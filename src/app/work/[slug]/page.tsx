@@ -137,6 +137,22 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               ))}
             </div>
           </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-line pt-6">
+              <span className="mr-1 text-[11px] font-bold uppercase tracking-widest text-muted">
+                Fitur Utama
+              </span>
+              {project.highlights.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-line bg-ivory px-3 py-1.5 text-[12px] font-medium text-forest/80"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </Reveal>
         </Container>
       </section>
 
@@ -153,7 +169,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             text={project.strategy}
             aside={
               <ul className="flex flex-col gap-2.5">
-                {["Fokus pada tujuan utama pengunjung", "Hierarki informasi berbasis keputusan", "Jalur tindakan yang jelas dan langsung"].map((point) => (
+                {project.highlights.map((point) => (
                   <li key={point} className="flex items-center gap-3 text-[14px] font-medium text-forest">
                     <Check className="h-4 w-4 text-moss" strokeWidth={2.5} />
                     {point}
@@ -191,23 +207,74 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {Array.from({ length: project.galleryCount }).map((_, i) => (
-              <Reveal key={i} delay={i * 0.05}>
+          <div className="mt-10">
+            <Reveal>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-muted">
+                Preview Desktop
+              </p>
+            </Reveal>
+            <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <Reveal>
                 <div>
                   <div className="overflow-hidden border border-line shadow-raise">
                     <ProjectMock
                       project={project}
-                      variation={i + 1}
-                      className={i === 0 ? "aspect-[16/10] md:col-span-2" : "aspect-[4/3]"}
+                      variation={1}
+                      className="aspect-[4/3]"
                     />
                   </div>
                   <p className="mt-3 text-[12px] font-semibold uppercase tracking-widest text-muted">
-                    Preview 0{i + 1}
+                    Halaman utama · 01
                   </p>
                 </div>
               </Reveal>
-            ))}
+              <Reveal delay={0.06}>
+                <div>
+                  <div className="overflow-hidden border border-line shadow-raise">
+                    <ProjectMock
+                      project={project}
+                      variation={2}
+                      className="aspect-[4/3]"
+                    />
+                  </div>
+                  <p className="mt-3 text-[12px] font-semibold uppercase tracking-widest text-muted">
+                    Detail & aspek visual · 02
+                  </p>
+                </div>
+              </Reveal>
+            </div>
+          </div>
+
+          <div className="mt-14">
+            <Reveal>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-muted">
+                Preview Mobile
+              </p>
+            </Reveal>
+            <Reveal delay={0.06}>
+              <div className="mt-5 flex flex-col items-start gap-10 sm:flex-row sm:items-center">
+                <div className="w-full max-w-[300px] rounded-[2.6rem] border border-line bg-forest p-2 shadow-raise">
+                  <div className="overflow-hidden rounded-[2rem]">
+                    <ProjectMock
+                      project={project}
+                      variation={3}
+                      frame={false}
+                      className="aspect-[9/16]"
+                    />
+                  </div>
+                </div>
+                <div className="max-w-sm">
+                  <h3 className="text-lg font-bold tracking-tight text-forest sm:text-xl">
+                    Dirancang dan diuji khusus untuk ponsel.
+                  </h3>
+                  <p className="mt-3 text-[14.5px] leading-relaxed text-muted">
+                    Tidak sekadar mengecilkan tampilan desktop — setiap halaman memiliki
+                    hierarki informasi, ukuran ketukan, dan alur tindakannya sendiri pada
+                    layar kecil.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </Container>
       </section>

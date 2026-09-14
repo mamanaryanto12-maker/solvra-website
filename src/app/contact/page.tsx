@@ -17,6 +17,7 @@ export default function ContactPage() {
   return (
     <>
       <PageIntro
+        atmosphere="contact"
         eyebrow="Kontak"
         title="Mari membangun sesuatu yang berarti."
         description="Ceritakan ke mana arah bisnis Anda. Kami akan membantu membangun pengalaman digital yang membawa Anda ke sana."

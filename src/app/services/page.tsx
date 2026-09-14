@@ -17,6 +17,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageIntro
+        atmosphere="systems"
         eyebrow="Layanan"
         title="Apa yang kami lakukan, dengan jelas."
         description="Tiga layanan inti yang bekerja sebagai satu kesatuan. Pilih salah satu untuk mempelajari detailnya — atau biarkan kami membantu menentukan kebutuhan Anda."

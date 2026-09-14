@@ -16,10 +16,11 @@ export default function WorkPage() {
   return (
     <>
       <PageIntro
+        atmosphere="gallery"
         eyebrow="Portofolio"
         title="Karya yang berbicara."
         description="Kumpulan studi konsep internal yang menunjukkan pendekatan, kualitas visual, dan cara berpikir kami dalam membangun website untuk berbagai industri."
-        meta={["Studio Concept", "Business", "Education", "Property", "Hospitality", "Healthcare", "Retail"]}
+        meta={["Studio Concept", "Property", "Hospitality", "Healthcare", "Education", "Retail", "Finance", "Logistics", "F&B", "Fashion", "Travel", "Wedding", "Automotive", "Spa"]}
       />
 
       <WorkGrid />
@@ -27,7 +28,11 @@ export default function WorkPage() {
       <Marquee
         items={[
           "Property", "Hospitality", "Healthcare", "Education",
-          "Professional Services", "Retail", "Business",
+          "Professional Services", "Financial Services", "Retail",
+          "Food & Beverage", "Fitness & Wellness", "Logistics",
+          "Community & Non-Profit", "Fashion & Lifestyle", "Travel & Leisure",
+          "Events & Wedding", "Automotive", "Beauty & Spa",
+          "Creative & Photography", "Business",
         ]}
         tone="dark"
       />

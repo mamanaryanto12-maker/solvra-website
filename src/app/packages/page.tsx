@@ -24,6 +24,7 @@ export default function PackagesPage() {
   return (
     <>
       <PageIntro
+        atmosphere="monument"
         eyebrow="Paket & Investasi"
         title="Investasi yang jelas untuk fondasi digital Anda."
         description="Tujuh pilihan paket dengan cakupan dan harga yang transparan — dari website sederhana hingga solusi digital custom. Jika belum yakin, mulailah dari percakapan singkat; kami bantu menentukan yang paling tepat."

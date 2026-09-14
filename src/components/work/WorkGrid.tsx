@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { projects, projectCategories, projectKinds, type Project } from "@/data/projects";
@@ -66,16 +65,18 @@ export function WorkGrid() {
   return (
     <section className="relative overflow-hidden py-16 sm:py-24">
       <div aria-hidden="true" className="absolute inset-0 -z-10">
-        <Image
-          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=2000&q=80&auto=format&fit=crop"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover opacity-40"
-        />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(180deg, rgba(247,247,245,0.94) 0%, rgba(247,247,245,0.9) 55%, rgba(247,247,245,0.96) 100%)" }}
+          style={{ background: "linear-gradient(180deg, rgba(247,247,245,0.55) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0.6) 100%)" }}
+        />
+        <div className="grid-lines absolute inset-0 opacity-20" />
+        <div
+          className="absolute bottom-10 left-8 hidden h-40 w-72 lg:block"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(14,26,61,0.06) 1px, transparent 1.4px)",
+            backgroundSize: "24px 24px",
+          }}
         />
       </div>
       <div className="container-x">

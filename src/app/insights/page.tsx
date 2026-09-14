@@ -15,6 +15,7 @@ export default function InsightsPage() {
   return (
     <>
       <PageIntro
+        atmosphere="insight"
         eyebrow="Insights"
         title="Pemikiran, catatan, dan pandangan kami."
         description="Pemikiran tentang web design, strategi digital, dan hal-hal yang sering kami pelajari dari proyek bersama klien."

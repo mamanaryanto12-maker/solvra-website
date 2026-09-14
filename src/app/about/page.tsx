@@ -43,6 +43,7 @@ export default function AboutPage() {
   return (
     <>
       <PageIntro
+        atmosphere="studio"
         eyebrow="Tentang SOLVRA"
         title="Kami membangun pengalaman digital yang bermakna."
         description="SOLVRA adalah Digital Website Studio yang membantu bisnis modern membangun website yang tidak hanya terlihat baik, tetapi bekerja dengan tujuan yang jelas."
