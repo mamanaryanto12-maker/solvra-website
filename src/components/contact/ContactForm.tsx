@@ -119,7 +119,7 @@ export function ContactForm() {
         <p className="mt-3 max-w-sm mx-auto text-[15px] leading-relaxed text-muted">
           {status === "success"
             ? "Pesan Anda telah diterima. Kami akan membalas dalam 1–2 hari kerja."
-            : "Mode demo aktif — formulir belum terhubung ke backend. Hubungkan variabel lingkungan NEXT_PUBLIC_CONTACT_ENDPOINT untuk mengaktifkan pengiriman."}
+            : "Terima kasih, pesan Anda tercatat. Untuk pembicaraan yang lebih langsung, kirim email ke hello@solvra.studio."}
         </p>
         <button
           type="button"

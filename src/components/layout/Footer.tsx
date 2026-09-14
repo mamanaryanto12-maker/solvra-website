@@ -49,11 +49,7 @@ export function Footer() {
         <div className="flex flex-col gap-6 lg:col-span-5">
           <Logo tone="dark" size="md" />
           <p className="text-[15px] leading-relaxed text-ivory/65">
-            {siteConfig.descriptor}. {siteConfig.tagline}
-          </p>
-          <p className="max-w-sm text-sm leading-relaxed text-ivory/45">
-            Website strategis, premium, dan berorientasi pada hasil — dibangun dengan desain yang
-            matang dan kode yang solid.
+            {siteConfig.tagline}
           </p>
           <div className="flex flex-wrap items-center gap-5 pt-2">
             {siteConfig.socials.map((social) => (
@@ -109,14 +105,6 @@ export function Footer() {
             >
               {siteConfig.contact.email}
             </a>
-            <a
-              href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, "")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-underline w-fit font-medium hover:text-ivory"
-            >
-              {siteConfig.contact.whatsapp}
-            </a>
             <span className="text-ivory/40">{siteConfig.contact.location}</span>
           </div>
           <a href="#top" className="mt-8 inline-flex items-center gap-2 text-[13px] font-semibold text-sage hover:text-ivory">
@@ -139,13 +127,6 @@ export function Footer() {
               Ketentuan
             </Link>
           </div>
-        </div>
-        <div className="container-x pb-6">
-          <p className="text-[11.5px] text-ivory/30">
-            Beberapa konten pada situs ini masih bersifat placeholder dan siap diganti dengan
-            informasi aktual: portofolio menampilkan studi konsep, artikel menampilkan draf, dan
-            detail kontak menunggu pembaruan.
-          </p>
         </div>
       </div>
     </footer>

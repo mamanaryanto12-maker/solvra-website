@@ -32,6 +32,7 @@ function FilterChip({ label, active, onClick }: FilterChipProps) {
 }
 
 function WorkItem({ project, index }: { project: Project; index: number }) {
+  const isFeatured = project.featured;
   return (
     <motion.div
       layout
@@ -39,9 +40,12 @@ function WorkItem({ project, index }: { project: Project; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -16 }}
       transition={{ duration: 0.5, delay: index * 0.04, ease: [0.22, 1, 0.36, 1] }}
-      className="col-span-1"
+      className={cn("col-span-1", isFeatured && "md:col-span-2")}
     >
-      <ProjectCard project={project} visualClassName="aspect-[4/5]" />
+      <ProjectCard
+        project={project}
+        visualClassName={isFeatured ? "aspect-[16/10]" : "aspect-[4/5]"}
+      />
     </motion.div>
   );
 }

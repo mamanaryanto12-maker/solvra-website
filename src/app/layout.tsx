@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/og-placeholder.svg",
+        url: "/og-solvra.svg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} — ${siteConfig.descriptor}`,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.descriptor}`,
     description: siteConfig.description,
-    images: ["/og-placeholder.svg"],
+    images: ["/og-solvra.svg"],
   },
   robots: {
     index: true,

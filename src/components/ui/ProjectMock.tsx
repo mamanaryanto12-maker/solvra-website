@@ -79,65 +79,128 @@ function Bar({ width, color, h = 3 }: { width: string; color: string; h?: number
   return <span className="block rounded-[1px]" style={{ width, height: h, backgroundColor: color }} />;
 }
 
+function FeatureStrip() {
+  return (
+    <div
+      className="flex shrink-0 gap-2 px-5 py-3"
+      style={{ backgroundColor: "rgba(12,23,47,0.85)", borderTop: "1px solid rgba(247,247,245,0.1)" }}
+    >
+      {[0, 1, 2].map((i) => (
+        <div
+          key={i}
+          className="flex flex-1 flex-col gap-1.5 rounded-[2px] p-2.5"
+          style={{
+            border: "1px solid rgba(247,247,245,0.12)",
+            backgroundColor: "rgba(247,247,245,0.05)",
+          }}
+        >
+          <span className="h-2 w-2 rounded-[1px] bg-moss" />
+          <Bar width="82%" color="rgba(247,247,245,0.55)" />
+          <Bar width="58%" color="rgba(247,247,245,0.3)" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function FooterBand() {
+  return (
+    <div
+      className="flex shrink-0 items-center justify-between px-5 py-2.5"
+      style={{ borderTop: "1px solid rgba(247,247,245,0.12)", backgroundColor: "#0C172F" }}
+    >
+      <span className="text-[7px] font-extrabold tracking-[0.24em]" style={{ color: "rgba(247,247,245,0.55)" }}>
+        SOLVRA&nbsp;&middot;&nbsp;DIGITAL WEBSITE STUDIO
+      </span>
+      <span className="block h-1.5 w-8 rounded-[1px] bg-moss" />
+      <div className="flex items-center gap-1.5">
+        <Bar width="26px" color="rgba(247,247,245,0.28)" h={3} />
+        <Bar width="26px" color="rgba(247,247,245,0.28)" h={3} />
+        <Bar width="26px" color="rgba(46,111,242,0.7)" h={3} />
+      </div>
+    </div>
+  );
+}
+
 function HeroMock({ project }: { project: Project }) {
   return (
-    <div className="relative h-full w-full" style={{ backgroundColor: NAVY }}>
-      <div className="absolute inset-0">
-        <Photo src={project.image} alt={project.imageAlt} />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to top, rgba(10,16,32,0.82) 0%, rgba(10,16,32,0.18) 45%, rgba(10,16,32,0.42) 100%)",
-          }}
-        />
+    <div className="flex h-full w-full flex-col" style={{ backgroundColor: NAVY }}>
+      <div className="relative flex min-h-0 flex-1">
+        <div className="absolute inset-0">
+          <Photo src={project.image} alt={project.imageAlt} />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(10,16,32,0.86) 0%, rgba(10,16,32,0.22) 45%, rgba(10,16,32,0.4) 100%)",
+            }}
+          />
+        </div>
+        <NavBar title={project.title} />
+        <div className="relative flex min-h-0 w-full flex-1 flex-col justify-end gap-2 px-5 pb-5 pt-8">
+          <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-moss">
+            {project.industry}
+          </span>
+          <div className="max-w-[85%] text-[clamp(15px,2.1vw,24px)] font-extrabold leading-[1.05] tracking-tight text-ivory">
+            {project.title}
+          </div>
+          <div className="mt-1 flex flex-col gap-1.5">
+            <Bar width="75%" color="rgba(247,247,245,0.5)" />
+            <Bar width="50%" color="rgba(247,247,245,0.32)" />
+          </div>
+          <div className="mt-1.5">
+            <Chip label="Pelajari Lebih Lanjut" />
+          </div>
+        </div>
       </div>
-      <NavBar title={project.title} />
-      <div className="relative flex h-full min-h-0 flex-col justify-end gap-2 px-5 pb-5 pt-6">
-        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-moss">
-          {project.industry}
-        </span>
-        <div className="max-w-[85%] text-[clamp(15px,2.1vw,24px)] font-extrabold leading-[1.05] tracking-tight text-ivory">
-          {project.title}
-        </div>
-        <div className="mt-1 flex flex-col gap-1.5">
-          <Bar width="75%" color="rgba(247,247,245,0.5)" />
-          <Bar width="50%" color="rgba(247,247,245,0.32)" />
-        </div>
-        <div className="mt-1.5">
-          <Chip label="Lihat Karya" />
-        </div>
-      </div>
+      <FeatureStrip />
+      <FooterBand />
     </div>
   );
 }
 
 function EditorialMock({ project }: { project: Project }) {
   return (
-    <div className="flex h-full min-h-0 bg-white">
-      <div className="flex min-w-0 flex-1 flex-col justify-center gap-2 px-5 py-4">
-        <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-moss">
-          {project.industry}
-        </span>
-        <div className="text-[clamp(13px,1.9vw,22px)] font-extrabold leading-none tracking-tight text-forest">
-          {project.title}
+    <div className="flex h-full min-h-0 flex-col bg-white">
+      <div className="flex min-h-0 flex-1">
+        <div className="flex min-w-0 flex-1 flex-col justify-center gap-2 px-5 py-4">
+          <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-moss">
+            {project.industry}
+          </span>
+          <div className="text-[clamp(13px,1.9vw,22px)] font-extrabold leading-none tracking-tight text-forest">
+            {project.title}
+          </div>
+          <Bar width="40px" color={BLUE} />
+          <div className="mt-1 flex flex-col gap-1.5">
+            <Bar width="100%" color={LINE} h={4} />
+            <Bar width="66%" color={LINE} h={4} />
+            <Bar width="80%" color={LINE} h={4} />
+          </div>
+          <div className="mt-1 flex items-center gap-2">
+            <Chip label="Pelajari" tone="navy" />
+            <Chip label="Hubungi" tone="ivory" />
+          </div>
         </div>
-        <Bar width="40px" color={BLUE} />
-        <div className="mt-1 flex flex-col gap-1.5">
-          <Bar width="100%" color={LINE} h={4} />
-          <Bar width="66%" color={LINE} h={4} />
-          <Bar width="80%" color={LINE} h={4} />
-        </div>
-        <div className="mt-1">
-          <Chip label="Pelajari" tone="navy" />
+        <div className="relative w-[46%] min-w-0 overflow-hidden">
+          <Photo src={project.image} alt={project.imageAlt} />
+          <div
+            className="absolute inset-0"
+            style={{ background: "linear-gradient(to left, rgba(10,16,32,0.42), rgba(10,16,32,0))" }}
+          />
         </div>
       </div>
-      <div className="relative w-[46%] min-w-0 overflow-hidden">
-        <Photo src={project.image} alt={project.imageAlt} />
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(to left, rgba(10,16,32,0.42), rgba(10,16,32,0))" }}
-        />
+      <div
+        className="flex shrink-0 items-center justify-between border-t px-5 py-2.5"
+        style={{ borderColor: LINE, backgroundColor: IVORY }}
+      >
+        <span className="text-[7px] font-extrabold tracking-[0.22em]" style={{ color: GRAY }}>
+          {project.title.slice(0, 16).toUpperCase()}&nbsp;&middot;&nbsp;Layanan &amp; Kontak
+        </span>
+        <div className="flex items-center gap-1.5">
+          <Bar width="24px" color={LINE} h={3} />
+          <Bar width="24px" color={NAVY} h={3} />
+          <Bar width="24px" color={BLUE} h={3} />
+        </div>
       </div>
     </div>
   );
@@ -146,13 +209,13 @@ function EditorialMock({ project }: { project: Project }) {
 function GalleryMock({ project }: { project: Project }) {
   return (
     <div className="flex h-full min-h-0 flex-col" style={{ backgroundColor: NAVY }}>
-      <NavBar title={project.title} />
-      <div className="relative flex-1 overflow-hidden">
+      <div className="relative min-h-0 flex-1 overflow-hidden">
         <Photo src={project.image} alt={project.imageAlt} />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,16,32,0.68), transparent 50%)" }}
+          style={{ background: "linear-gradient(to top, rgba(10,16,32,0.7), transparent 50%)" }}
         />
+        <NavBar title={project.title} />
         <span className="absolute bottom-4 left-5 text-[9px] font-bold uppercase tracking-[0.2em] text-moss">
           {project.industry}
         </span>
@@ -170,6 +233,7 @@ function GalleryMock({ project }: { project: Project }) {
           <Bar width="66%" color={BLUE} />
         </div>
       </div>
+      <FooterBand />
     </div>
   );
 }
@@ -221,7 +285,7 @@ function MobileMock({ project }: { project: Project }) {
   );
 }
 
-function NavRow({ label, active, index }: { label: string; active?: boolean; index: number }) {
+function NavRow({ active, index }: { active?: boolean; index: number }) {
   return (
     <div
       className="flex items-center gap-2 rounded-[2px] px-2 py-1.5"
@@ -242,7 +306,7 @@ function DashboardMock({ project }: { project: Project }) {
           <span className="h-2 w-14 rounded-[1px]" style={{ backgroundColor: "rgba(247,247,245,0.8)" }} />
         </div>
         {["Dashboard", "Kursus", "Tugas", "Nilai", "Materi"].map((label, i) => (
-          <NavRow key={label} label={label} active={i === 0} index={i} />
+          <NavRow key={label} active={i === 0} index={i} />
         ))}
       </div>
       <div className="flex min-w-0 flex-1 flex-col p-3.5">
@@ -339,7 +403,7 @@ function CommerceMock({ project }: { project: Project }) {
   );
 }
 
-function Field({ label, width }: { label: string; width: string }) {
+function Field({ width }: { width: string }) {
   return (
     <div className="flex flex-col gap-1">
       <Bar width={width} color="rgba(247,247,245,0.55)" h={3} />
@@ -350,28 +414,43 @@ function Field({ label, width }: { label: string; width: string }) {
 
 function HospitalityMock({ project }: { project: Project }) {
   return (
-    <div className="relative h-full min-h-0 overflow-hidden bg-ivory">
-      <div className="absolute inset-0">
-        <Photo src={project.image} alt={project.imageAlt} />
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,16,32,0.72), rgba(10,16,32,0.2) 55%, rgba(10,16,32,0.35))" }}
-        />
+    <div className="flex h-full min-h-0 flex-col overflow-hidden bg-ivory">
+      <div className="relative min-h-0 flex-1">
+        <div className="absolute inset-0">
+          <Photo src={project.image} alt={project.imageAlt} />
+          <div
+            className="absolute inset-0"
+            style={{ background: "linear-gradient(to top, rgba(10,16,32,0.74), rgba(10,16,32,0.2) 55%, rgba(10,16,32,0.35))" }}
+          />
+        </div>
+        <NavBar title={project.title} />
+        <div className="relative flex h-full min-h-0 flex-col justify-end p-5">
+          <div
+            className="rounded-[3px] p-3.5 shadow-float"
+            style={{ backgroundColor: "rgba(14,26,61,0.82)", border: "1px solid rgba(247,247,245,0.16)", backdropFilter: "blur(2px)" }}
+          >
+            <div className="grid grid-cols-2 gap-2.5">
+              <Field width="45%" />
+              <Field width="48%" />
+            </div>
+            <span className="mt-3 block h-6 rounded-[2px] bg-moss" />
+            <div className="mt-2 flex flex-col gap-1">
+              <Bar width="60%" color={NAVY} h={3} />
+            </div>
+          </div>
+        </div>
       </div>
-      <NavBar title={project.title} />
-      <div className="relative flex h-full min-h-0 flex-col justify-end p-5">
-        <div
-          className="rounded-[3px] p-3.5 shadow-float"
-          style={{ backgroundColor: "rgba(14,26,61,0.82)", border: "1px solid rgba(247,247,245,0.16)", backdropFilter: "blur(2px)" }}
-        >
-          <div className="grid grid-cols-2 gap-2.5">
-            <Field label="Check-in" width="45%" />
-            <Field label="Check-out" width="48%" />
-          </div>
-          <span className="mt-3 block h-6 rounded-[2px] bg-moss" />
-          <div className="mt-2 flex flex-col gap-1">
-            <Bar width="60%" color={NAVY} h={3} />
-          </div>
+      <div
+        className="flex shrink-0 items-center justify-between border-t px-5 py-2.5"
+        style={{ borderColor: LINE, backgroundColor: WHITE }}
+      >
+        <span className="text-[7px] font-extrabold tracking-[0.22em]" style={{ color: GRAY }}>
+          {project.title.slice(0, 16).toUpperCase()}
+        </span>
+        <div className="flex items-center gap-1.5">
+          <Bar width="26px" color={LINE} h={3} />
+          <Bar width="26px" color={NAVY} h={3} />
+          <Bar width="26px" color={BLUE} h={3} />
         </div>
       </div>
     </div>
@@ -442,7 +521,7 @@ function BookingMock({ project }: { project: Project }) {
           </div>
           <div className="flex flex-col gap-1.5">
             <DoctorRow active image={project.image} alt={project.imageAlt} />
-            <DoctorRow image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&q=80&auto=format&fit=crop" alt="Dokter kedua" />
+            <DoctorRow image="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80&auto=format&fit=crop" alt="Dokter kedua" />
           </div>
         </div>
       </div>

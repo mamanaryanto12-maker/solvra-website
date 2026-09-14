@@ -185,9 +185,7 @@ export function Nav() {
                   <span className="text-3xl font-bold tracking-tight sm:text-4xl">
                     {item.label}
                   </span>
-                  <span className="text-xs font-semibold tracking-widest text-sage">
-                    0{index + 1}
-                  </span>
+                  <span className="h-1 w-1 rounded-full bg-sage transition-colors duration-300 group-hover:bg-ivory" />
                 </MotionLink>
               ))}
               <motion.div

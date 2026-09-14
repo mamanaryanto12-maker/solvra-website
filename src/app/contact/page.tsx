@@ -21,7 +21,7 @@ export default function ContactPage() {
         eyebrow="Kontak"
         title="Mari membangun sesuatu yang berarti."
         description="Ceritakan ke mana arah bisnis Anda. Kami akan membantu membangun pengalaman digital yang membawa Anda ke sana."
-        meta={["Mulai percakapan", "Tanpa komitmen", "Respon dalam 1–2 hari kerja"]}
+        meta={["Mulai percakapan", "Tanpa komitmen", "Kami bantu tentukan arah"]}
       />
 
       <section className="py-16 sm:py-24">
@@ -66,17 +66,19 @@ export default function ContactPage() {
                         {siteConfig.contact.email}
                       </a>
                     </div>
-                    <div>
-                      <p className="label-light">WhatsApp</p>
-                      <a
-                        href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-1.5 block text-[15px] font-semibold text-ivory transition-colors hover:text-sage"
-                      >
-                        {siteConfig.contact.whatsapp}
-                      </a>
-                    </div>
+                    {!siteConfig.contact.whatsappPlaceholder && siteConfig.contact.whatsapp && (
+                      <div>
+                        <p className="label-light">WhatsApp</p>
+                        <a
+                          href={`https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, "")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-1.5 block text-[15px] font-semibold text-ivory transition-colors hover:text-sage"
+                        >
+                          {siteConfig.contact.whatsapp}
+                        </a>
+                      </div>
+                    )}
                     <div>
                       <p className="label-light">Lokasi</p>
                       <p className="mt-1.5 text-[15px] font-semibold text-ivory/80">
@@ -95,15 +97,6 @@ export default function ContactPage() {
                       ))}
                     </div>
                   </div>
-
-                  {siteConfig.contact.emailPlaceholder && (
-                    <div className="mt-8 rounded border border-ivory/10 bg-ivory/[0.04] p-4">
-                      <p className="text-[12.5px] leading-relaxed text-ivory/40">
-                        Detail kontak di atas masih berupa placeholder. Detail akan diperbarui saat
-                        informasi kontak resmi tersedia.
-                      </p>
-                    </div>
-                  )}
                 </div>
               </Reveal>
             </div>

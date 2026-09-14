@@ -6,13 +6,14 @@ export type NavItem = {
 export const siteConfig = {
   name: "SOLVRA",
   descriptor: "Digital Website Studio",
-  tagline: "Kurangi hambatan. Percepat pertumbuhan. Kerjakan dengan lebih cerdas.",
-  heroHeadline: "Strategic websites designed for modern businesses.",
-  philosophy: "Technology should solve problems, not create them.",
+  tagline: "Digital Website Studio dari Indonesia, untuk bisnis yang serius mau tumbuh online.",
+  heroHeadline: "Kami bangun satu website. Bukan lima puluh.",
+  philosophy:
+    "Website yang bagus itu yang bikin orang lupa mereka sedang pakai website — bukan yang bikin mereka kagum sama animasinya.",
   siteUrl: "https://solvra.studio",
   description:
-    "SOLVRA adalah Digital Website Studio yang membangun website strategis, premium, dan berorientasi pada hasil untuk bisnis modern.",
-  defaultOgImage: "/og-placeholder.svg",
+    "SOLVRA adalah Digital Website Studio dari Indonesia. Kami sengaja membatasi jumlah klien per bulan supaya setiap website benar-benar dipikirkan — bukan dicetak dari template.",
+  defaultOgImage: "/og-solvra.svg",
   contact: {
     email: "hello@solvra.studio",
     emailPlaceholder: true,

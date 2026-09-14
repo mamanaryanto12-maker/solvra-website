@@ -9,33 +9,32 @@ import { Marquee } from "@/components/ui/Marquee";
 export const metadata: Metadata = {
   title: "Tentang SOLVRA",
   description:
-    "SOLVRA adalah Digital Website Studio yang membantu bisnis modern membangun website yang tidak hanya terlihat baik, tetapi bekerja dengan tujuan yang jelas.",
+    "SOLVRA mulai dari kegelisahan: website bisnis kecil yang dibikin asal jadi, tanpa memikirkan orang yang benar-benar akan membukanya. Sekarang kami fokus di satu hal — website yang jelas alasannya ada.",
   alternates: { canonical: "/about" },
 };
 
-const missionItems = [
-  "Membangun pengalaman digital yang dipikirkan dengan matang",
-  "Memadukan strategi, desain, dan teknologi dalam satu kesatuan",
-  "Menyelesaikan masalah bisnis nyata melalui solusi digital",
-  "Membantu bisnis menyampaikan nilainya dengan lebih efektif",
-  "Terus menyempurnakan kualitas pengalaman digital",
+const principles = [
+  "Ngobrol dulu sebelum desain — kami tidak mulai dari template.",
+  "Satu tim yang memegang strategi, desain, sampai kode — bukan lempar-lemparan brief antar vendor.",
+  "Kami bilang jujur kalau ide klien kurang pas untuk bisnisnya, bukan asal setuju.",
+  "Website selesai bukan berarti hubungan selesai — performanya tetap kami pantau.",
 ];
 
 const beliefs = [
   {
     index: "01",
     title: "Mulai dari masalah",
-    text: "Kami memulai dari tantangan bisnis, bukan dari tren atau preferensi visual. Solusi dirancang untuk menjawab masalah, bukan menciptakannya.",
+    text: "Kami mulai dari tantangan bisnis, bukan dari tren atau preferensi visual. Kalau solusinya tidak menjawab masalah, sebaik apa pun tampilannya — kami tunda dulu.",
   },
   {
     index: "02",
-    title: "Desain adalah bahasa",
-    text: "Setiap pilihan tipografi, warna, dan komposisi adalah cara berbicara dengan pengunjung. Kami memilihnya agar pesan sampai dengan jernih.",
+    title: "Desain yang jujur",
+    text: "Kalau warna brand Anda biru dan CTA-nya juga biru, orang tidak akan tahu harus klik di mana. Hal sekecil itu yang sering kami betulkan duluan — sebelum bicara soal 'branding'.",
   },
   {
     index: "03",
-    title: "Teknik tanpa kompromi",
-    text: "Website yang baik juga harus cepat, aman, dan mudah dirawat. Fondasi teknis yang solid sama pentingnya dengan tampilan yang premium.",
+    title: "Fondasi tanpa kompromi",
+    text: "Website yang baik harus cepat, aman, dan mudah dirawat — bukan cuma terlihat premium. Fondasi teknis yang solid menentukan umur website Anda.",
   },
 ];
 
@@ -45,8 +44,8 @@ export default function AboutPage() {
       <PageIntro
         atmosphere="studio"
         eyebrow="Tentang SOLVRA"
-        title="Kami membangun pengalaman digital yang bermakna."
-        description="SOLVRA adalah Digital Website Studio yang membantu bisnis modern membangun website yang tidak hanya terlihat baik, tetapi bekerja dengan tujuan yang jelas."
+        title="Kami mulai karena capek lihat website dibuatkan asal jadi."
+        description="Cuma tempel logo dan teks, tanpa mikir siapa yang benar-benar akan membukanya. Sekarang kami fokus di satu hal: bikin website yang jelas alasannya ada — dari struktur sampai baris kalimat terakhir."
         meta={["Strategy", "Design", "Development", "Digital Experience"]}
       />
 
@@ -59,25 +58,24 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.06}>
                 <p className="mt-6 text-2xl font-bold leading-snug tracking-tight text-forest sm:text-3xl">
-                  Kami membangun website sebagai alat bisnis — bukan sekadar tampilan.
+                  Kami memakai website sebagai alat bisnis — bukan pajangan.
                 </p>
               </Reveal>
               <Reveal delay={0.12}>
                 <div className="prose-solvra mt-8 space-y-5">
                   <p>
-                    SOLVRA adalah Digital Website Studio yang membantu bisnis modern membangun
-                    website yang tidak hanya terlihat baik, tetapi bekerja dengan tujuan yang
-                    jelas.
+                    SOLVRA mulai dari satu kegelisahan: terlalu banyak website bisnis kecil dibikin
+                    asal jadi — logo ditempel, teks disalin dari template, dan tidak ada yang
+                    memikirkan orang yang benar-benar akan membukanya.
                   </p>
                   <p>
-                    Kami menggabungkan strategy, design, development, dan digital experience untuk
-                    menciptakan website yang memperkuat brand, membangun kepercayaan, dan
-                    mendukung pertumbuhan bisnis.
+                    Karena itu kami sengaja membatasi jumlah klien per bulan. Satu tim memegang
+                    strategi sampai kode, jadi penjelasan Anda tidak pernah hilang di antara vendor.
                   </p>
                   <p>
-                    Setiap proyek kami mulai dari pertanyaan yang sama: apa yang ingin dicapai oleh
-                    bisnis ini? Dari sana, kami membangun struktur, desain, dan teknologi yang
-                    mengarah ke sana — dengan cara yang tenang, presisi, dan manusiawi.
+                    Dan begitu website tayang, kami tak berhenti di situ. Kalau ada halaman yang
+                    tidak bekerja, kami perbaiki — bukan karena janji, tapi karena ini pekerjaan
+                    kami.
                   </p>
                 </div>
               </Reveal>
@@ -88,19 +86,26 @@ export default function AboutPage() {
                 <div className="border border-line bg-white p-8">
                   <span className="label">Visi Kami</span>
                   <p className="mt-5 text-lg font-bold leading-relaxed tracking-tight text-forest sm:text-xl">
-                    Menjadi partner digital yang membantu bisnis modern membangun fondasi digital
-                    yang kuat, relevan, dan berkelanjutan.
+                    Menjadi studio yang dipilih karena kejujuran dan kualitas — bukan karena
+                    banyaknya proyek yang bisa kami terima dalam sebulan.
                   </p>
                 </div>
               </Reveal>
               <Reveal delay={0.16}>
                 <div className="mt-6 border border-line bg-forest p-8 text-ivory">
-                  <span className="label-light">Misi Kami</span>
-                  <ul className="mt-5 flex flex-col gap-3.5">
-                    {missionItems.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-[14.5px] leading-relaxed text-ivory/75">
-                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-sage" />
-                        {item}
+                  <span className="label-light">Cara Kami Bekerja</span>
+                  <p className="mt-4 text-[14.5px] leading-relaxed text-ivory/60">
+                    Prinsip ini kami pegang di setiap proyek:
+                  </p>
+                  <ul className="mt-5 flex flex-col border-l border-ivory/15">
+                    {principles.map((item) => (
+                      <li
+                        key={item}
+                        className="border-b border-ivory/10 py-4 last:border-b-0"
+                      >
+                        <span className="pl-5 text-[14.5px] font-semibold leading-relaxed text-ivory/85">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -113,8 +118,8 @@ export default function AboutPage() {
 
       <Marquee
         items={[
-          "Strategy", "Design", "Development", "Digital Experience",
-          "Menyelesaikan Masalah", "Membangun Kepercayaan", "Tumbuh Lebih Cepat",
+          "Ngobrol Dulu", "Desain Kemudian", "Satu Tim Sampai Kode",
+          "Website Punya Alasan", "Dipantau Setelah Live",
         ]}
         tone="dark"
       />
@@ -123,19 +128,19 @@ export default function AboutPage() {
         <Container>
           <div className="mx-auto max-w-4xl text-center">
             <Reveal>
-              <span className="label-light">Filosofi Brand</span>
+              <span className="label-light">Pandangan Kami</span>
             </Reveal>
             <Reveal delay={0.08}>
               <p className="mt-7 text-3xl font-extrabold leading-[1.12] tracking-tight text-ivory sm:text-5xl">
-                &ldquo;Teknologi seharusnya menyelesaikan masalah,
-                <br className="hidden sm:block" /> bukan menciptakannya.&rdquo;
+                &ldquo;Website yang bagus itu yang bikin orang lupa mereka sedang pakai website —
+                bukan yang bikin mereka kagum sama animasinya.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.14}>
               <p className="mx-auto mt-8 max-w-xl text-[15.5px] leading-relaxed text-ivory/60">
-                Inilah dasar dari setiap keputusan kami. Teknologi hadir untuk mempermudah — bukan
-                menambah kerumitan. Prinsip ini berlaku pada arsitektur konten, pilihan teknologi,
-                hingga cara kami berkomunikasi.
+                Ini yang kami sebut halaman yang bekerja: pengunjung paham apa yang Anda tawarkan,
+                tahu langkah berikutnya, dan tidak pernah tersesat. Animasi hanyalah pelengkap —
+                bukan alasan website itu ada.
               </p>
             </Reveal>
           </div>
@@ -144,10 +149,13 @@ export default function AboutPage() {
           <div className="border-t border-ivory/10">
             {beliefs.map((belief) => (
               <Reveal key={belief.index}>
-                <div className="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-ivory/10 py-8 first:border-t-0 sm:grid-cols-[6rem_1fr_1fr] sm:gap-8">
-                  <span className="text-sm font-bold tracking-widest text-sage">{belief.index}</span>
-                  <h3 className="text-xl font-bold tracking-tight text-ivory">{belief.title}</h3>
-                  <p className="text-[14.5px] leading-relaxed text-ivory/60">{belief.text}</p>
+                <div className="grid grid-cols-1 gap-3 border-t border-ivory/10 py-8 first:border-t-0 sm:grid-cols-[10rem_1fr] sm:gap-10">
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-sage">
+                    {belief.title}
+                  </span>
+                  <p className="max-w-2xl text-lg font-bold leading-relaxed tracking-tight text-ivory/90">
+                    {belief.text}
+                  </p>
                 </div>
               </Reveal>
             ))}
@@ -157,9 +165,9 @@ export default function AboutPage() {
 
       <CTASection
         eyebrow="Kerja Sama"
-        headline="Mari kita bangun website yang bekerja untuk bisnis Anda."
-        text="Ceritakan tentang bisnis Anda, dan kami akan membantu menemukan pendekatan digital yang tepat."
-        primaryLabel="Bekerja Sama dengan SOLVRA"
+        headline="Ceritakan bisnis Anda. Tanpa form panjang."
+        text="Mulai dari percakapan singkat — kami akan bantu menentukan apakah website Anda perlu dibangun dari nol, dibenahi, atau sebenarnya sudah cukup."
+        primaryLabel="Mulai Percakapan"
         primaryHref="/contact"
         secondaryLabel="Lihat Proyek Kami"
         secondaryHref="/work"

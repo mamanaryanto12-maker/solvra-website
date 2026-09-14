@@ -3,29 +3,29 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const points = [
   {
-    index: "01",
-    title: "Membangun kredibilitas",
-    text: "Website yang rapi dan profesional membuat bisnis Anda terlihat lebih dipercaya sejak pandangan pertama.",
+    tag: "Kredibilitas",
+    title: "Diraih sebelum satu kata dibaca",
+    text: "Kerapian dan konsistensi membuat bisnis terlihat terkelola dengan baik — kesan yang terbentuk lebih cepat daripada teks mana pun.",
   },
   {
-    index: "02",
-    title: "Menyampaikan nilai",
-    text: "Struktur dan bahasa visual yang jelas membantu calon pelanggan memahami apa yang membuat bisnis Anda berbeda.",
+    tag: "Nilai",
+    title: "Disampaikan lewat struktur, bukan basa-basi",
+    text: "Hirarki yang jujur membantu calon pelanggan memahami apa yang membuat Anda berbeda — tanpa kalimat pemasaran yang bertele-tele.",
   },
   {
-    index: "03",
-    title: "Menciptakan kepercayaan",
-    text: "Informasi yang transparan dan alur yang jujur mengurangi keraguan sebelum pengunjung mengambil keputusan.",
+    tag: "Kepercayaan",
+    title: "Dibangun dengan transparansi",
+    text: "Harga, kontak, dan proses yang jujur mengurangi keraguan sebelum pengunjung mengambil keputusan.",
   },
   {
-    index: "04",
-    title: "Memandu pengunjung",
-    text: "Setiap halaman dirancang agar pengunjung tahu apa yang bisa dilakukan dan ke mana harus melangkah.",
+    tag: "Arah",
+    title: "Setiap halaman punya satu tugas",
+    text: "Pengunjung tidak perlu menebak langkah berikutnya — setiap halaman memandu dengan jelas.",
   },
   {
-    index: "05",
-    title: "Mendukung pertumbuhan",
-    text: "Fondasi digital yang baik siap tumbuh bersama bisnis — dari konten baru hingga integrasi di kemudian hari.",
+    tag: "Pertumbuhan",
+    title: "Fondasi yang siap ditanami konten baru",
+    text: "Struktur yang baik membuat website mudah ditambah, diukur, dan diperbaiki di kemudian hari.",
   },
 ];
 
@@ -37,17 +37,17 @@ export function StrategicPositioning() {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-32">
               <Reveal>
-                <span className="label">Mengapa Berpikir Strategis</span>
+                <span className="label">Yang Kami Pikirkan</span>
               </Reveal>
               <Reveal delay={0.06}>
                 <h2 className="mt-4 text-3xl font-bold leading-[1.08] tracking-tight text-forest sm:text-4xl lg:text-[2.9rem]">
-                  Website Anda seharusnya lebih dari sekadar tampil baik.
+                  Website bukan brosur daring. Ia tempat orang menilai Anda dalam hitungan detik.
                 </h2>
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-5 max-w-md text-[15.5px] leading-relaxed text-muted">
-                  Website bukan sekadar brosur daring. Website adalah tempat bisnis Anda dipahami,
-                  dipercaya, dan diingat.
+                  Sebagian besar calon pelanggan mengambil keputusan sebelum menghubungi Anda.
+                  Lima hal ini kami kerjakan di hampir setiap halaman.
                 </p>
               </Reveal>
             </div>
@@ -56,16 +56,18 @@ export function StrategicPositioning() {
           <div className="lg:col-span-7">
             <div>
               {points.map((point) => (
-                <Reveal key={point.index}>
-                  <div className="group grid grid-cols-[3.5rem_1fr] gap-4 border-t border-line py-7 last:border-b sm:grid-cols-[5rem_1fr] sm:gap-6">
-                    <span className="text-sm font-bold tracking-widest text-moss">
-                      {point.index}
+                <Reveal key={point.tag}>
+                  <div className="grid grid-cols-1 gap-3 border-t border-line py-7 last:border-b sm:grid-cols-[9rem_1fr] sm:gap-8">
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-moss sm:pt-1.5">
+                      {point.tag}
                     </span>
-                    <div className="grid gap-1.5 sm:grid-cols-2 sm:gap-8">
+                    <div>
                       <h3 className="text-lg font-bold tracking-tight text-forest sm:text-xl">
                         {point.title}
                       </h3>
-                      <p className="text-[14.5px] leading-relaxed text-muted">{point.text}</p>
+                      <p className="mt-1.5 max-w-lg text-[14.5px] leading-relaxed text-muted">
+                        {point.text}
+                      </p>
                     </div>
                   </div>
                 </Reveal>

@@ -9,7 +9,7 @@ import { CTASection } from "@/components/cta/CTASection";
 export const metadata: Metadata = {
   title: "Layanan — Desain, Development, Digital Experience",
   description:
-    "SOLVRA menawarkan tiga layanan inti: Design, Development, dan Digital Experience — dibangun agar website Anda strategis, premium, dan berorientasi pada hasil.",
+    "SOLVRA menawarkan tiga layanan inti yang bekerja berurutan: Design, Development, dan Digital Experience — dari strategi hingga kode, dalam satu tim.",
   alternates: { canonical: "/services" },
 };
 

@@ -21,14 +21,10 @@ export default function TermsPage() {
         <Container>
           <Reveal>
             <div className="mx-auto max-w-measure">
-              <p className="text-lg font-bold text-forest">Halaman ini sedang disiapkan.</p>
+              <p className="text-lg font-bold text-forest">Ketentuan layanan SOLVRA segera tersedia.</p>
               <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                Ketentuan layanan lengkap akan tersedia di halaman ini setelah proses finalisasi.
-                Jika Anda memiliki pertanyaan terkait ketentuan layanan, silakan hubungi kami
-                melalui email.
-              </p>
-              <p className="mt-3 text-[15px] text-muted/70">
-                Status: draft
+                Dokumen ini sedang finalisasi dan akan dimuat di halaman ini. Jika Anda memiliki
+                pertanyaan terkait ketentuan layanan, silakan hubungi kami melalui email.
               </p>
             </div>
           </Reveal>

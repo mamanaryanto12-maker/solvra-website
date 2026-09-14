@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import { MockBrowser } from "@/components/ui/MockBrowser";
+
+function MiniDivider() {
+  return <span aria-hidden="true" className="block h-1 w-4 bg-white/15" />;
+}
 
 export function HeroVisual() {
   return (
@@ -19,30 +22,55 @@ export function HeroVisual() {
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="relative z-10"
         >
-          <MockBrowser url="solvra.studio" bodyClassName="aspect-[4/3]">
-            <div className="relative h-full w-full overflow-hidden bg-forest">
-              <Image
-                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1400&q=80&auto=format&fit=crop"
-                alt=""
-                fill
-                sizes="(max-width: 768px) 100vw, 45vw"
-                className="object-cover opacity-90"
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(10,16,32,0.6) 0%, rgba(10,16,32,0) 45%)",
-                }}
-              />
-              <div className="absolute inset-x-0 bottom-0 flex flex-col gap-2.5 p-6">
-                <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-sage">
-                  Digital Website Studio
+          <MockBrowser url="solvra.studio" tone="dark" bodyClassName="aspect-[4/3]">
+            <div className="flex h-full w-full flex-col bg-forest">
+              <div className="flex shrink-0 items-center justify-between border-b border-ivory/10 px-5 py-3">
+                <span className="text-[10px] font-extrabold tracking-[0.2em] text-ivory">
+                  SOLVRA
                 </span>
-                <span className="max-w-xs text-2xl font-extrabold leading-[1.08] tracking-tight text-ivory sm:text-[1.7rem]">
-                  Dibangun untuk memberi solusi, dirancang untuk berkembang.
-                </span>
-                <span className="mt-1 flex h-[3px] w-24 bg-sage" />
+                <div className="flex items-center gap-3">
+                  <MiniDivider />
+                  <MiniDivider />
+                  <MiniDivider />
+                  <span className="block h-4 w-10 rounded-[2px] bg-moss" />
+                </div>
+              </div>
+
+              <div className="flex min-h-0 flex-1 flex-col justify-between p-5 sm:p-6">
+                <div className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-moss" />
+                  <span className="block h-1.5 w-24 rounded-[1px] bg-white/25" />
+                </div>
+
+                <div className="flex flex-col gap-2.5">
+                  <div className="w-[88%] text-[clamp(18px,2.6vw,30px)] font-extrabold leading-[1.05] tracking-tight text-ivory">
+                    Satu website.
+                    <br />
+                    Benar-benar dipikirkan.
+                  </div>
+                  <div className="flex flex-col gap-1.5 pt-1">
+                    <span className="block h-2 w-[70%] rounded-[1px] bg-white/20" />
+                    <span className="block h-2 w-[52%] rounded-[1px] bg-white/12" />
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5">
+                  <span className="block h-7 w-24 rounded-[2px] bg-moss" />
+                  <span className="block h-7 w-24 rounded-[2px] border border-white/25" />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex shrink-0 flex-col gap-3 border-t border-ivory/10 bg-white p-5">
+              <span className="block h-2 w-32 rounded-[1px] bg-forest/80" />
+              <div className="grid grid-cols-3 gap-2.5">
+                <span className="block h-6 rounded-[1px] bg-ivory" />
+                <span className="block h-6 rounded-[1px] bg-forest/[0.06]" />
+                <span className="block h-6 rounded-[1px] border border-moss/40 bg-moss/10" />
+              </div>
+              <div className="mt-0.5 flex items-center justify-between border-t border-line pt-3">
+                <span className="block h-1.5 w-16 rounded-[1px] bg-muted/40" />
+                <span className="block h-1.5 w-8 rounded-[1px] bg-sage" />
               </div>
             </div>
           </MockBrowser>
@@ -62,6 +90,9 @@ export function HeroVisual() {
               <span className="h-6 bg-moss" />
               <span className="h-6 bg-sage" />
             </div>
+            <span className="text-[10px] font-medium uppercase tracking-wider text-muted">
+              Warna &amp; tata letak
+            </span>
           </div>
         </motion.div>
 
@@ -76,9 +107,11 @@ export function HeroVisual() {
               <span className="text-[10px] font-bold text-sage">S</span>
             </span>
             <div className="flex flex-col">
-              <span className="text-[12px] font-bold tracking-tight text-forest">Strategi Diutamakan</span>
+              <span className="text-[12px] font-bold tracking-tight text-forest">
+                Ngobrol dulu, desain kemudian
+              </span>
               <span className="text-[9px] font-medium uppercase tracking-wider text-muted">
-                Desain · Kode · Konversi
+                Bukan mulai dari template
               </span>
             </div>
           </div>

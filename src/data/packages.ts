@@ -21,9 +21,9 @@ export const packages: WebPackage[] = [
     name: "Starter",
     number: "Paket 01",
     price: "Rp120.000",
-    tagline: "Website sederhana untuk mulai hadir secara online.",
+    tagline: "Biar orang yang mencari nama bisnis Anda di Google benar-benar menemukannya.",
     description:
-      "Pilihan praktis untuk bisnis atau individu yang membutuhkan website satu halaman dengan informasi dasar yang jelas.",
+      "Landing page satu halaman tanpa CMS. Cocok kalau Anda cuma butuh orang bisa cari nama bisnis Anda, dan ketemu — alamat, jam buka, kontak, dan tombol WhatsApp dalam satu halaman yang rapi.",
     includes: [
       "Website 1 halaman",
       "Tampilan responsif untuk desktop dan mobile",
@@ -47,7 +47,7 @@ export const packages: WebPackage[] = [
       "Integrasi lanjutan",
     ],
     cocokUntuk:
-      "UMKM baru, usaha rumahan, freelancer, personal brand, portofolio sederhana, dan bisnis yang baru ingin mulai memiliki website.",
+      "UMKM baru, usaha rumahan, freelancer, dan personal brand yang belum punya website sama sekali dan cuma butuh keberadaan yang jujur di internet.",
     cta: "Mulai Sekarang",
     order: 1,
   },
@@ -56,9 +56,9 @@ export const packages: WebPackage[] = [
     name: "Ready",
     number: "Paket 02",
     price: "Mulai dari Rp299.000",
-    tagline: "Website siap digunakan untuk bisnis Anda.",
+    tagline: "Website yang dibangun cepat, tapi tidak dibangun sembarangan.",
     description:
-      "Untuk bisnis yang membutuhkan website sederhana dengan struktur yang lebih lengkap dan siap dipublikasikan.",
+      "Untuk bisnis yang sudah jalan dan butuh website jadi 'kantor kedua' — beranda, tentang, layanan, dan kontak, lengkap dengan tombol WhatsApp. Kami berangkat dari template yang tertata, lalu menyesuaikan isinya dengan bisnis Anda, bukan sebaliknya.",
     includes: [
       "Hingga 5 halaman",
       "Tampilan responsif",
@@ -77,7 +77,7 @@ export const packages: WebPackage[] = [
       "1–2x revisi",
     ],
     cocokUntuk:
-      "UMKM, bisnis lokal, restoran, kafe, salon, barbershop, jasa profesional, dan bisnis kecil yang ingin memiliki website dengan cepat.",
+      "Restoran, kafe, salon, barbershop, jasa profesional, dan bisnis lokal yang butuh hadir online secepat mungkin tanpa kehilangan kesan rapi.",
     cta: "Pilih Paket Ready",
     order: 2,
   },
@@ -86,9 +86,9 @@ export const packages: WebPackage[] = [
     name: "CMS",
     number: "Paket 03",
     price: "Mulai dari Rp799.000",
-    tagline: "Website yang bisa Anda kelola sendiri.",
+    tagline: "Website yang bisa Anda kelola sendiri, tanpa menelepon developer tiap minggu.",
     description:
-      "Cocok untuk bisnis yang ingin memperbarui konten website tanpa harus selalu meminta bantuan developer.",
+      "Cocok untuk bisnis yang rutin memperbarui konten — berita, galeri, agenda, tim. Anda mengelola sendiri lewat CMS; kami yang mengatur struktur dan desainnya supaya tetap rapi meski kontennya makin banyak.",
     includes: [
       "Hingga 7 halaman",
       "Tampilan responsif",
@@ -117,7 +117,7 @@ export const packages: WebPackage[] = [
       "Konten bisnis lainnya",
     ],
     cocokUntuk:
-      "Sekolah, lembaga pendidikan, jasa profesional, klinik, properti, hospitality, organisasi, UMKM berkembang, dan bisnis yang rutin memperbarui konten.",
+      "Sekolah, lembaga pendidikan, klinik, organisasi, UMKM berkembang, dan bisnis yang rutin berbagi kabar terbaru kepada pelanggannya.",
     cta: "Buat Website CMS",
     order: 3,
   },
@@ -126,9 +126,9 @@ export const packages: WebPackage[] = [
     name: "Business",
     number: "Paket 04",
     price: "Mulai dari Rp1.999.000",
-    tagline: "Website profesional yang dibangun untuk bisnis Anda.",
+    tagline: "Website yang dibangun sebagai fondasi bisnis, bukan sekadar halaman.",
     description:
-      "Untuk bisnis yang membutuhkan lebih dari sekadar website biasa. Kami menggabungkan struktur, desain, pengalaman pengguna, dan teknologi untuk membantu website Anda terlihat profesional, membangun kepercayaan, dan mendukung tujuan bisnis.",
+      "Untuk bisnis yang sudah stabil dan butuh website yang ikut bekerja: struktur informasi diatur dari tujuan, desain menyesuaikan brand (bukan template), dan jalur kontak dibuat semudah mungkin. Ini paket yang paling sering kami rekomendasikan — dan paling sering kami kerjakan sehari-hari.",
     includes: [
       "Hingga 10 halaman",
       "Arahan visual yang disesuaikan dengan brand",
@@ -150,7 +150,7 @@ export const packages: WebPackage[] = [
       "Dukungan minor setelah website diluncurkan",
     ],
     cocokUntuk:
-      "Bisnis yang sudah berkembang, UMKM, jasa profesional, pendidikan, properti, healthcare, hospitality, retail, B2B, konsultan, serta personal & professional brand.",
+      "Bisnis berkembang, jasa profesional, klien B2B, klinik, properti, konsultan, dan personal brand yang butuh kehadiran digital yang bisa diandalkan.",
     cta: "Mulai Proyek",
     featured: true,
     badge: "PALING POPULER",
@@ -161,9 +161,9 @@ export const packages: WebPackage[] = [
     name: "Business Pro",
     number: "Paket 05",
     price: "Mulai dari Rp2.999.000",
-    tagline: "Pengalaman digital yang lebih detail untuk bisnis yang berkembang.",
+    tagline: "Ketika desain dan detailnya perlu dirawat lebih dalam.",
     description:
-      "Untuk bisnis yang membutuhkan tingkat penyesuaian desain, pengalaman pengguna, dan fitur yang lebih tinggi.",
+      "Untuk brand yang sadar benar bedanya rapi dan 'rapi sekali': design system sendiri, interaksi yang lebih bernuansa, struktur yang lebih kompleks, dan pengujian yang lebih teliti. Ini untuk website yang pemiliknya tahu di mana detailnya berada.",
     includes: [
       "Custom UI/UX yang lebih mendalam",
       "Custom design system",
@@ -179,7 +179,7 @@ export const packages: WebPackage[] = [
       "Dukungan setelah website diluncurkan",
     ],
     cocokUntuk:
-      "Brand premium, perusahaan properti, professional firm, bisnis hospitality, healthcare, B2B, dan organisasi yang membutuhkan kehadiran digital yang lebih kuat.",
+      "Brand premium, perusahaan properti, professional firm, bisnis hospitality dan healthcare, serta organisasi yang sadar bahwa presentasi digital ikut menentukan kesan.",
     cta: "Konsultasikan Proyek",
     order: 5,
   },
@@ -188,9 +188,9 @@ export const packages: WebPackage[] = [
     name: "Custom",
     number: "Paket 06",
     price: "Mulai dari Rp3.999.000",
-    tagline: "Website yang dirancang mengikuti cara kerja bisnis Anda.",
+    tagline: "Website yang mengikuti cara kerja bisnis Anda — bukan kebalikannya.",
     description:
-      "Ketika kebutuhan bisnis sudah melampaui website biasa, SOLVRA dapat membangun solusi yang disesuaikan dengan kebutuhan dan proses bisnis.",
+      "Saat kebutuhan sudah melampaui halaman: butuh login, database, dashboard, sistem booking, atau alur kerja sendiri. Kami mulai dari diskusi teknis dan proses bisnis Anda, bukan dari template harga.",
     includes: [
       "Backend custom",
       "Database",
@@ -209,7 +209,7 @@ export const packages: WebPackage[] = [
       "Fitur custom lainnya",
     ],
     cocokUntuk:
-      "Bisnis dengan kebutuhan khusus, proses operasional yang kompleks, sistem internal, atau kebutuhan digital yang tidak dapat dipenuhi oleh website standar.",
+      "Bisnis dengan proses operasional yang kompleks, sistem internal, atau kebutuhan digital yang tidak bisa dipenuhi paket standar.",
     cta: "Konsultasikan Kebutuhan",
     order: 6,
   },
@@ -218,9 +218,9 @@ export const packages: WebPackage[] = [
     name: "Web Application",
     number: "Paket 07",
     price: "Mulai dari Rp10.000.000",
-    tagline: "Bukan sekadar website. Sebuah produk digital.",
+    tagline: "Bukan sekadar website. Ini produk digital.",
     description:
-      "Untuk kebutuhan yang sudah berkembang menjadi aplikasi berbasis web dengan sistem, pengguna, database, dan alur kerja yang lebih kompleks.",
+      "Ketika yang Anda bangun sudah menjadi sistem dengan pengguna, data, dan alur kerja — portal pelanggan, platform SaaS, learning platform, marketplace. Ini jalur proyek yang berbeda: pembahasan dimulai dari kebutuhan teknis dan skala, bukan dari paket harga.",
     includes: [
       "Customer portal",
       "Sistem manajemen",
@@ -236,7 +236,7 @@ export const packages: WebPackage[] = [
       "Platform digital custom",
     ],
     cocokUntuk:
-      "Bisnis yang membutuhkan solusi aplikasi web dengan sistem, pengguna, dan alur kerja yang kompleks.",
+      "Tim yang membangun sistem multi-pengguna, platform digital, atau produk SaaS yang membutuhkan arsitektur, keamanan, dan alur data yang serius.",
     cta: "Diskusikan Proyek",
     order: 7,
   },
@@ -286,7 +286,7 @@ export const industries = [
   {
     name: "B2B & Corporate",
     description: "Manufaktur, distributor, supplier, teknologi, konstruksi, logistik, dan perusahaan B2B.",
-    range: "Rp1.999 juta – Rp7 juta+",
+    range: "Rp2 juta – Rp7 juta+",
   },
 ];
 

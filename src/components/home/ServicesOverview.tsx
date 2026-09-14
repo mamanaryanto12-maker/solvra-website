@@ -32,12 +32,10 @@ function HudItem({ service, active, onSelect }: { service: Service; active: bool
         </span>
         <span
           className={cn(
-            "text-[10px] font-bold uppercase tracking-widest",
-            active ? "text-sage" : "text-muted/50"
+            "h-1.5 w-1.5 rounded-full transition-colors duration-300",
+            active ? "bg-sage" : "bg-line"
           )}
-        >
-          {active ? "Sedang ditampilkan" : "Klik untuk lihat"}
-        </span>
+        />
       </div>
       <span
         className={cn(

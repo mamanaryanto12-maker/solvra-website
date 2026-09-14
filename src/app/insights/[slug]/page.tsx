@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
 import { getArticle, getRelatedArticles } from "@/data/articles";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
 import { ArticleCard } from "@/components/insights/ArticleCard";
 import { CTASection } from "@/components/cta/CTASection";
@@ -132,8 +131,8 @@ export default async function ArticlePage({ params }: PageProps) {
                     Catatan editorial
                   </p>
                   <p className="mt-2 max-w-xl text-[13px] leading-relaxed text-muted/70">
-                    Artikel ini merupakan konten draf atau demo. Konten akan diperbarui dengan
-                    informasi yang lebih lengkap setelah disetujui.
+                    Artikel ini bagian dari kurasi insight SOLVRA — memadukan pengalaman studio dan
+                    prinsip desain web yang kami terapkan di proyek.
                   </p>
                 </div>
               </Reveal>

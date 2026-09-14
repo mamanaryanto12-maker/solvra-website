@@ -16,9 +16,10 @@ export const services: Service[] = [
     id: "design",
     index: "01",
     name: "Design",
-    summary: "UI/UX premium yang estetik, responsive, intuitif, dan selaras dengan identitas brand.",
+    summary:
+      "Kami desain dulu di atas kertas dan wireframe sebelum menyentuh Figma — supaya struktur informasinya benar dulu, baru soal cantik.",
     overview:
-      "Kami menerjemahkan strategi bisnis menjadi antarmuka digital yang jelas, elegan, dan mudah digunakan. Setiap keputusan visual — dari tipografi, warna, hingga komposisi — dibuat dengan tujuan: memperkuat kesan brand dan memandu pengunjung menuju tindakan.",
+      "Sebelum satu piksel pun, ada struktur. Kami mulai dari wireframe dan alur informasi untuk memastikan pesan Anda sampai dengan jernih, lalu menyisir detail visual — tipografi, warna, komposisi — supaya brand terasa konsisten dan pengunjung tahu harus melangkah ke mana.",
     problems: [
       "Website yang tampak tidak profesional dan kurang dipercaya.",
       "Tampilan tidak konsisten dengan identitas brand.",
@@ -40,7 +41,7 @@ export const services: Service[] = [
       "Panduan visual untuk development",
     ],
     outcome:
-      "Website yang tampak profesional, konsisten dengan brand, dan memudahkan pengunjung memahami serta menggunakan layanan Anda.",
+      "Website yang tampak profesional, konsisten dengan brand, dan membuat pengunjung paham apa yang Anda tawarkan dalam hitungan detik.",
     process: [
       "Audit kebutuhan dan eksplorasi visual",
       "Wireframe dan struktur informasi",
@@ -52,9 +53,10 @@ export const services: Service[] = [
     id: "development",
     index: "02",
     name: "Development",
-    summary: "Website cepat, aman, scalable, dibangun dengan teknologi modern dan fondasi teknis yang solid.",
+    summary:
+      "Kami pakai Next.js, bukan WordPress bertumpuk plugin — website Anda tetap cepat walau sudah dua tahun jalan.",
     overview:
-      "Desain yang indah harus berjalan dengan baik. Kami membangun website menggunakan teknologi web modern yang menghasilkan loading cepat, konsisten di berbagai perangkat, serta mudah dikelola dan dikembangkan di kemudian hari.",
+      "Website ini sendiri dibangun dengan Next.js. Kami memilih fondasi teknis berdasarkan kebutuhan, bukan pada banyaknya plugin yang tersedia. Hasilnya: halaman yang ringan, mudah dirawat, dan tetap cepat saat konten serta trafik mulai bertambah.",
     problems: [
       "Website lambat dan berat saat dibuka.",
       "Tampilan rusak di perangkat seluler.",
@@ -75,7 +77,7 @@ export const services: Service[] = [
       "Dokumentasi teknis ringkas",
     ],
     outcome:
-      "Website yang cepat, stabil, aman, dan mudah diperbarui — fondasi digital yang siap tumbuh bersama bisnis Anda.",
+      "Website yang cepat, stabil, aman, dan mudah diperbarui — tetap terasa ringan bahkan setelah bertambah konten dan pengunjung.",
     process: [
       "Setup lingkungan dan arsitektur teknis",
       "Implementasi desain secara responsive",
@@ -87,9 +89,10 @@ export const services: Service[] = [
     id: "digital-experience",
     index: "03",
     name: "Digital Experience",
-    summary: "Perjalanan pengguna strategis dan optimasi konversi yang dibangun di sekitar tujuan bisnis.",
+    summary:
+      "Kami cek: dari 100 orang yang masuk ke website Anda, di titik mana mereka biasanya pergi tanpa menghubungi Anda — lalu kami perbaiki titik itu.",
     overview:
-      "Website yang baik harus memandu pengunjung secara alami menuju tindakan yang Anda inginkan. Kami merancang alur halaman, interaksi, dan integrasi agar seluruh pengalaman digital mendukung tujuan bisnis Anda.",
+      "Kami mulai dari pertanyaan sederhana: ke mana pengunjung seharusnya melangkah, dan di mana mereka sebenarnya berhenti? Dari jawaban itu kami merancang alur halaman, form, dan integrasi supaya orang yang datang benar-benar melanjutkan percakapan dengan Anda.",
     problems: [
       "Pengunjung datang tetapi tidak tahu harus melakukan apa.",
       "Formulir dan jalur kontak kurang mendukung konversi.",
@@ -110,7 +113,7 @@ export const services: Service[] = [
       "Struktur pengukuran yang siap dipantau",
     ],
     outcome:
-      "Website tidak hanya terlihat baik, tetapi benar-benar bekerja — memandu pengunjung menuju pertanyaan, pembelian, atau tindakan bisnis lainnya.",
+      "Website yang tidak hanya rapi, tetapi benar-benar bekerja — memandu pengunjung menuju pertanyaan, pembelian, atau tindakan bisnis lainnya.",
     process: [
       "Pemetaan tujuan dan pengguna",
       "Perancangan alur dan struktur konversi",

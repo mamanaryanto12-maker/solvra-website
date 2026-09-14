@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -11,9 +10,9 @@ const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const copy = [
   {
-    label: "SOLVRA — Digital Website Studio",
-    headline: ["Website strategis", "dirancang untuk", "bisnis modern."],
-    body: "Kami memadukan desain premium, kode yang solid, dan pengalaman digital yang berorientasi pada hasil untuk pertumbuhan bisnis Anda.",
+    label: "SOLVRA — Digital Website Studio dari Indonesia",
+    headline: ["Kami bangun", "satu website.", "Bukan lima puluh."],
+    body: "SOLVRA sengaja membatasi jumlah klien per bulan supaya setiap website benar-benar dipikirkan — bukan dicetak dari template.",
     steps: ["Discovery", "Strategy", "Design", "Development", "Launch"],
   },
 ];
@@ -24,19 +23,22 @@ export function HomeHero() {
 
   return (
     <section className="relative overflow-hidden pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
-      <motion.div
-        aria-hidden="true"
-        style={{ y: bgY }}
-        className="absolute inset-0 -z-10 scale-110"
-      >
-        <Image
-          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=2000&q=80&auto=format&fit=crop"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
+      <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(115deg, #F4F4F1 0%, #F7F7F5 38%, #EDF0F7 72%, #E4EAF5 100%)",
+          }}
         />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(820px 520px at 78% 18%, rgba(46,111,242,0.14) 0%, transparent 62%), radial-gradient(700px 480px at -4% 96%, rgba(22,42,92,0.16) 0%, transparent 60%)",
+          }}
+        />
+        <div className="grid-lines absolute inset-0 opacity-[0.16]" />
       </motion.div>
 
       <div
@@ -44,7 +46,7 @@ export function HomeHero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(90deg, rgba(247,247,245,0.96) 0%, rgba(247,247,245,0.9) 34%, rgba(247,247,245,0.55) 62%, rgba(247,247,245,0.22) 100%)",
+            "linear-gradient(90deg, rgba(247,247,245,0.72) 0%, rgba(247,247,245,0.4) 55%, rgba(247,247,245,0) 100%)",
         }}
       />
 

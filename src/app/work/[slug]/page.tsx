@@ -202,7 +202,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 </h2>
               </div>
               <p className="hidden text-[12px] text-muted sm:block">
-                Representasi preview konsep — akan diganti dengan screenshot asli.
+                Representasi visual konsep dari halaman utama proyek.
               </p>
             </div>
           </Reveal>

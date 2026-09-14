@@ -19,7 +19,7 @@ export default function InsightsPage() {
         eyebrow="Insights"
         title="Pemikiran, catatan, dan pandangan kami."
         description="Pemikiran tentang web design, strategi digital, dan hal-hal yang sering kami pelajari dari proyek bersama klien."
-        meta={["Draft / Demo Content", "5 Kategori", "Web Design & Strategy"]}
+        meta={["Artikel", "5 Kategori", "Web Design & Strategy"]}
       />
 
       <InsightFilters />

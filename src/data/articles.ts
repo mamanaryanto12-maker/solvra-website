@@ -28,7 +28,7 @@ export const articles: Article[] = [
   {
     id: "a1",
     slug: "website-bukan-hanya-brosur-digital",
-    title: "Website Anda Bukan Hanya Brosur Digital",
+    title: "Website Anda Bukan Brosur — Di Sinilah Pengunjung Memutuskan Percaya atau Pergi",
     category: "Website Strategy",
     excerpt:
       "Banyak bisnis memperlakukan website sebagai katalog statis. Padahal website yang strategis bekerja jauh lebih dari itu.",
@@ -68,12 +68,12 @@ export const articles: Article[] = [
     readingTime: "4 menit",
     author: "Solvra Studio",
     featured: true,
-    status: "draft",
+    status: "published",
   },
   {
     id: "a2",
     slug: "desain-yang-membangun-kepercayaan",
-    title: "Desain yang Membangun Kepercayaan: Lebih dari Sekadar Tampilan",
+    title: "Desain yang Membangun Kepercayaan Lebih Dulu daripada Kata-Kata",
     category: "Web Design",
     excerpt:
       "Desain bukan tentang dekorasi. Desain yang baik menciptakan kesan kredibilitas dan kemudahan sebelum satu kata pun dibaca.",
@@ -101,12 +101,12 @@ export const articles: Article[] = [
     readingTime: "3 menit",
     author: "Solvra Studio",
     featured: true,
-    status: "draft",
+    status: "published",
   },
   {
     id: "a3",
     slug: "mengapa-kecepatan-website-penting",
-    title: "Kecepatan Website dan Pengaruhnya pada Keputusan Pengunjung",
+    title: "Satu Detik Tambahan, Satu Pengunjung Pergi: Soal Kecepatan dan Kepercayaan",
     category: "Technology",
     excerpt:
       "Kecepatan bukan sekadar masalah teknis. Website yang lambat langsung memengaruhi kepercayaan, keterlibatan, dan keputusan pengunjung.",
@@ -139,12 +139,12 @@ export const articles: Article[] = [
     readingTime: "4 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "draft",
+    status: "published",
   },
   {
     id: "a4",
     slug: "menata-ulang-halaman-beranda",
-    title: "Menata Ulang Halaman Beranda: Memulai dari Tujuan, Bukan Desain",
+    title: "Beranda yang Terlalu Penuh: Membereskan dari Tujuan, Bukan dari Konten",
     category: "Digital Experience",
     excerpt:
       "Halaman beranda sering diisi terlalu banyak hal. Berikut prinsip untuk mulai merapikannya dari tujuan utama bisnis Anda.",
@@ -176,12 +176,12 @@ export const articles: Article[] = [
     readingTime: "3 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "draft",
+    status: "published",
   },
   {
     id: "a5",
     slug: "sebelum-membangun-website-baru",
-    title: "Lima Hal yang Perlu Anda Siapkan Sebelum Membangun Website",
+    title: "Lima Hal yang Sering Terlewat di Sisi Bisnis Sebelum Website Dibangun",
     category: "Business",
     excerpt:
       "Proyek website berjalan lebih lancar ketika persiapan di sisi bisnis tidak diabaikan. Berikut lima hal yang sering terlewat.",
@@ -218,7 +218,7 @@ export const articles: Article[] = [
     readingTime: "5 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "draft",
+    status: "published",
   },
 ];
 

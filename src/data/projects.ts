@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "Struktur properti yang mudah dibandingkan",
     ],
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Presentasi unit properti premium dengan arsitektur dan interior yang elegan",
+    imageAlt: "Fasad rumah modern dengan arsitektur yang bersih dan lapang",
     featured: true,
     status: "concept",
     heroLabel: "Project studio konsep untuk sektor property",
@@ -317,7 +317,7 @@ export const projects: Project[] = [
       "Form reservasi meja yang singkat",
     ],
     visual: "editorial",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1600&q=80&auto=format&fit=crop",
     imageAlt: "Suasana kedai kopi dengan interior hangat dan meja kayu",
     featured: false,
     status: "concept",
@@ -350,8 +350,8 @@ export const projects: Project[] = [
       "Tampilan mobile untuk cek jadwal",
     ],
     visual: "booking",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Ruang kerja yang terang menciptakan kesan profesional dan energik",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80&auto=format&fit=crop",
+    imageAlt: "Sesi latihan di studio kebugaran dengan peralatan modern",
     featured: false,
     status: "concept",
     heroLabel: "Project studio konsep untuk sektor fitness & wellness",
@@ -383,8 +383,8 @@ export const projects: Project[] = [
       "Tabel data yang ringan dan responsif",
     ],
     visual: "dashboard",
-    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Jaringan kota yang merepresentasikan aktivitas logistik",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80&auto=format&fit=crop",
+    imageAlt: "Gudang logistik modern dengan sistem pelacakan terpusat",
     featured: false,
     status: "concept",
     heroLabel: "Project studio konsep untuk sektor logistik",
@@ -558,7 +558,7 @@ export const projects: Project[] = [
     strategy:
       "Kami menempatkan model sebagai sorotan, menyajikan informasi secara jujur, lalu mempersingkat jalur menuju test drive.",
     design:
-      "Komposisi yang tegas dan maskulin yang menonjolkan bentuk kendaraan, dengan grid presisi dan tipografi yang kuat namun elegan.",
+      "Komposisi yang tegas dan presisi yang menonjolkan bentuk kendaraan, dengan grid yang rapi dan tipografi yang kuat namun elegan.",
     development:
       "Galeri model yang cepat, halaman perbandingan spesifikasi yang terstruktur, serta form test drive yang nyaman digunakan.",
     outcome:

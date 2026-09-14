@@ -14,9 +14,8 @@ import { CTASection } from "@/components/cta/CTASection";
 import { finalCta } from "@/data/packages";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — Digital Website Studio untuk Bisnis Modern`,
-  description:
-    "SOLVRA membangun website strategis, premium, dan berorientasi pada hasil untuk bisnis modern — dari strategi, desain, pengembangan, hingga peluncuran.",
+  title: `${siteConfig.name} — Digital Website Studio dari Indonesia`,
+  description: siteConfig.description,
   alternates: { canonical: "/" },
 };
 
@@ -26,11 +25,11 @@ export default function HomePage() {
       <HomeHero />
       <Marquee
         items={[
-          "Website Strategis",
-          "Desain Premium",
-          "Pengalaman Digital",
-          "Fokus pada Hasil",
-          "Kecepatan & Performa",
+          "Satu Website per Klien",
+          "Desain yang Dipikir Matang",
+          "Dibangun dari Kode, Bukan Template",
+          "Performa Bukan Kecelakaan",
+          "Strategi Sebelum Visual",
         ]}
       />
       <StrategicPositioning />

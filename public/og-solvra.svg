@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0E1A3D"/>
+  <g opacity="0.16">
+    <path d="M0 0H1200V16H0V0ZM0 40H1200V46H0V40ZM0 76H1200V82H0V76ZM0 112H1200V118H0V112ZM0 148H1200V154H0V148ZM0 184H1200V190H0V184ZM0 220H1200V226H0V220ZM0 256H1200V262H0V256ZM0 292H1200V298H0V292ZM0 328H1200V334H0V328ZM0 364H1200V370H0V364ZM0 400H1200V406H0V400ZM0 436H1200V442H0V436ZM0 472H1200V478H0V472ZM0 508H1200V514H0V508ZM0 544H1200V550H0V544ZM0 580H1200V586H0V580ZM0 616H1200V622H0V616Z" fill="#F7F7F5"/>
+    <path d="M17 0H23V630H17V0ZM53 0H59V630H53V0ZM89 0H95V630H89V0ZM125 0H131V630H125V0ZM161 0H167V630H161V0ZM197 0H203V630H197V0ZM233 0H239V630H233V0ZM269 0H275V630H269V0ZM305 0H311V630H305V0ZM341 0H347V630H341V0ZM377 0H383V630H377V0ZM413 0H419V630H413V0ZM449 0H455V630H449V0ZM485 0H491V630H485V0ZM521 0H527V630H521V0ZM557 0H563V630H557V0ZM593 0H599V630H593V0ZM629 0H635V630H629V0ZM665 0H671V630H665V0ZM701 0H707V630H701V0ZM737 0H743V630H737V0ZM773 0H779V630H773V0ZM809 0H815V630H809V0ZM845 0H851V630H845V0ZM881 0H887V630H881V0ZM917 0H923V630H917V0ZM953 0H959V630H953V0ZM989 0H995V630H989V0ZM1025 0H1031V630H1025V0ZM1061 0H1067V630H1061V0ZM1097 0H1103V630H1097V0ZM1133 0H1139V630H1133V0ZM1169 0H1175V630H1169V0Z" fill="#F7F7F5"/>
+  </g>
+  <path d="M1056 96C1056 51.8172 1092.82 15 1137 15H1200V399H1137C1092.82 399 1056 362.183 1056 318V96Z" fill="none" stroke="#2E6FF2" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M1008 96C1008 65.7452 1031.75 42 1062 42H1200V411H1062C1031.75 411 1008 387.255 1008 357V96Z" fill="none" stroke="#F7F7F5" stroke-opacity="0.16" stroke-width="2"/>
+  <circle cx="1120" cy="120" r="2" fill="#6B7280"/>
+  <circle cx="1136" cy="124" r="3" fill="#2E6FF2"/>
+  <circle cx="1152" cy="118" r="2" fill="#6B7280"/>
+  <rect x="96" y="150" width="120" height="6" fill="#2E6FF2"/>
+  <text x="96" y="120" fill="#F7F7F5" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" letter-spacing="10">SOLVRA</text>
+  <rect x="96" y="190" width="640" height="64" fill="none"/>
+  <text x="96" y="232" fill="#F7F7F5" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" letter-spacing="0">Kami bangun satu website.</text>
+  <text x="96" y="296" fill="#F7F7F5" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="400" letter-spacing="0">Bukan lima puluh.</text>
+  <text x="96" y="356" fill="#F7F7F5" fill-opacity="0.65" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="0.5">Digital Website Studio dari Indonesia</text>
+  <text x="96" y="392" fill="#F7F7F5" fill-opacity="0.65" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="0.5">untuk bisnis yang serius mau tumbuh online.</text>
+  <rect x="96" y="452" width="248" height="54" fill="#2E6FF2"/>
+  <text x="112" y="487" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Konsultasi Gratis</text>
+  <rect x="96" y="524" width="640" height="1" fill="#F7F7F5" fill-opacity="0.14"/>
+  <text x="96" y="570" fill="#F7F7F5" fill-opacity="0.42" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="2">strategi &middot; desain &middot; pengembangan &middot; peluncuran</text>
+</svg>

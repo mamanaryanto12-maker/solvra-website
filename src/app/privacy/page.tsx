@@ -21,14 +21,10 @@ export default function PrivacyPage() {
         <Container>
           <Reveal>
             <div className="mx-auto max-w-measure">
-              <p className="text-lg font-bold text-forest">Halaman ini sedang disiapkan.</p>
+              <p className="text-lg font-bold text-forest">Kebijakan privasi SOLVRA segera tersedia.</p>
               <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                Kebijakan privasi lengkap akan tersedia di halaman ini setelah disetujui oleh tim
-                hukum. Jika Anda memiliki pertanyaan terkait privasi data, silakan hubungi kami
-                melalui email.
-              </p>
-              <p className="mt-3 text-[15px] text-muted/70">
-                Status: draft
+                Dokumen ini sedang disusun bersama pendamping hukum dan akan dimuat di halaman ini.
+                Jika Anda memiliki pertanyaan terkait privasi data, silakan hubungi kami melalui email.
               </p>
             </div>
           </Reveal>

@@ -3,19 +3,19 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const principles = [
   {
-    index: "01",
-    title: "Strategi Lebih Dulu",
-    text: "Kami tidak sekadar mendesain. Kami membangun website sebagai alat pertumbuhan bisnis.",
+    tag: "Urutan kerja",
+    title: "Ide sebelum piksel.",
+    text: "Struktur dan tujuan dibangun dulu, desain menyusul. Bukan sebaliknya — karena cantik tanpa struktur tidak pernah selesai menjadi website yang bekerja.",
   },
   {
-    index: "02",
-    title: "Performa dari Awal",
-    text: "Website yang cepat, responsive, secure, dan dioptimalkan untuk pengalaman terbaik di berbagai perangkat.",
+    tag: "Fondasi",
+    title: "Cepat itu pilihan, bukan keberuntungan.",
+    text: "Next.js, gambar teroptimasi, dan tanpa tumpukan plugin. Website harus tetap ringan bahkan setelah bertahun-tahun berjalan.",
   },
   {
-    index: "03",
-    title: "Dari Ide Hingga Peluncuran",
-    text: "Pendampingan menyeluruh mulai dari discovery, strategy, design, development, hingga launch.",
+    tag: "Satu tim",
+    title: "Dari brief sampai kode, di satu tangan.",
+    text: "Kami pegang strategi, desain, dan development dalam satu tim. Yang Anda ceritakan kepada kami, sampai utuh menjadi kode.",
   },
 ];
 
@@ -31,13 +31,13 @@ export function WhySolvra() {
               </Reveal>
               <Reveal delay={0.06}>
                 <h2 className="mt-4 max-w-sm text-3xl font-bold leading-[1.05] tracking-tight text-ivory sm:text-4xl lg:text-[2.75rem]">
-                  Pendekatan yang jernih, dari strategi hingga peluncuran.
+                  Kami tidak mulai dari template. Kami mulai dari pertanyaan.
                 </h2>
               </Reveal>
               <Reveal delay={0.12}>
                 <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-ivory/60">
-                  Tidak ada formula generik. Setiap website dimulai dari pemahaman tentang tujuan
-                  bisnis, lalu dirancang dan dibangun dengan presisi.
+                  Untuk apa website ini, dan siapa yang membukanya? Dua pertanyaan pertama sebelum
+                  lembar kerja desain dibuka.
                 </p>
               </Reveal>
             </div>
@@ -45,10 +45,10 @@ export function WhySolvra() {
 
           <div className="lg:col-span-7">
             {principles.map((principle) => (
-              <Reveal key={principle.index}>
-                <div className="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-ivory/10 py-8 last:border-b sm:grid-cols-[5rem_1fr] sm:gap-6">
-                  <span className="text-sm font-bold tracking-widest text-sage">
-                    {principle.index}
+              <Reveal key={principle.tag}>
+                <div className="grid grid-cols-1 gap-3 border-t border-ivory/10 py-8 last:border-b sm:grid-cols-[10rem_1fr] sm:gap-8">
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-sage sm:pt-1.5">
+                    {principle.tag}
                   </span>
                   <div>
                     <h3 className="text-xl font-bold tracking-tight text-ivory sm:text-2xl">
@@ -65,10 +65,12 @@ export function WhySolvra() {
             <Reveal delay={0.1}>
               <blockquote className="mt-14 max-w-lg">
                 <p className="text-2xl font-bold leading-snug tracking-tight text-ivory/90 sm:text-3xl">
-                  &ldquo;Teknologi seharusnya menyelesaikan masalah, bukan menciptakannya.&rdquo;
+                  &ldquo;Klien kami biasa kaget di pertemuan pertama: kami lebih sering bilang
+                  &lsquo;cukup&rsquo;, &lsquo;bakal nggak kepake&rsquo;, atau &lsquo;ini bukan
+                  masalahnya&rsquo; — dibanding asal setuju.&rdquo;
                 </p>
                 <cite className="mt-3 block not-italic text-[12px] font-semibold uppercase tracking-widest text-sage">
-                  Filosofi SOLVRA
+                  Dari percakapan proyek
                 </cite>
               </blockquote>
             </Reveal>
