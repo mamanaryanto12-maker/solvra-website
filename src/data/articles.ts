@@ -21,14 +21,13 @@ export type Article = {
   readingTime: string;
   author: string;
   featured: boolean;
-  status: "draft" | "published";
 };
 
 export const articles: Article[] = [
   {
     id: "a1",
     slug: "website-bukan-hanya-brosur-digital",
-    title: "Website Anda Bukan Brosur — Di Sinilah Pengunjung Memutuskan Percaya atau Pergi",
+    title: "Pengunjung Memutuskan Percaya atau Pergi dalam Hitungan Detik",
     category: "Website Strategy",
     excerpt:
       "Banyak bisnis memperlakukan website sebagai katalog statis. Padahal website yang strategis bekerja jauh lebih dari itu.",
@@ -68,7 +67,6 @@ export const articles: Article[] = [
     readingTime: "4 menit",
     author: "Solvra Studio",
     featured: true,
-    status: "published",
   },
   {
     id: "a2",
@@ -101,7 +99,6 @@ export const articles: Article[] = [
     readingTime: "3 menit",
     author: "Solvra Studio",
     featured: true,
-    status: "published",
   },
   {
     id: "a3",
@@ -139,7 +136,6 @@ export const articles: Article[] = [
     readingTime: "4 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "published",
   },
   {
     id: "a4",
@@ -176,7 +172,6 @@ export const articles: Article[] = [
     readingTime: "3 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "published",
   },
   {
     id: "a5",
@@ -218,7 +213,6 @@ export const articles: Article[] = [
     readingTime: "5 menit",
     author: "Solvra Studio",
     featured: false,
-    status: "published",
   },
 ];
 

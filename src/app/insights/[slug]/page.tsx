@@ -58,11 +58,6 @@ export default async function ArticlePage({ params }: PageProps) {
                 <span className="text-[11px] font-bold uppercase tracking-widest text-moss">
                   {article.category}
                 </span>
-                {article.status === "draft" && (
-                  <span className="border border-line px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest text-muted">
-                    Draf
-                  </span>
-                )}
               </div>
               <Reveal delay={0.05}>
                 <h1 className="mt-5 text-4xl font-extrabold leading-[1.03] tracking-tightest text-forest sm:text-5xl">

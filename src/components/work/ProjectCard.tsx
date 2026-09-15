@@ -63,7 +63,7 @@ export function ProjectCard({ project, className, visualClassName, noHover }: Pr
 
         <div className="mt-5 flex items-center gap-1.5 text-[13px] font-semibold text-forest">
           <span className="border-b border-moss/0 transition-colors duration-200 group-hover:border-moss/60">
-            Lihat studi kasus
+            Lihat studi konsep
           </span>
           <ArrowRight className="h-4 w-4 text-moss transition-transform duration-300 group-hover:translate-x-1" />
         </div>

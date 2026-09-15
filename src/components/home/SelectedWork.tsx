@@ -28,8 +28,8 @@ export function SelectedWork() {
           <Reveal delay={0.08}>
             <div className="flex items-center gap-4">
               <p className="max-w-xs text-[13.5px] leading-relaxed text-muted">
-                Semua karya ditampilkan sebagai studi konsep studio — pendekatan dan kualitas
-                desain yang kami kerjakan untuk berbagai industri.
+                Seluruh karya di sini adalah website concept mandiri yang kami susun sendiri —
+                bukti pendekatan dan kualitas desain kami untuk berbagai industri.
               </p>
               <Button href="/work" variant="outline" arrow className="shrink-0">
                 Lihat Semua Karya
@@ -77,7 +77,7 @@ export function SelectedWork() {
                       className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-forest transition-colors hover:text-moss"
                     >
                       <span className="border-b border-moss/0 transition-colors hover:border-moss/60">
-                        Lihat studi kasus
+                        Lihat studi konsep
                       </span>
                       <ArrowUpRight className="h-4 w-4 text-moss" />
                     </Link>

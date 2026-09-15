@@ -21,11 +21,6 @@ export function ArticleCard({ article, className }: ArticleCardProps) {
           <span className="text-[11px] font-bold uppercase tracking-widest text-moss">
             {article.category}
           </span>
-          {article.status === "draft" && (
-            <span className="border border-line px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-muted">
-              Draf
-            </span>
-          )}
         </div>
         <h3 className="mt-3 max-w-md text-xl font-bold leading-snug tracking-tight text-forest transition-colors duration-200 group-hover:text-moss sm:text-2xl">
           {article.title}

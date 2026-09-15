@@ -12,7 +12,7 @@ const copy = [
   {
     label: "SOLVRA — Digital Website Studio dari Indonesia",
     headline: ["Kami bangun", "satu website.", "Bukan lima puluh."],
-    body: "SOLVRA sengaja membatasi jumlah klien per bulan supaya setiap website benar-benar dipikirkan — bukan dicetak dari template.",
+    body: "Sebelum ada desain, kami ngobrol dulu soal bisnis Anda. Website dibangun satu per satu — dipikirkan dari struktur sampai kata terakhir, bukan dicetak dari template.",
     steps: ["Discovery", "Strategy", "Design", "Development", "Launch"],
   },
 ];

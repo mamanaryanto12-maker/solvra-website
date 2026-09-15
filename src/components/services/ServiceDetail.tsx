@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Check } from "lucide-react";
 
@@ -119,6 +119,18 @@ export function ServiceDetailExplorer() {
   const [activeId, setActiveId] = useState<Service["id"]>("design");
   const active = services.find((s) => s.id === activeId) ?? services[0];
 
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash && services.some((s) => s.id === hash)) {
+      setActiveId(hash as Service["id"]);
+    }
+  }, []);
+
+  function select(serviceId: Service["id"]) {
+    setActiveId(serviceId);
+    window.history.replaceState(null, "", `#${serviceId}`);
+  }
+
   return (
     <section>
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
@@ -131,7 +143,7 @@ export function ServiceDetailExplorer() {
                 <button
                   key={service.id}
                   type="button"
-                  onClick={() => setActiveId(service.id)}
+                  onClick={() => select(service.id)}
                   aria-pressed={isActive}
                   className={cn(
                     "group flex items-center gap-4 border border-line px-5 py-4 text-left transition-all duration-300",

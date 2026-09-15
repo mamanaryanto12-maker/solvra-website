@@ -8,7 +8,7 @@ import { CTASection } from "@/components/cta/CTASection";
 export const metadata: Metadata = {
   title: "Proyek & Karya",
   description:
-    "Lihat pendekatan desain dan kualitas SOLVRA melalui studi konsep — contoh nyata cara kami membangun website untuk berbagai industri.",
+    "Lihat pendekatan desain dan kualitas SOLVRA melalui website concept mandiri — contoh nyata cara kami menyusun website untuk berbagai industri.",
   alternates: { canonical: "/work" },
 };
 
@@ -19,20 +19,16 @@ export default function WorkPage() {
         atmosphere="gallery"
         eyebrow="Portofolio"
         title="Karya yang berbicara."
-        description="Kumpulan studi konsep internal yang menunjukkan pendekatan, kualitas visual, dan cara berpikir kami dalam membangun website untuk berbagai industri."
-        meta={["Studio Concept", "Property", "Hospitality", "Healthcare", "Education", "Retail", "Finance", "Logistics", "F&B", "Fashion", "Travel", "Wedding", "Automotive", "Spa"]}
+        description="Kumpulan website concept mandiri yang menunjukkan pendekatan, kualitas visual, dan cara berpikir kami dalam menyusun website untuk berbagai industri."
+        meta={["Website Concept", "Property", "Hospitality", "Professional Services", "Logistics", "Community & Non-Profit"]}
       />
 
       <WorkGrid />
 
       <Marquee
         items={[
-          "Property", "Hospitality", "Healthcare", "Education",
-          "Professional Services", "Financial Services", "Retail",
-          "Food & Beverage", "Fitness & Wellness", "Logistics",
-          "Community & Non-Profit", "Fashion & Lifestyle", "Travel & Leisure",
-          "Events & Wedding", "Automotive", "Beauty & Spa",
-          "Creative & Photography", "Business",
+          "Property", "Hospitality", "Professional Services",
+          "Logistics", "Community & Non-Profit",
         ]}
         tone="dark"
       />

@@ -69,8 +69,9 @@ export default function AboutPage() {
                     memikirkan orang yang benar-benar akan membukanya.
                   </p>
                   <p>
-                    Karena itu kami sengaja membatasi jumlah klien per bulan. Satu tim memegang
-                    strategi sampai kode, jadi penjelasan Anda tidak pernah hilang di antara vendor.
+                    Karena itu kami mengerjakan website satu per satu — percakapan, strategi,
+                    desain, sampai kode, dipegang satu tim. Penjelasan Anda tidak pernah hilang di
+                    antara vendor dan perantara.
                   </p>
                   <p>
                     Dan begitu website tayang, kami tak berhenti di situ. Kalau ada halaman yang

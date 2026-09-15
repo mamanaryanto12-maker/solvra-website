@@ -12,7 +12,7 @@ export const siteConfig = {
     "Website yang bagus itu yang bikin orang lupa mereka sedang pakai website — bukan yang bikin mereka kagum sama animasinya.",
   siteUrl: "https://solvra.studio",
   description:
-    "SOLVRA adalah Digital Website Studio dari Indonesia. Kami sengaja membatasi jumlah klien per bulan supaya setiap website benar-benar dipikirkan — bukan dicetak dari template.",
+    "SOLVRA adalah Digital Website Studio dari Indonesia. Setiap website dibangun satu per satu dan diawali percakapan — supaya benar-benar dipikirkan, bukan dicetak dari template.",
   defaultOgImage: "/og-solvra.svg",
   contact: {
     email: "hello@solvra.studio",

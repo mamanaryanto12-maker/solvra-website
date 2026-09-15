@@ -119,7 +119,7 @@ export function WorkGrid() {
               Menampilkan {sorted.length} dari {projects.length} proyek
             </p>
             <p className="hidden text-[12px] text-muted/70 sm:block">
-              Semua karya saat ini adalah studi konsep studio
+              Semua karya di sini adalah website concept mandiri SOLVRA
             </p>
           </div>
         </div>
