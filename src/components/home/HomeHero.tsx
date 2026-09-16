@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -18,10 +18,32 @@ const copy = [
 ];
 
 export function HomeHero() {
+  const { scrollY } = useScroll();
+  const bgY = useTransform(scrollY, [0, 700], ["0%", "6%"]);
+
   return (
     <section className="relative overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
+      <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
+        <Image
+          src="/hero-background.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(247,247,245,0.92) 0%, rgba(247,247,245,0.64) 34%, rgba(247,247,245,0.3) 56%, rgba(247,247,245,0) 76%), linear-gradient(0deg, rgba(247,247,245,0.95) 0%, rgba(247,247,245,0.55) 5%, rgba(247,247,245,0) 12%), radial-gradient(900px 620px at 18% 4%, rgba(247,247,245,0.4) 0%, rgba(247,247,245,0) 62%)",
+          }}
+        />
+        <div className="noise absolute inset-0" />
+      </motion.div>
+
       <Container>
-        <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="flex flex-col gap-8 lg:col-span-6">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -83,34 +105,6 @@ export function HomeHero() {
               ))}
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease, delay: 0.35 }}
-            className="pointer-events-none relative lg:col-span-6"
-          >
-            <div className="w-full overflow-hidden lg:-mr-8">
-              <div className="relative aspect-[16/10] w-full">
-                <Image
-                  src="/hero-background.png"
-                  alt=""
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 46vw, 92vw"
-                  className="object-cover object-center"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, rgba(247,247,245,0.9) 0%, rgba(247,247,245,0.2) 5%, rgba(247,247,245,0) 10%), linear-gradient(0deg, rgba(247,247,245,0.85) 0%, rgba(247,247,245,0) 12%)",
-                  }}
-                />
-              </div>
-            </div>
-          </motion.div>
         </div>
       </Container>
     </section>
