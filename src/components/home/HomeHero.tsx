@@ -20,27 +20,8 @@ const copy = [
 export function HomeHero() {
   return (
     <section className="relative isolate overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 hidden lg:block">
-        <Image
-          src="/hero-background.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(247,247,245,0.92) 0%, rgba(247,247,245,0.64) 34%, rgba(247,247,245,0.3) 56%, rgba(247,247,245,0) 76%), linear-gradient(0deg, rgba(247,247,245,0.95) 0%, rgba(247,247,245,0.55) 5%, rgba(247,247,245,0) 12%), radial-gradient(900px 620px at 18% 4%, rgba(247,247,245,0.4) 0%, rgba(247,247,245,0) 62%)",
-          }}
-        />
-        <div className="noise absolute inset-0" />
-      </div>
-
       <Container>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12 lg:items-center">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-12">
           <div className="flex flex-col gap-8 lg:col-span-6">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -103,19 +84,21 @@ export function HomeHero() {
             </motion.div>
           </div>
 
-          <div className="lg:hidden">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease, delay: 0.4 }}
-              className="relative aspect-[16/10] w-full overflow-hidden"
-            >
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease, delay: 0.35 }}
+            className="relative lg:col-span-6"
+          >
+            <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
                 src="/hero-background.png"
                 alt=""
                 fill
-                sizes="100vw"
-                className="object-cover object-center"
+                priority
+                quality={85}
+                sizes="(min-width: 1024px) 46vw, 100vw"
+                className="object-cover object-[center_22%]"
               />
               <div
                 aria-hidden="true"
@@ -125,8 +108,8 @@ export function HomeHero() {
                     "linear-gradient(0deg, rgba(247,247,245,0.8) 0%, rgba(247,247,245,0) 100%)",
                 }}
               />
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </Container>
     </section>
