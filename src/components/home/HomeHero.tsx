@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { HeroVisual } from "@/components/home/HeroVisual";
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -24,31 +24,17 @@ export function HomeHero() {
   return (
     <section className="relative overflow-hidden pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
       <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(115deg, #F4F4F1 0%, #F7F7F5 38%, #EDF0F7 72%, #E4EAF5 100%)",
-          }}
+        <Image
+          src="/hero-background.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(820px 520px at 78% 18%, rgba(46,111,242,0.14) 0%, transparent 62%), radial-gradient(700px 480px at -4% 96%, rgba(22,42,92,0.16) 0%, transparent 60%)",
-          }}
-        />
-        <div className="grid-lines absolute inset-0 opacity-[0.16]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ivory/85 via-ivory/35 to-ivory/0" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-ivory/70 to-ivory/0" />
       </motion.div>
-
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-10"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(247,247,245,0.72) 0%, rgba(247,247,245,0.4) 55%, rgba(247,247,245,0) 100%)",
-        }}
-      />
 
       <Container>
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-12 lg:gap-10">
@@ -113,15 +99,6 @@ export function HomeHero() {
               ))}
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease, delay: 0.35 }}
-            className="lg:col-span-6"
-          >
-            <HeroVisual />
-          </motion.div>
         </div>
       </Container>
     </section>
