@@ -22,7 +22,7 @@ export function HomeHero() {
   const bgY = useTransform(scrollY, [0, 700], ["0%", "6%"]);
 
   return (
-    <section className="relative overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
+    <section className="relative isolate overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
       <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
         <Image
           src="/hero-background.png"

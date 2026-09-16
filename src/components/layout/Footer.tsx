@@ -19,7 +19,7 @@ const exploreLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-line bg-forest text-ivory">
+    <footer className="relative isolate overflow-hidden border-t border-line bg-forest text-ivory">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
         <div
           className="absolute inset-0"
