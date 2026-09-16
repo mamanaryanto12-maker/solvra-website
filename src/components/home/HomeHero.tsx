@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -18,26 +18,10 @@ const copy = [
 ];
 
 export function HomeHero() {
-  const { scrollY } = useScroll();
-  const bgY = useTransform(scrollY, [0, 700], ["0%", "16%"]);
-
   return (
-    <section className="relative overflow-hidden pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
-      <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
-        <Image
-          src="/hero-background.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ivory/85 via-ivory/35 to-ivory/0" />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-ivory/70 to-ivory/0" />
-      </motion.div>
-
+    <section className="relative overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-12 lg:gap-10">
+        <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-12">
           <div className="flex flex-col gap-8 lg:col-span-6">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -99,6 +83,26 @@ export function HomeHero() {
               ))}
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease, delay: 0.35 }}
+            className="pointer-events-none lg:col-span-6"
+          >
+            <div className="mx-auto w-full max-w-[30rem] overflow-hidden border border-line bg-white p-2 sm:p-3 lg:ml-auto">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src="/hero-background.png"
+                  alt=""
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 40vw, 92vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </Container>
     </section>

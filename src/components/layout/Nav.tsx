@@ -40,16 +40,8 @@ const itemVariants: Variants = {
 };
 
 export function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -66,10 +58,8 @@ export function Nav() {
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-          scrolled && !open
-            ? "border-b border-line bg-ivory/85 backdrop-blur-md"
-            : "border-b border-transparent bg-transparent"
+          "fixed inset-x-0 top-0 z-50 border-b",
+          open ? "border-ivory/25 bg-transparent" : "border-line bg-ivory/90 backdrop-blur-sm"
         )}
       >
         <nav className="container-x flex h-[72px] items-center justify-between">
