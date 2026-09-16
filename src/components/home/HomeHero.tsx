@@ -88,17 +88,25 @@ export function HomeHero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease, delay: 0.35 }}
-            className="pointer-events-none lg:col-span-6"
+            className="pointer-events-none relative lg:col-span-6"
           >
-            <div className="mx-auto w-full max-w-[30rem] overflow-hidden border border-line bg-white p-2 sm:p-3 lg:ml-auto">
-              <div className="relative aspect-[16/9] w-full">
+            <div className="w-full overflow-hidden lg:-mr-8">
+              <div className="relative aspect-[16/10] w-full">
                 <Image
                   src="/hero-background.png"
                   alt=""
                   fill
                   priority
-                  sizes="(min-width: 1024px) 40vw, 92vw"
+                  sizes="(min-width: 1024px) 46vw, 92vw"
                   className="object-cover object-center"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(247,247,245,0.9) 0%, rgba(247,247,245,0.2) 5%, rgba(247,247,245,0) 10%), linear-gradient(0deg, rgba(247,247,245,0.85) 0%, rgba(247,247,245,0) 12%)",
+                  }}
                 />
               </div>
             </div>
