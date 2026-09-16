@@ -93,7 +93,7 @@ export function Nav() {
 
           <div className="flex items-center gap-3">
             <Button href="/contact" variant="primary" size="sm" className="hidden lg:inline-flex">
-              Mulai Proyek
+              Get Started
             </Button>
             <button
               type="button"
@@ -196,7 +196,7 @@ export function Nav() {
                 className="mt-8 flex flex-col gap-4"
               >
                 <Button href="/contact" variant="light" size="lg" arrow>
-                  Mulai Proyek Anda
+                  Get Started
                 </Button>
                 <p className="text-xs leading-relaxed text-ivory/50">
                   {siteConfig.contact.email}

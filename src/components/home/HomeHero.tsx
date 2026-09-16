@@ -11,8 +11,8 @@ const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 const copy = [
   {
     label: "SOLVRA — Digital Website Studio dari Indonesia",
-    headline: ["Kami bangun", "satu website.", "Bukan lima puluh."],
-    body: "Sebelum ada desain, kami ngobrol dulu soal bisnis Anda. Website dibangun satu per satu — dipikirkan dari struktur sampai kata terakhir, bukan dicetak dari template.",
+    headline: ["Website yang dibangun", "untuk bisnis dan keperluan Anda."],
+    body: "SOLVRA adalah digital website studio dari Indonesia. Kami membangun website di seputaran kebutuhan nyata bisnis — dimulai dari masalah, bukan dari template. Teknologi adalah alatnya; kemajuan bisnis tujuannya.",
     steps: ["Discovery", "Strategy", "Design", "Development", "Launch"],
   },
 ];
@@ -67,13 +67,11 @@ export function HomeHero() {
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease, delay: 0.15 }}
-              className="text-[2.6rem] font-extrabold leading-[1.02] tracking-tightest text-forest sm:text-6xl lg:text-[4.35rem]"
+              className="text-[2.25rem] font-extrabold leading-[1.05] tracking-tightest text-forest sm:text-5xl lg:text-[3.75rem]"
             >
               {copy[0].headline[0]}
               <br />
               <span className="font-medium text-moss">{copy[0].headline[1]}</span>
-              <br />
-              {copy[0].headline[2]}
             </motion.h1>
 
             <motion.p
@@ -92,10 +90,10 @@ export function HomeHero() {
               className="flex flex-wrap items-center gap-4"
             >
               <Button href="/contact" variant="primary" size="lg" arrow>
-                Konsultasi Gratis
+                Get Started
               </Button>
               <Button href="/work" variant="outline" size="lg">
-                Lihat Karya Kami
+                View Work
               </Button>
             </motion.div>
 

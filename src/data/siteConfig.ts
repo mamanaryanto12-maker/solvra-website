@@ -7,7 +7,7 @@ export const siteConfig = {
   name: "SOLVRA",
   descriptor: "Digital Website Studio",
   tagline: "Digital Website Studio dari Indonesia, untuk bisnis yang serius mau tumbuh online.",
-  heroHeadline: "Kami bangun satu website. Bukan lima puluh.",
+  heroHeadline: "Website yang dibangun untuk bisnis dan keperluan Anda.",
   philosophy:
     "Website yang bagus itu yang bikin orang lupa mereka sedang pakai website — bukan yang bikin mereka kagum sama animasinya.",
   siteUrl: "https://solvra.studio",

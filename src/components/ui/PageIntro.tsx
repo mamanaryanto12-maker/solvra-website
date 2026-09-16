@@ -202,8 +202,8 @@ function StudioPanel() {
     <div className="relative">
       <div className="relative ml-8 overflow-hidden rounded-t-[10rem] border border-line shadow-raise sm:ml-0 sm:aspect-[4/5] sm:rounded-t-[12rem]">
         <Image
-          src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=1600&q=90&auto=format&fit=crop"
-          alt="Ruang modern yang tenang dan elegan dalam pencahayaan alami"
+          src="/solvra-hero-visual-2.png"
+          alt="Komposisi digital SOLVRA yang menyatukan teknologi dan kebutuhan bisnis"
           fill
           priority
           sizes="50vw"
@@ -218,8 +218,8 @@ function StudioPanel() {
         />
         <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-moss">Desain & Ruang</p>
-            <p className="mt-1 text-sm font-bold text-forest">Referensi suasana studio yang elegan</p>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-moss">Digital & Teknologi</p>
+            <p className="mt-1 text-sm font-bold text-forest">Pendekatan SOLVRA untuk pertumbuhan bisnis digital</p>
           </div>
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-forest/15 bg-white/90 text-[16px] font-bold text-forest">
             S

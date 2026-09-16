@@ -9,7 +9,7 @@ import { Marquee } from "@/components/ui/Marquee";
 export const metadata: Metadata = {
   title: "Tentang SOLVRA",
   description:
-    "SOLVRA mulai dari kegelisahan: website bisnis kecil yang dibikin asal jadi, tanpa memikirkan orang yang benar-benar akan membukanya. Sekarang kami fokus di satu hal — website yang jelas alasannya ada.",
+    "SOLVRA membantu bisnis mengubah teknologi digital menjadi sesuatu yang praktis, berguna, dan terhubung dengan tujuan bisnis yang nyata — dimulai dari masalah, bukan dari teknologi semata.",
   alternates: { canonical: "/about" },
 };
 
@@ -44,8 +44,8 @@ export default function AboutPage() {
       <PageIntro
         atmosphere="studio"
         eyebrow="Tentang SOLVRA"
-        title="Kami mulai karena capek lihat website dibuatkan asal jadi."
-        description="Cuma tempel logo dan teks, tanpa mikir siapa yang benar-benar akan membukanya. Sekarang kami fokus di satu hal: bikin website yang jelas alasannya ada — dari struktur sampai baris kalimat terakhir."
+        title="Teknologi seharusnya memecahkan masalah, bukan menciptakannya."
+        description="SOLVRA membantu bisnis mengubah teknologi digital menjadi sesuatu yang praktis, berguna, dan terhubung dengan tujuan bisnis yang nyata. Kami memulai dari masalah dan pemahaman bisnis Anda, lalu menentukan solusi digital yang paling tepat."
         meta={["Strategy", "Design", "Development", "Digital Experience"]}
       />
 
@@ -58,25 +58,24 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.06}>
                 <p className="mt-6 text-2xl font-bold leading-snug tracking-tight text-forest sm:text-3xl">
-                  Kami memakai website sebagai alat bisnis — bukan pajangan.
+                  Kami membantu bisnis memakai teknologi digital secara efektif.
                 </p>
               </Reveal>
               <Reveal delay={0.12}>
                 <div className="prose-solvra mt-8 space-y-5">
                   <p>
-                    SOLVRA mulai dari satu kegelisahan: terlalu banyak website bisnis kecil dibikin
-                    asal jadi — logo ditempel, teks disalin dari template, dan tidak ada yang
-                    memikirkan orang yang benar-benar akan membukanya.
+                    SOLVRA adalah studio digital yang fokus pada satu hal: membuat teknologi bekerja
+                    untuk kemajuan bisnis Anda. Website, visibilitas, dan pengalaman digital disusun
+                    dari masalah yang nyata — bukan dari template atau tren.
                   </p>
                   <p>
-                    Karena itu kami mengerjakan website satu per satu — percakapan, strategi,
-                    desain, sampai kode, dipegang satu tim. Penjelasan Anda tidak pernah hilang di
-                    antara vendor dan perantara.
+                    Kami memulai dari percakapan untuk memahami bisnis Anda, kemudian menentukan
+                    solusi digital yang paling tepat: website yang lebih baik, visibilitas yang
+                    lebih kuat, atau alur yang benar-benar mengarahkan pengunjung.
                   </p>
                   <p>
-                    Dan begitu website tayang, kami tak berhenti di situ. Kalau ada halaman yang
-                    tidak bekerja, kami perbaiki — bukan karena janji, tapi karena ini pekerjaan
-                    kami.
+                    Teknologi adalah alatnya, bukan tujuannya. Kemajuan bisnis Anda — itulah
+                    ukurannya.
                   </p>
                 </div>
               </Reveal>
