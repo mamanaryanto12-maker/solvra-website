@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -18,12 +18,9 @@ const copy = [
 ];
 
 export function HomeHero() {
-  const { scrollY } = useScroll();
-  const bgY = useTransform(scrollY, [0, 700], ["0%", "6%"]);
-
   return (
     <section className="relative isolate overflow-hidden bg-ivory pb-20 pt-[7.5rem] sm:pb-28 sm:pt-40">
-      <motion.div aria-hidden="true" style={{ y: bgY }} className="absolute inset-0 -z-10 scale-110">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 hidden lg:block">
         <Image
           src="/hero-background.png"
           alt=""
@@ -40,10 +37,10 @@ export function HomeHero() {
           }}
         />
         <div className="noise absolute inset-0" />
-      </motion.div>
+      </div>
 
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12 lg:items-center">
           <div className="flex flex-col gap-8 lg:col-span-6">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -103,6 +100,31 @@ export function HomeHero() {
                   )}
                 </span>
               ))}
+            </motion.div>
+          </div>
+
+          <div className="lg:hidden">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease, delay: 0.4 }}
+              className="relative aspect-[16/10] w-full overflow-hidden"
+            >
+              <Image
+                src="/hero-background.png"
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover object-center"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute inset-x-0 bottom-0 h-16"
+                style={{
+                  background:
+                    "linear-gradient(0deg, rgba(247,247,245,0.8) 0%, rgba(247,247,245,0) 100%)",
+                }}
+              />
             </motion.div>
           </div>
         </div>
