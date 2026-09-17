@@ -90,24 +90,26 @@ export function HomeHero() {
             transition={{ duration: 0.9, ease, delay: 0.35 }}
             className="relative lg:col-span-6"
           >
-            <div className="relative aspect-[16/10] w-full overflow-hidden">
-              <Image
-                src="/hero-background.png"
-                alt=""
-                fill
-                priority
-                quality={85}
-                sizes="(min-width: 1024px) 46vw, 100vw"
-                className="object-cover object-[center_22%]"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute inset-x-0 bottom-0 h-16"
-                style={{
-                  background:
-                    "linear-gradient(0deg, rgba(247,247,245,0.8) 0%, rgba(247,247,245,0) 100%)",
-                }}
-              />
+            <div className="border border-line border-l-[3px] border-l-moss bg-white p-2.5">
+              <div className="relative aspect-[16/10] w-full overflow-hidden">
+                <Image
+                  src="/hero-background.png"
+                  alt="Visual teknologi SOLVRA — robot dan sistem digital untuk kebutuhan bisnis"
+                  fill
+                  priority
+                  quality={85}
+                  sizes="(min-width: 1024px) 46vw, 100vw"
+                  className="object-cover object-[center_22%]"
+                />
+              </div>
+            </div>
+            <div className="mt-2.5 flex items-center justify-between gap-3 border-t border-line pt-2.5">
+              <span className="text-[11px] font-bold uppercase tracking-widest text-muted">
+                Digital Growth &amp; Technology Partner
+              </span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-moss">
+                Dibangun untuk Bisnis
+              </span>
             </div>
           </motion.div>
         </div>
