@@ -212,7 +212,7 @@ const comparison: { label: string; values: Record<string, string> }[] = [
     label: "Revisi",
     values: {
       starter: "1x",
-      ready: "1–2x",
+      ready: "1 sampai 2x",
       cms: "Hingga 2x",
       business: "Hingga 3x",
       "business-pro": "Hingga 4x",

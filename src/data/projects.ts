@@ -39,9 +39,9 @@ export const projects: Project[] = [
     kind: "Website Arsitektur",
     services: ["Strategy", "Design", "Development"],
     description:
-      "Website arsitektur butik untuk Ruang Antara Studio — praktik di Bandung Utara yang berpegang pada modernisme tropis yang tenang. Editorial, tenang, dan dibangun sepenuhnya dengan HTML5, CSS3, serta JavaScript murni tanpa proses build.",
+      "Website arsitektur butik untuk Ruang Antara Studio, praktik di Bandung Utara yang berpegang pada modernisme tropis yang tenang. Editorial, tenang, dan dibangun sepenuhnya dengan HTML5, CSS3, serta JavaScript murni tanpa proses build.",
     short:
-      "Situs editorial untuk praktik arsitektur butik di Bandung Utara — dari hero slideshow hingga studi kasus proyek dan gambar kerja vektor.",
+      "Situs editorial untuk praktik arsitektur butik di Bandung Utara, dari hero slideshow hingga studi kasus proyek dan gambar kerja vektor.",
     highlights: [
       "Sistem desain editorial",
       "10 halaman · 3 studi kasus proyek",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     imageAlt:
       "Beranda situs Ruang Antara Studio dengan hero slideshow karya arsitektur tropis",
     featured: true,
-    heroLabel: "Proyek Terpilih — Website Studio Arsitektur",
+    heroLabel: "Proyek Terpilih: Website Studio Arsitektur",
     facts: [
       { term: "Klien", value: "Ruang Antara Studio" },
       { term: "Sektor", value: "Arsitektur / Properti" },
@@ -74,17 +74,17 @@ export const projects: Project[] = [
       {
         index: "02",
         title: "Bahasa Visual",
-        text: "Standar estetika editorial menjadi dasar seluruh halaman: Newsreader untuk judul, Plus Jakarta Sans untuk teks tubuh, dan JetBrains Mono untuk notasi teknis seperti skala gambar dan dimensi tapak. Paletnya tektonik — kertas gading, jelaga arang, dengan satu warna aksen tanah liat bakar. Sudut tegas, tanpa gradien, dan tanpa bayangan mengambang.",
+        text: "Standar estetika editorial menjadi dasar seluruh halaman: Newsreader untuk judul, Plus Jakarta Sans untuk teks tubuh, dan JetBrains Mono untuk notasi teknis seperti skala gambar dan dimensi tapak. Paletnya tektonik: kertas gading, jelaga arang, dengan satu warna aksen tanah liat bakar. Sudut tegas, tanpa gradien, dan tanpa bayangan mengambang.",
       },
       {
         index: "03",
         title: "Struktur & Isi",
-        text: "Sepuluh halaman tersusun rapi: beranda dengan hero slideshow lambat, profil studio beserta esai filosofi dan tim, portofolio dengan filter kategori yang understated, tiga studi kasus proyek, lima lingkup layanan, proses enam tahap, jurnal, serta halaman kontak. Seluruh konten memakai materi nyata studio — tanpa lorem ipsum dan tanpa angka karangan.",
+        text: "Sepuluh halaman tersusun rapi: beranda dengan hero slideshow lambat, profil studio beserta esai filosofi dan tim, portofolio dengan filter kategori yang understated, tiga studi kasus proyek, lima lingkup layanan, proses enam tahap, jurnal, serta halaman kontak. Seluruh konten memakai materi nyata studio, tanpa lorem ipsum dan tanpa angka karangan.",
       },
       {
         index: "04",
         title: "Teknik & Material Digital",
-        text: "Dibangun tanpa kerangka kerja dan tanpa proses kompilasi: HTML5 semantik, CSS3 murni, dan JavaScript standar. Gambar kerja arsitektur digambar ulang sebagai vektor SVG — potongan, aksonometri, dan denah tapak — sehingga tajam di segala ukuran layar, ringan dimuat, dan mudah dirawat.",
+        text: "Dibangun tanpa kerangka kerja dan tanpa proses kompilasi: HTML5 semantik, CSS3 murni, dan JavaScript standar. Gambar kerja arsitektur digambar ulang sebagai vektor SVG (potongan, aksonometri, dan denah tapak) sehingga tajam di segala ukuran layar, ringan dimuat, dan mudah dirawat.",
       },
     ],
     gallery: [

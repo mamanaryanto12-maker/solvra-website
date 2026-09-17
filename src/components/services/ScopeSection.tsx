@@ -5,7 +5,7 @@ const focusPoints = [
   {
     label: "Sekarang",
     title: "Website adalah fokus utama kami.",
-    text: "Mulai dari strategi, desain, pengembangan, hingga pengalaman digital — kami fokus melakukan ini dengan sangat baik.",
+    text: "Mulai dari strategi, desain, pengembangan, hingga pengalaman digital, kami fokus melakukan ini dengan sangat baik.",
   },
   {
     label: "Nanti",

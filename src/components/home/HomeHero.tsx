@@ -10,9 +10,9 @@ const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const copy = [
   {
-    label: "SOLVRA — Digital Website Studio dari Indonesia",
+    label: "SOLVRA: Digital Website Studio dari Indonesia",
     headline: ["Website yang dibangun", "untuk bisnis dan keperluan Anda."],
-    body: "SOLVRA adalah digital website studio dari Indonesia. Kami membangun website di seputaran kebutuhan nyata bisnis — dimulai dari masalah, bukan dari template. Teknologi adalah alatnya; kemajuan bisnis tujuannya.",
+    body: "SOLVRA adalah digital website studio dari Indonesia. Kami membangun website berdasarkan kebutuhan nyata bisnis, dimulai dari masalah, bukan dari template. Teknologi adalah alatnya; kemajuan bisnis tujuannya.",
     steps: ["Discovery", "Strategy", "Design", "Development", "Launch"],
   },
 ];
@@ -94,7 +94,7 @@ export function HomeHero() {
               <div className="relative aspect-[16/10] w-full overflow-hidden">
                 <Image
                   src="/hero-background.png"
-                  alt="Visual teknologi SOLVRA — robot dan sistem digital untuk kebutuhan bisnis"
+                  alt="Visual teknologi SOLVRA: robot dan sistem digital untuk kebutuhan bisnis"
                   fill
                   priority
                   quality={85}

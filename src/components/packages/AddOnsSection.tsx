@@ -10,7 +10,7 @@ export function AddOnsSection() {
         <SectionHeading
           eyebrow="Fitur Tambahan"
           title="Butuh fitur tambahan?"
-          description="Tidak semua kebutuhan harus masuk ke dalam satu paket. Tambahkan fitur sesuai kebutuhan bisnis Anda — harga mulai dari."
+          description="Tidak semua kebutuhan harus masuk ke dalam satu paket. Tambahkan fitur sesuai kebutuhan bisnis Anda. Harga setiap fitur tercantum di bawah."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden border border-line bg-line md:grid-cols-2">
@@ -26,7 +26,7 @@ export function AddOnsSection() {
 
         <Reveal delay={0.1}>
           <p className="mt-6 text-[13px] leading-relaxed text-muted">
-            Perlu fitur yang tidak tercantum? Ceritakan kebutuhan Anda — banyak fitur dapat disesuaikan
+            Perlu fitur yang tidak tercantum? Ceritakan kebutuhan Anda, banyak fitur dapat disesuaikan
             dengan paket yang dipilih.
           </p>
         </Reveal>

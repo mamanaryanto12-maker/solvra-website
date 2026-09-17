@@ -5,7 +5,7 @@ const principles = [
   {
     tag: "Urutan kerja",
     title: "Ide sebelum piksel.",
-    text: "Struktur dan tujuan dibangun dulu, desain menyusul. Bukan sebaliknya — karena cantik tanpa struktur tidak pernah selesai menjadi website yang bekerja.",
+    text: "Struktur dan tujuan dibangun dulu, desain menyusul. Bukan sebaliknya. Cantik tanpa struktur tidak pernah selesai menjadi website yang bekerja.",
   },
   {
     tag: "Fondasi",
@@ -67,7 +67,7 @@ export function WhySolvra() {
                 <p className="text-2xl font-bold leading-snug tracking-tight text-ivory/90 sm:text-3xl">
                   &ldquo;Klien kami biasa kaget di pertemuan pertama: kami lebih sering bilang
                   &lsquo;cukup&rsquo;, &lsquo;bakal nggak kepake&rsquo;, atau &lsquo;ini bukan
-                  masalahnya&rsquo; — dibanding asal setuju.&rdquo;
+                  masalahnya&rsquo;, dibanding asal setuju.&rdquo;
                 </p>
                 <cite className="mt-3 block not-italic text-[12px] font-semibold uppercase tracking-widest text-sage">
                   Dari percakapan proyek

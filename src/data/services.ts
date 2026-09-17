@@ -17,9 +17,9 @@ export const services: Service[] = [
     index: "01",
     name: "Design",
     summary:
-      "Kami desain dulu di atas kertas dan wireframe sebelum menyentuh Figma — supaya struktur informasinya benar dulu, baru soal cantik.",
+      "Kami desain dulu di atas kertas dan wireframe sebelum menyentuh Figma, supaya struktur informasinya benar dulu, baru soal cantik.",
     overview:
-      "Sebelum satu piksel pun, ada struktur. Kami mulai dari wireframe dan alur informasi untuk memastikan pesan Anda sampai dengan jernih, lalu menyisir detail visual — tipografi, warna, komposisi — supaya brand terasa konsisten dan pengunjung tahu harus melangkah ke mana.",
+      "Sebelum satu piksel pun, ada struktur. Kami mulai dari wireframe dan alur informasi untuk memastikan pesan Anda sampai dengan jernih, lalu menyisir detail visual (tipografi, warna, komposisi) supaya brand terasa konsisten dan pengunjung tahu harus melangkah ke mana.",
     problems: [
       "Website yang tampak tidak profesional dan kurang dipercaya.",
       "Tampilan tidak konsisten dengan identitas brand.",
@@ -54,7 +54,7 @@ export const services: Service[] = [
     index: "02",
     name: "Development",
     summary:
-      "Kami pakai Next.js, bukan WordPress bertumpuk plugin — website Anda tetap cepat walau sudah dua tahun jalan.",
+      "Kami pakai Next.js, bukan WordPress bertumpuk plugin. Website Anda tetap cepat walau sudah dua tahun jalan.",
     overview:
       "Website ini sendiri dibangun dengan Next.js. Kami memilih fondasi teknis berdasarkan kebutuhan, bukan pada banyaknya plugin yang tersedia. Hasilnya: halaman yang ringan, mudah dirawat, dan tetap cepat saat konten serta trafik mulai bertambah.",
     problems: [
@@ -77,7 +77,7 @@ export const services: Service[] = [
       "Dokumentasi teknis ringkas",
     ],
     outcome:
-      "Website yang cepat, stabil, aman, dan mudah diperbarui — tetap terasa ringan bahkan setelah bertambah konten dan pengunjung.",
+      "Website yang cepat, stabil, aman, dan mudah diperbarui. Tetap terasa ringan bahkan setelah bertambah konten dan pengunjung.",
     process: [
       "Setup lingkungan dan arsitektur teknis",
       "Implementasi desain secara responsive",
@@ -90,7 +90,7 @@ export const services: Service[] = [
     index: "03",
     name: "Digital Experience",
     summary:
-      "Kami cek: dari 100 orang yang masuk ke website Anda, di titik mana mereka biasanya pergi tanpa menghubungi Anda — lalu kami perbaiki titik itu.",
+      "Kami cek: dari 100 orang yang masuk ke website Anda, di titik mana mereka biasanya pergi tanpa menghubungi Anda, lalu kami perbaiki titik itu.",
     overview:
       "Kami mulai dari pertanyaan sederhana: ke mana pengunjung seharusnya melangkah, dan di mana mereka sebenarnya berhenti? Dari jawaban itu kami merancang alur halaman, form, dan integrasi supaya orang yang datang benar-benar melanjutkan percakapan dengan Anda.",
     problems: [
@@ -113,7 +113,7 @@ export const services: Service[] = [
       "Struktur pengukuran yang siap dipantau",
     ],
     outcome:
-      "Website yang tidak hanya rapi, tetapi benar-benar bekerja — memandu pengunjung menuju pertanyaan, pembelian, atau tindakan bisnis lainnya.",
+      "Website yang tidak hanya rapi, tetapi benar-benar bekerja: memandu pengunjung menuju pertanyaan, pembelian, atau tindakan bisnis lainnya.",
     process: [
       "Pemetaan tujuan dan pengguna",
       "Perancangan alur dan struktur konversi",

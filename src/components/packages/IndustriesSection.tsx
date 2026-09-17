@@ -38,7 +38,7 @@ export function IndustriesSection() {
               <div>
                 <h3 className="text-xl font-bold tracking-tight text-forest">Bidang lain?</h3>
                 <p className="mt-2.5 text-[14px] leading-relaxed text-muted">
-                  Setiap bisnis memiliki kebutuhan yang berbeda. Ceritakan bidang dan tujuan Anda — kami bantu memperkirakan investasinya.
+                  Setiap bisnis memiliki kebutuhan yang berbeda. Ceritakan bidang dan tujuan Anda, kami bantu memperkirakan investasinya.
                 </p>
               </div>
               <Link href="/contact" className="text-[12px] font-bold uppercase tracking-widest text-forest hover:text-moss">

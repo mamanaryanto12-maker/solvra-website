@@ -13,7 +13,7 @@ export function FAQSection() {
             <SectionHeading
               eyebrow="Pertanyaan Umum"
               title="Pertanyaan yang sering diajukan."
-              description="Belum menemukan jawaban? Konsultasikan kebutuhan Anda — kami akan membantu."
+              description="Belum menemukan jawaban? Konsultasikan kebutuhan Anda, kami akan membantu."
             />
           </div>
           <Reveal delay={0.1} className="flex-1">

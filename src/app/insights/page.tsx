@@ -5,7 +5,7 @@ import { InsightFilters } from "@/components/insights/InsightFilters";
 import { CTASection } from "@/components/cta/CTASection";
 
 export const metadata: Metadata = {
-  title: "Insights — Pemikiran tentang Web & Bisnis",
+  title: "Insights: Pemikiran tentang Web & Bisnis",
   description:
     "Catatan, strategi, dan pemikiran tentang web design, pengalaman digital, dan pertumbuhan bisnis modern.",
   alternates: { canonical: "/insights" },

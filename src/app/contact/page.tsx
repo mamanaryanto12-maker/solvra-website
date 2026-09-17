@@ -7,9 +7,9 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Kontak — Mulai Proyek Anda",
+  title: "Kontak: Mulai Proyek Anda",
   description:
-    "Ceritakan tentang bisnis dan kebutuhan website Anda. Kami akan membantu menentukan pendekatan yang paling sesuai — tanpa komitmen.",
+    "Ceritakan tentang bisnis dan kebutuhan website Anda. Kami akan membantu menentukan pendekatan yang paling sesuai, tanpa komitmen.",
   alternates: { canonical: "/contact" },
 };
 
@@ -52,7 +52,7 @@ export default function ContactPage() {
                     Siap untuk percakapan?
                   </h3>
                   <p className="mt-4 text-[15px] leading-relaxed text-ivory/65">
-                    Kami tidak meminta komitmen dari percakapan awal. Mulailah dari pertanyaan sederhana —
+                    Kami tidak meminta komitmen dari percakapan awal. Mulailah dari pertanyaan sederhana,
                     kami akan membantu menentukan arah yang tepat.
                   </p>
 

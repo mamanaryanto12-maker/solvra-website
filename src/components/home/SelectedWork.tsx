@@ -25,7 +25,7 @@ export function SelectedWork() {
           <Reveal delay={0.08}>
             <div className="flex items-center gap-4">
               <p className="max-w-xs text-[13.5px] leading-relaxed text-muted">
-                Proyek yang kami tampilkan adalah pekerjaan nyata — tanpa contoh fiktif dan tanpa
+                Proyek yang kami tampilkan adalah pekerjaan nyata, tanpa contoh fiktif dan tanpa
                 angka yang belum terverifikasi.
               </p>
               <Button href="/work" variant="outline" arrow className="shrink-0">

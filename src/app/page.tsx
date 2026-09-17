@@ -14,7 +14,7 @@ import { CTASection } from "@/components/cta/CTASection";
 import { finalCta } from "@/data/packages";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — Digital Website Studio dari Indonesia`,
+  title: `${siteConfig.name}: Digital Website Studio dari Indonesia`,
   description: siteConfig.description,
   alternates: { canonical: "/" },
 };

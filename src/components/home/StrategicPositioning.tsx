@@ -5,12 +5,12 @@ const points = [
   {
     tag: "Kredibilitas",
     title: "Diraih sebelum satu kata dibaca",
-    text: "Kerapian dan konsistensi membuat bisnis terlihat terkelola dengan baik — kesan yang terbentuk lebih cepat daripada teks mana pun.",
+    text: "Kerapian dan konsistensi membuat bisnis terlihat terkelola dengan baik: kesan yang terbentuk lebih cepat daripada teks mana pun.",
   },
   {
     tag: "Nilai",
     title: "Disampaikan lewat struktur, bukan basa-basi",
-    text: "Hirarki yang jujur membantu calon pelanggan memahami apa yang membuat Anda berbeda — tanpa kalimat pemasaran yang bertele-tele.",
+    text: "Hirarki yang jujur membantu calon pelanggan memahami apa yang membuat Anda berbeda, tanpa kalimat pemasaran yang bertele-tele.",
   },
   {
     tag: "Kepercayaan",
@@ -20,7 +20,7 @@ const points = [
   {
     tag: "Arah",
     title: "Setiap halaman punya satu tugas",
-    text: "Pengunjung tidak perlu menebak langkah berikutnya — setiap halaman memandu dengan jelas.",
+    text: "Pengunjung tidak perlu menebak langkah berikutnya. Setiap halaman memandu dengan jelas.",
   },
   {
     tag: "Pertumbuhan",

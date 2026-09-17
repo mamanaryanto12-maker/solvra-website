@@ -177,7 +177,7 @@ export function ServiceDetailExplorer() {
             })}
             <div className="mt-4 hidden border border-line bg-ivory p-5 lg:block">
               <p className="text-[12.5px] leading-relaxed text-muted">
-                Tidak bisa menentukan layanan yang dibutuhkan? Mulailah dari percakapan — identifikasi
+                Tidak bisa menentukan layanan yang dibutuhkan? Mulailah dari percakapan: identifikasi
                 kebutuhan bersama-sama.
               </p>
               <Button href="/contact" variant="ghost" className="mt-3 px-0">

@@ -18,7 +18,7 @@ export function Logo({ tone = "light", size = "sm", className }: LogoProps) {
   return (
     <Link
       href="/"
-      aria-label="SOLVRA — Beranda"
+      aria-label="SOLVRA, Beranda"
       className={cn("group inline-flex items-center", className)}
     >
       <Image

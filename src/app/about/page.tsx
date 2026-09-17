@@ -7,34 +7,34 @@ import { CTASection } from "@/components/cta/CTASection";
 import { Marquee } from "@/components/ui/Marquee";
 
 export const metadata: Metadata = {
-  title: "Tentang SOLVRA",
+  title: "Tentang Kami",
   description:
-    "SOLVRA membantu bisnis mengubah teknologi digital menjadi sesuatu yang praktis, berguna, dan terhubung dengan tujuan bisnis yang nyata — dimulai dari masalah, bukan dari teknologi semata.",
+    "SOLVRA membantu bisnis mengubah teknologi digital menjadi sesuatu yang praktis, berguna, dan terhubung dengan tujuan bisnis yang nyata, dimulai dari masalah, bukan dari teknologi semata.",
   alternates: { canonical: "/about" },
 };
 
 const principles = [
-  "Ngobrol dulu sebelum desain — kami tidak mulai dari template.",
-  "Satu tim yang memegang strategi, desain, sampai kode — bukan lempar-lemparan brief antar vendor.",
+  "Ngobrol dulu sebelum desain. Kami tidak mulai dari template.",
+  "Satu tim yang memegang strategi, desain, sampai kode, bukan lempar-lemparan brief antar vendor.",
   "Kami bilang jujur kalau ide klien kurang pas untuk bisnisnya, bukan asal setuju.",
-  "Website selesai bukan berarti hubungan selesai — performanya tetap kami pantau.",
+  "Website selesai bukan berarti hubungan selesai. Performanya tetap kami pantau.",
 ];
 
 const beliefs = [
   {
     index: "01",
     title: "Mulai dari masalah",
-    text: "Kami mulai dari tantangan bisnis, bukan dari tren atau preferensi visual. Kalau solusinya tidak menjawab masalah, sebaik apa pun tampilannya — kami tunda dulu.",
+    text: "Kami mulai dari tantangan bisnis, bukan dari tren atau preferensi visual. Kalau solusinya tidak menjawab masalah, sebaik apa pun tampilannya, kami tunda dulu.",
   },
   {
     index: "02",
     title: "Desain yang jujur",
-    text: "Kalau warna brand Anda biru dan CTA-nya juga biru, orang tidak akan tahu harus klik di mana. Hal sekecil itu yang sering kami betulkan duluan — sebelum bicara soal 'branding'.",
+    text: "Kalau warna brand Anda biru dan CTA-nya juga biru, orang tidak akan tahu harus klik di mana. Hal sekecil itu yang sering kami betulkan duluan, sebelum bicara soal 'branding'.",
   },
   {
     index: "03",
     title: "Fondasi tanpa kompromi",
-    text: "Website yang baik harus cepat, aman, dan mudah dirawat — bukan cuma terlihat premium. Fondasi teknis yang solid menentukan umur website Anda.",
+    text: "Website yang baik harus cepat, aman, dan mudah dirawat, bukan cuma terlihat premium. Fondasi teknis yang solid menentukan umur website Anda.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
                   <p>
                     SOLVRA adalah studio digital yang fokus pada satu hal: membuat teknologi bekerja
                     untuk kemajuan bisnis Anda. Website, visibilitas, dan pengalaman digital disusun
-                    dari masalah yang nyata — bukan dari template atau tren.
+                    dari masalah yang nyata, bukan dari template atau tren.
                   </p>
                   <p>
                     Kami memulai dari percakapan untuk memahami bisnis Anda, kemudian menentukan
@@ -74,8 +74,8 @@ export default function AboutPage() {
                     lebih kuat, atau alur yang benar-benar mengarahkan pengunjung.
                   </p>
                   <p>
-                    Teknologi adalah alatnya, bukan tujuannya. Kemajuan bisnis Anda — itulah
-                    ukurannya.
+                    Teknologi adalah alatnya, bukan tujuannya. Ukurannya adalah kemajuan
+                    bisnis Anda.
                   </p>
                 </div>
               </Reveal>
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <div className="border border-line bg-white p-8">
                   <span className="label">Visi Kami</span>
                   <p className="mt-5 text-lg font-bold leading-relaxed tracking-tight text-forest sm:text-xl">
-                    Menjadi studio yang dipilih karena kejujuran dan kualitas — bukan karena
+                    Menjadi studio yang dipilih karena kejujuran dan kualitas, bukan karena
                     banyaknya proyek yang bisa kami terima dalam sebulan.
                   </p>
                 </div>
@@ -132,14 +132,14 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.08}>
               <p className="mt-7 text-3xl font-extrabold leading-[1.12] tracking-tight text-ivory sm:text-5xl">
-                &ldquo;Website yang bagus itu yang bikin orang lupa mereka sedang pakai website —
+                &ldquo;Website yang bagus itu yang bikin orang lupa mereka sedang pakai website,
                 bukan yang bikin mereka kagum sama animasinya.&rdquo;
               </p>
             </Reveal>
             <Reveal delay={0.14}>
               <p className="mx-auto mt-8 max-w-xl text-[15.5px] leading-relaxed text-ivory/60">
                 Ini yang kami sebut halaman yang bekerja: pengunjung paham apa yang Anda tawarkan,
-                tahu langkah berikutnya, dan tidak pernah tersesat. Animasi hanyalah pelengkap —
+                tahu langkah berikutnya, dan tidak pernah tersesat. Animasi hanyalah pelengkap,
                 bukan alasan website itu ada.
               </p>
             </Reveal>
@@ -166,7 +166,7 @@ export default function AboutPage() {
       <CTASection
         eyebrow="Kerja Sama"
         headline="Ceritakan bisnis Anda. Tanpa form panjang."
-        text="Mulai dari percakapan singkat — kami akan bantu menentukan apakah website Anda perlu dibangun dari nol, dibenahi, atau sebenarnya sudah cukup."
+        text="Mulai dari percakapan singkat, kami akan bantu menentukan apakah website Anda perlu dibangun dari nol, dibenahi, atau sebenarnya sudah cukup."
         primaryLabel="Mulai Percakapan"
         primaryHref="/contact"
         secondaryLabel="Lihat Proyek Kami"

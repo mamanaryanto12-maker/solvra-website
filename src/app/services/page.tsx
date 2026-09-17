@@ -7,9 +7,9 @@ import { ScopeSection } from "@/components/services/ScopeSection";
 import { CTASection } from "@/components/cta/CTASection";
 
 export const metadata: Metadata = {
-  title: "Layanan — Desain, Development, Digital Experience",
+  title: "Layanan: Desain, Development, Digital Experience",
   description:
-    "SOLVRA menawarkan tiga layanan inti yang bekerja berurutan: Design, Development, dan Digital Experience — dari strategi hingga kode, dalam satu tim.",
+    "SOLVRA menawarkan tiga layanan inti yang bekerja berurutan: Design, Development, dan Digital Experience, dari strategi hingga kode, dalam satu tim.",
   alternates: { canonical: "/services" },
 };
 
@@ -20,7 +20,7 @@ export default function ServicesPage() {
         atmosphere="systems"
         eyebrow="Layanan"
         title="Apa yang kami lakukan, dengan jelas."
-        description="Tiga layanan inti yang bekerja sebagai satu kesatuan. Pilih salah satu untuk mempelajari detailnya — atau biarkan kami membantu menentukan kebutuhan Anda."
+        description="Tiga layanan inti yang bekerja sebagai satu kesatuan. Pilih salah satu untuk mempelajari detailnya, atau biarkan kami membantu menentukan kebutuhan Anda."
         meta={["Design", "Development", "Digital Experience"]}
       />
 

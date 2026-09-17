@@ -15,7 +15,7 @@ export function HeroVisual() {
         <div className="border border-line bg-white p-2 sm:p-3">
           <Image
             src="/solvra-hero-visual.png"
-            alt="Komposisi visual perpaduan digital dan arsitektural — arah visual SOLVRA untuk pertumbuhan bisnis"
+            alt="Komposisi visual perpaduan digital dan arsitektural, arah visual SOLVRA untuk pertumbuhan bisnis"
             width={1600}
             height={1200}
             priority

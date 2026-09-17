@@ -14,7 +14,7 @@ import { CTASection } from "@/components/cta/CTASection";
 import { finalCta } from "@/data/packages";
 
 export const metadata: Metadata = {
-  title: "Paket Website — Investasi yang Jelas",
+  title: "Paket Website: Investasi yang Jelas",
   description:
     "Tujuh pilihan paket website dari yang sederhana hingga solusi digital custom. Harga transparan, cakupan jelas, dan bisa disesuaikan dengan kebutuhan bisnis Anda.",
   alternates: { canonical: "/packages" },
@@ -27,7 +27,7 @@ export default function PackagesPage() {
         atmosphere="monument"
         eyebrow="Paket & Investasi"
         title="Investasi yang jelas untuk fondasi digital Anda."
-        description="Tujuh pilihan paket dengan cakupan dan harga yang transparan — dari website sederhana hingga solusi digital custom. Jika belum yakin, mulailah dari percakapan singkat; kami bantu menentukan yang paling tepat."
+        description="Tujuh pilihan paket dengan cakupan dan harga yang transparan, dari website sederhana hingga solusi digital custom. Jika belum yakin, mulailah dari percakapan singkat; kami bantu menentukan yang paling tepat."
         meta={["7 pilihan paket", "Mulai dari Rp120.000", "Harga mulai dari", "Konsultasi awal gratis"]}
       />
 

@@ -19,7 +19,7 @@ export function ProcessOverview() {
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:text-base">
-                Alur ini membuat proyek terasa tenang — Anda selalu tahu berada di tahap mana dan
+                Alur ini membuat proyek terasa tenang. Anda selalu tahu berada di tahap mana dan
                 apa yang terjadi berikutnya.
               </p>
             </Reveal>

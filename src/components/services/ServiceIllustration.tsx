@@ -29,7 +29,7 @@ function DesignVisual() {
             <span className="h-[4px] w-5/6 bg-ivory/30" />
           </div>
           <span className="mt-2 text-[9px] font-semibold uppercase tracking-widest text-ivory/60">
-            Manrope · 400–800
+            Manrope · 400 sampai 800
           </span>
         </div>
         <div className="relative min-h-0 overflow-hidden bg-forest-2">

@@ -13,7 +13,7 @@ import { CTASection } from "@/components/cta/CTASection";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Proyek nyata yang kami kerjakan. Saat ini menampilkan Ruang Antara Studio — website arsitektur butik di Bandung Utara.",
+    "Proyek nyata yang kami kerjakan. Saat ini menampilkan Ruang Antara Studio, website arsitektur butik di Bandung Utara.",
   alternates: { canonical: "/work" },
 };
 
@@ -26,7 +26,7 @@ export default function WorkPage() {
         atmosphere="gallery"
         eyebrow="Work"
         title="Satu proyek, dikerjakan sungguh-sungguh."
-        description="Kami tidak memenuhi halaman ini dengan contoh fiktif. Yang tampil di sini adalah pekerjaan nyata — lengkap dengan studi kasus cara kami berpikir dan membangunnya."
+        description="Kami tidak memenuhi halaman ini dengan contoh fiktif. Yang tampil di sini adalah pekerjaan nyata, lengkap dengan studi kasus cara kami berpikir dan membangunnya."
         meta={[project.industry, project.kind, "Bandung, Jawa Barat"]}
       />
 

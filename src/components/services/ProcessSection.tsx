@@ -18,7 +18,7 @@ export function ProcessSection() {
         <SectionHeading
           eyebrow="Alur Kerja"
           title="Proses yang jelas, dari awal hingga peluncuran."
-          description="Setiap tahap memiliki tujuan dan luaran yang dapat Anda lihat — tidak ada kejutan di tengah jalan."
+          description="Setiap tahap memiliki tujuan dan luaran yang dapat Anda lihat: tidak ada kejutan di tengah jalan."
         />
 
         <div className="mt-16 flex flex-col">

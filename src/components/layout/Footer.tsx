@@ -55,7 +55,7 @@ export function Footer() {
             {siteConfig.socials.map((social) => (
               <span
                 key={social.name}
-                title={`${social.name} — segera tersedia`}
+                title={`${social.name}, segera tersedia`}
                 className="text-[13px] font-medium text-ivory/50 transition-colors duration-200 hover:text-ivory"
               >
                 {social.name}

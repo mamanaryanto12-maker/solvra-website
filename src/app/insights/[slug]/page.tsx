@@ -126,7 +126,7 @@ export default async function ArticlePage({ params }: PageProps) {
                     Catatan editorial
                   </p>
                   <p className="mt-2 max-w-xl text-[13px] leading-relaxed text-muted/70">
-                    Artikel ini bagian dari kurasi insight SOLVRA — memadukan pengalaman studio dan
+                    Artikel ini bagian dari kurasi insight SOLVRA, memadukan pengalaman studio dan
                     prinsip desain web yang kami terapkan di proyek.
                   </p>
                 </div>

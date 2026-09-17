@@ -38,14 +38,14 @@ const fields: Field[] = [
     name: "budget",
     label: "Estimasi Anggaran",
     type: "select",
-    options: ["", "Di bawah Rp500 ribu", "Rp500 ribu – Rp1 juta", "Rp1 juta – Rp3 juta", "Rp3 juta – Rp5 juta", "Rp5 juta – Rp10 juta", "Rp10 juta+", "Belum ditentukan"],
+    options: ["", "Di bawah Rp500 ribu", "Rp500 ribu sampai Rp1 juta", "Rp1 juta sampai Rp3 juta", "Rp3 juta sampai Rp5 juta", "Rp5 juta sampai Rp10 juta", "Rp10 juta+", "Belum ditentukan"],
     placeholder: "Pilih rentang anggaran",
   },
   {
     name: "timeline",
     label: "Timeline Proyek",
     type: "select",
-    options: ["", "Segera", "1–2 bulan", "3–6 bulan", "Setelah 6 bulan", "Belum ditentukan"],
+    options: ["", "Segera", "1 sampai 2 bulan", "3 sampai 6 bulan", "Setelah 6 bulan", "Belum ditentukan"],
     placeholder: "Pilih timeline",
   },
   {
@@ -118,7 +118,7 @@ export function ContactForm() {
         </h3>
         <p className="mt-3 max-w-sm mx-auto text-[15px] leading-relaxed text-muted">
           {status === "success"
-            ? "Pesan Anda telah diterima. Kami akan membalas dalam 1–2 hari kerja."
+            ? "Pesan Anda telah diterima. Kami akan membalas dalam 1 sampai 2 hari kerja."
             : "Terima kasih, pesan Anda tercatat. Untuk pembicaraan yang lebih langsung, kirim email ke hello@solvra.studio."}
         </p>
         <button

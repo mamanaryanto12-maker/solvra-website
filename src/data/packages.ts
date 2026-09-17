@@ -23,7 +23,7 @@ export const packages: WebPackage[] = [
     price: "Rp120.000",
     tagline: "Biar orang yang mencari nama bisnis Anda di Google benar-benar menemukannya.",
     description:
-      "Landing page satu halaman tanpa CMS. Cocok kalau Anda cuma butuh orang bisa cari nama bisnis Anda, dan ketemu — alamat, jam buka, kontak, dan tombol WhatsApp dalam satu halaman yang rapi.",
+      "Landing page satu halaman tanpa CMS. Cocok kalau Anda cuma butuh orang bisa cari nama bisnis Anda, dan ketemu: alamat, jam buka, kontak, dan tombol WhatsApp dalam satu halaman yang rapi.",
     includes: [
       "Website 1 halaman",
       "Tampilan responsif untuk desktop dan mobile",
@@ -58,7 +58,7 @@ export const packages: WebPackage[] = [
     price: "Mulai dari Rp299.000",
     tagline: "Website yang dibangun cepat, tapi tidak dibangun sembarangan.",
     description:
-      "Untuk bisnis yang sudah jalan dan butuh website jadi 'kantor kedua' — beranda, tentang, layanan, dan kontak, lengkap dengan tombol WhatsApp. Kami berangkat dari template yang tertata, lalu menyesuaikan isinya dengan bisnis Anda, bukan sebaliknya.",
+      "Untuk bisnis yang sudah jalan dan butuh website jadi 'kantor kedua': beranda, tentang, layanan, dan kontak, lengkap dengan tombol WhatsApp. Kami berangkat dari template yang tertata, lalu menyesuaikan isinya dengan bisnis Anda, bukan sebaliknya.",
     includes: [
       "Hingga 5 halaman",
       "Tampilan responsif",
@@ -74,7 +74,7 @@ export const packages: WebPackage[] = [
       "SSL",
       "Deployment website",
       "Optimasi performa dasar",
-      "1–2x revisi",
+      "1 sampai 2x revisi",
     ],
     cocokUntuk:
       "Restoran, kafe, salon, barbershop, jasa profesional, dan bisnis lokal yang butuh hadir online secepat mungkin tanpa kehilangan kesan rapi.",
@@ -88,7 +88,7 @@ export const packages: WebPackage[] = [
     price: "Mulai dari Rp799.000",
     tagline: "Website yang bisa Anda kelola sendiri, tanpa menelepon developer tiap minggu.",
     description:
-      "Cocok untuk bisnis yang rutin memperbarui konten — berita, galeri, agenda, tim. Anda mengelola sendiri lewat CMS; kami yang mengatur struktur dan desainnya supaya tetap rapi meski kontennya makin banyak.",
+      "Cocok untuk bisnis yang rutin memperbarui konten: berita, galeri, agenda, tim. Anda mengelola sendiri lewat CMS; kami yang mengatur struktur dan desainnya supaya tetap rapi meski kontennya makin banyak.",
     includes: [
       "Hingga 7 halaman",
       "Tampilan responsif",
@@ -128,7 +128,7 @@ export const packages: WebPackage[] = [
     price: "Mulai dari Rp1.999.000",
     tagline: "Website yang dibangun sebagai fondasi bisnis, bukan sekadar halaman.",
     description:
-      "Untuk bisnis yang sudah stabil dan butuh website yang ikut bekerja: struktur informasi diatur dari tujuan, desain menyesuaikan brand (bukan template), dan jalur kontak dibuat semudah mungkin. Ini paket yang paling sering kami rekomendasikan — dan paling sering kami kerjakan sehari-hari.",
+      "Untuk bisnis yang sudah stabil dan butuh website yang ikut bekerja: struktur informasi diatur dari tujuan, desain menyesuaikan brand (bukan template), dan jalur kontak dibuat semudah mungkin. Ini paket yang paling sering kami rekomendasikan, dan paling sering kami kerjakan sehari-hari.",
     includes: [
       "Hingga 10 halaman",
       "Arahan visual yang disesuaikan dengan brand",
@@ -188,7 +188,7 @@ export const packages: WebPackage[] = [
     name: "Custom",
     number: "Paket 06",
     price: "Mulai dari Rp3.999.000",
-    tagline: "Website yang mengikuti cara kerja bisnis Anda — bukan kebalikannya.",
+    tagline: "Website yang mengikuti cara kerja bisnis Anda, bukan kebalikannya.",
     description:
       "Saat kebutuhan sudah melampaui halaman: butuh login, database, dashboard, sistem booking, atau alur kerja sendiri. Kami mulai dari diskusi teknis dan proses bisnis Anda, bukan dari template harga.",
     includes: [
@@ -220,7 +220,7 @@ export const packages: WebPackage[] = [
     price: "Mulai dari Rp10.000.000",
     tagline: "Bukan sekadar website. Ini produk digital.",
     description:
-      "Ketika yang Anda bangun sudah menjadi sistem dengan pengguna, data, dan alur kerja — portal pelanggan, platform SaaS, learning platform, marketplace. Ini jalur proyek yang berbeda: pembahasan dimulai dari kebutuhan teknis dan skala, bukan dari paket harga.",
+      "Ketika yang Anda bangun sudah menjadi sistem dengan pengguna, data, dan alur kerja: portal pelanggan, platform SaaS, learning platform, marketplace. Ini jalur proyek yang berbeda: pembahasan dimulai dari kebutuhan teknis dan skala, bukan dari paket harga.",
     includes: [
       "Customer portal",
       "Sistem manajemen",
@@ -256,37 +256,37 @@ export const industries = [
   {
     name: "Pendidikan",
     description: "Sekolah, kursus, lembaga pendidikan, training center, dan organisasi pendidikan.",
-    range: "Rp799 ribu – Rp4 juta+",
+    range: "Rp799 ribu sampai Rp4 juta+",
   },
   {
     name: "Jasa Profesional",
     description: "Konsultan, pengacara, akuntan, arsitek, agency, freelancer, dan professional firm.",
-    range: "Rp799 ribu – Rp3 juta+",
+    range: "Rp799 ribu sampai Rp3 juta+",
   },
   {
     name: "Properti",
     description: "Developer, agen properti, perumahan, villa, apartemen, dan bisnis properti.",
-    range: "Rp799 ribu – Rp5 juta+",
+    range: "Rp799 ribu sampai Rp5 juta+",
   },
   {
     name: "Healthcare",
     description: "Klinik, dokter, dental, wellness, dan organisasi healthcare.",
-    range: "Rp799 ribu – Rp5 juta+",
+    range: "Rp799 ribu sampai Rp5 juta+",
   },
   {
     name: "Hospitality",
     description: "Hotel, villa, resort, homestay, restoran, kafe, dan bisnis pariwisata.",
-    range: "Rp799 ribu – Rp5 juta+",
+    range: "Rp799 ribu sampai Rp5 juta+",
   },
   {
     name: "Retail & UMKM",
     description: "Brand lokal, toko, fashion, makanan, salon, barbershop, dan berbagai bisnis berkembang.",
-    range: "Rp299 ribu – Rp5 juta+",
+    range: "Rp299 ribu sampai Rp5 juta+",
   },
   {
     name: "B2B & Corporate",
     description: "Manufaktur, distributor, supplier, teknologi, konstruksi, logistik, dan perusahaan B2B.",
-    range: "Rp2 juta – Rp7 juta+",
+    range: "Rp2 juta sampai Rp7 juta+",
   },
 ];
 

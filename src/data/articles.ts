@@ -34,7 +34,7 @@ export const articles: Article[] = [
     content: [
       {
         type: "p",
-        text: "Website masih sering diperlakukan sebagai brosur digital — tempat menaruh informasi, lalu dibiarkan begitu saja. Padahal, di sebagian besar industri, website adalah tempat pertama calon pelanggan menilai bisnis Anda.",
+        text: "Website masih sering diperlakukan sebagai brosur digital: tempat menaruh informasi, lalu dibiarkan begitu saja. Padahal, di sebagian besar industri, website adalah tempat pertama calon pelanggan menilai bisnis Anda.",
       },
       {
         type: "p",
@@ -115,7 +115,7 @@ export const articles: Article[] = [
       { type: "h2", text: "Kecepatan adalah masalah kepercayaan" },
       {
         type: "p",
-        text: "Website yang lambat terasa tidak terurus. Pengalaman ini secara tidak sadar memengaruhi cara pengunjung menilai bisnis Anda — termasuk ketanggapan layanan yang mungkin Anda berikan.",
+        text: "Website yang lambat terasa tidak terurus. Pengalaman ini secara tidak sadar memengaruhi cara pengunjung menilai bisnis Anda, termasuk ketanggapan layanan yang mungkin Anda berikan.",
       },
       { type: "h2", text: "Keputusan teknis yang berpengaruh besar" },
       {
@@ -129,7 +129,7 @@ export const articles: Article[] = [
       },
       {
         type: "p",
-        text: "Kecepatan bukan target akhir. Kecepatan adalah syarat dasar untuk percakapan — pengunjung hanya akan mendengarkan Anda jika halamannya berhenti membebani mereka.",
+        text: "Kecepatan bukan target akhir. Kecepatan adalah syarat dasar untuk percakapan. Pengunjung hanya akan mendengarkan Anda jika halamannya berhenti membebani mereka.",
       },
     ],
     publishedAt: "22 Agustus 2026",
@@ -152,7 +152,7 @@ export const articles: Article[] = [
       { type: "h2", text: "Satu halaman, satu peran utama" },
       {
         type: "p",
-        text: "Coba tentukan satu hal yang paling ingin dilakukan pengunjung saat berada di beranda. Semua elemen lain harus membantu — bukan bersaing — dengan tujuan tersebut.",
+        text: "Coba tentukan satu hal yang paling ingin dilakukan pengunjung saat berada di beranda. Semua elemen lain harus membantu, bukan bersaing, dengan tujuan tersebut.",
       },
       { type: "h2", text: "Uji dengan pertanyaan sederhana" },
       {
@@ -206,7 +206,7 @@ export const articles: Article[] = [
       },
       {
         type: "p",
-        text: "Website adalah proyek bersama. Ketika sisi bisnis siap, sisi teknis dapat bergerak dengan jauh lebih tenang — dan hasilnya lebih sesuai dengan yang dibutuhkan.",
+        text: "Website adalah proyek bersama. Ketika sisi bisnis siap, sisi teknis dapat bergerak dengan jauh lebih tenang, dan hasilnya lebih sesuai dengan yang dibutuhkan.",
       },
     ],
     publishedAt: "5 Agustus 2026",

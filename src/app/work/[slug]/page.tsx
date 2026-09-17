@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${project.title} — ${project.industry}`,
+    title: `${project.title}, ${project.industry}`,
     description: project.description,
     alternates: { canonical: `/work/${project.slug}` },
   };
@@ -272,7 +272,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   Lihat Ruang Antara Studio langsung.
                 </h2>
                 <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted">
-                  Seluruh halaman dapat dibuka persis seperti yang dibangun — tanpa mockup dan
+                  Seluruh halaman dapat dibuka persis seperti yang dibangun, tanpa mockup dan
                   tanpa rekayasa tampilan.
                 </p>
               </div>
@@ -293,7 +293,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <CTASection
         eyebrow="Serupa dengan kebutuhan Anda?"
         headline="Mari rancang website yang tepat untuk bisnis Anda."
-        text="Mulai dari percakapan singkat — kami akan membantu mengidentifikasi kebutuhan dan pendekatan yang paling sesuai."
+        text="Mulai dari percakapan singkat, kami akan membantu mengidentifikasi kebutuhan dan pendekatan yang paling sesuai."
         primaryLabel="Mulai Proyek Anda"
         primaryHref="/contact"
         secondaryLabel="Lihat Work"
