@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%" style="background-color: #F7F5F0; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#EAE7DF" stroke-width="0.75"/>
+    </pattern>
+    <pattern id="concreteHatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#D3CEC2" stroke-width="0.8"/>
+    </pattern>
+    <pattern id="earthHatch" width="16" height="16" patternUnits="userSpaceOnUse">
+      <line x1="2" y1="8" x2="14" y2="8" stroke="#CBC5B6" stroke-width="0.75"/>
+      <line x1="6" y1="14" x2="10" y2="14" stroke="#CBC5B6" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="1000" height="560" fill="url(#grid)"/>
+
+  <!-- Border & Drawing Frame -->
+  <rect x="25" y="25" width="950" height="510" fill="none" stroke="#D8D4C7" stroke-width="1"/>
+  <rect x="28" y="28" width="944" height="504" fill="none" stroke="#ECE9DF" stroke-width="0.5"/>
+
+  <!-- Garis Tanah Asli & Kontur Lereng Lembang -->
+  <path d="M 40 430 Q 250 425 450 435 T 720 445 T 960 455" fill="none" stroke="#191817" stroke-width="1.8"/>
+  <path d="M 40 430 Q 250 425 450 435 T 720 445 T 960 455 L 960 520 L 40 520 Z" fill="url(#earthHatch)" opacity="0.6"/>
+
+  <!-- Pohon Mangga 40 Tahun yang Dilestarikan -->
+  <g id="pohon-mangga" opacity="0.85">
+    <!-- Batang Pohon melintasi void courtyard -->
+    <path d="M 475 435 C 470 380 460 320 455 240 C 452 180 430 140 410 90 C 435 120 460 110 475 70 C 485 110 520 130 545 100 C 530 140 515 190 510 240 C 505 310 515 380 520 435 Z" fill="#D5CEBE" stroke="#686358" stroke-width="1.2"/>
+    <!-- Tajuk Daun -->
+    <ellipse cx="480" cy="110" rx="160" ry="75" fill="#E2DDD0" stroke="#7A7467" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>
+    <ellipse cx="440" cy="90" rx="110" ry="55" fill="#DDD7C8" stroke="#7A7467" stroke-width="0.75" opacity="0.5"/>
+    <ellipse cx="530" cy="120" rx="90" ry="45" fill="#DDD7C8" stroke="#7A7467" stroke-width="0.75" opacity="0.5"/>
+    <!-- Batas Perlindungan Zona Perakaran (Bebas Pondasi) -->
+    <path d="M 430 435 C 410 480 450 510 495 510 C 540 510 580 470 565 435" fill="none" stroke="#A64B2A" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <text x="495" y="525" text-anchor="middle" font-size="8.5" fill="#A64B2A" letter-spacing="1">ZONA PERLINDUNGAN AKAR — BEBAS TIANG PANCANG RADIUS 4.0 METER</text>
+  </g>
+
+  <!-- Pondasi Telapak Mundur & Pelat Beton Gantung (Kantilever) -->
+  <!-- Pondasi Sayap Barat -->
+  <rect x="210" y="430" width="40" height="50" fill="url(#concreteHatch)" stroke="#191817" stroke-width="1.4"/>
+  <rect x="195" y="475" width="70" height="20" fill="none" stroke="#191817" stroke-width="1.2"/>
+  <!-- Pondasi Sayap Timur (Mundur Menjaga Akar Utama) -->
+  <rect x="680" y="440" width="40" height="50" fill="url(#concreteHatch)" stroke="#191817" stroke-width="1.4"/>
+  <rect x="665" y="485" width="70" height="20" fill="none" stroke="#191817" stroke-width="1.2"/>
+
+  <!-- Pelat Lantai Beton Gantung -->
+  <path d="M 120 405 L 430 405 L 430 415 L 565 415 L 565 405 L 840 405 L 840 418 L 120 418 Z" fill="url(#concreteHatch)" stroke="#191817" stroke-width="1.6"/>
+  <!-- Dek Kayu Ulin Terbuka Mengelilingi Pohon -->
+  <line x1="430" y1="403" x2="430" y2="385" stroke="#191817" stroke-width="1"/>
+  <line x1="565" y1="403" x2="565" y2="385" stroke="#191817" stroke-width="1"/>
+  <line x1="430" y1="388" x2="565" y2="388" stroke="#A64B2A" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="498" y="380" text-anchor="middle" font-size="8.5" fill="#63605A">VOID COURTYARD KAYU ULIN</text>
+
+  <!-- Dinding & Kolom Paviliun -->
+  <!-- Paviliun Barat (Ruang Duduk & Makan) -->
+  <rect x="225" y="270" width="12" height="135" fill="#191817"/>
+  <rect x="390" y="270" width="10" height="135" fill="#191817"/>
+  <line x1="237" y1="275" x2="390" y2="275" stroke="#7A7467" stroke-width="0.8"/>
+  <line x1="237" y1="400" x2="390" y2="400" stroke="#7A7467" stroke-width="0.8"/>
+  <line x1="310" y1="275" x2="310" y2="400" stroke="#8C887B" stroke-width="0.8" stroke-dasharray="2 2"/>
+
+  <!-- Paviliun Timur (Kamar Utama) -->
+  <rect x="695" y="270" width="12" height="135" fill="#191817"/>
+  <rect x="815" y="270" width="12" height="135" fill="#191817"/>
+  <line x1="707" y1="280" x2="815" y2="280" stroke="#191817" stroke-width="0.8"/>
+  <line x1="707" y1="290" x2="815" y2="290" stroke="#191817" stroke-width="0.8"/>
+  <line x1="707" y1="300" x2="815" y2="300" stroke="#191817" stroke-width="0.8"/>
+
+  <!-- Balok Kayu Glulam & Struktur Atap Respons Iklim -->
+  <path d="M 90 262 L 440 262 L 440 270 L 90 270 Z" fill="#3D3A35" stroke="#191817" stroke-width="1.2"/>
+  <path d="M 555 262 L 880 262 L 880 270 L 555 270 Z" fill="#3D3A35" stroke="#191817" stroke-width="1.2"/>
+
+  <!-- Tritisan Atap Dalam (Overhang 2.800 mm Melindungi dari Tampias & Panas Barat) -->
+  <path d="M 60 250 L 445 220 L 445 230 L 70 258 Z" fill="#191817" stroke="#191817" stroke-width="1.5"/>
+  <path d="M 550 220 L 910 252 L 900 260 L 550 230 Z" fill="#191817" stroke="#191817" stroke-width="1.5"/>
+
+  <!-- Garis Ukuran / Dimensi Tritisan -->
+  <line x1="60" y1="205" x2="225" y2="205" stroke="#8C887B" stroke-width="0.75"/>
+  <line x1="60" y1="200" x2="60" y2="210" stroke="#8C887B" stroke-width="0.75"/>
+  <line x1="225" y1="200" x2="225" y2="210" stroke="#8C887B" stroke-width="0.75"/>
+  <text x="142" y="198" text-anchor="middle" font-size="9" fill="#63605A" font-family="'JetBrains Mono', monospace">TRITISAN DALAM 2.800 MM</text>
+
+  <!-- Dimensi Bukaan Courtyard -->
+  <line x1="430" y1="365" x2="565" y2="365" stroke="#8C887B" stroke-width="0.75"/>
+  <line x1="430" y1="360" x2="430" y2="370" stroke="#8C887B" stroke-width="0.75"/>
+  <line x1="565" y1="360" x2="565" y2="370" stroke="#8C887B" stroke-width="0.75"/>
+  <text x="498" y="360" text-anchor="middle" font-size="9" fill="#63605A" font-family="'JetBrains Mono', monospace">BUKAAN POHON 4.200 MM</text>
+
+  <!-- Arah Angin Sejuk Pegunungan Lembang (Ventilasi Silang) -->
+  <path d="M 120 370 C 180 365 280 360 420 340 C 470 330 480 280 485 200 C 490 140 470 100 460 70" fill="none" stroke="#7A8B7B" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <polygon points="460,65 455,75 465,74" fill="#7A8B7B"/>
+  <text x="290" y="348" text-anchor="middle" font-size="8.5" fill="#586759" font-style="italic">Aliran angin sejuk pegunungan melintasi void</text>
+
+  <!-- Notasi Elevasi Ketinggian -->
+  <g transform="translate(925, 405)">
+    <polygon points="0,0 -8,-5 -8,5" fill="#191817"/>
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#191817" stroke-width="0.8"/>
+    <text x="5" y="-4" font-size="8" font-family="'JetBrains Mono', monospace" fill="#191817">+0.00 LANTAI</text>
+  </g>
+  <g transform="translate(925, 262)">
+    <polygon points="0,0 -8,-5 -8,5" fill="#191817"/>
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#191817" stroke-width="0.8"/>
+    <text x="5" y="-4" font-size="8" font-family="'JetBrains Mono', monospace" fill="#191817">+3.80 BALOK</text>
+  </g>
+
+  <!-- Kepala Gambar Arsitektural (Kop Gambar Baku Indonesia) -->
+  <rect x="610" y="470" width="340" height="50" fill="#F7F5F0" stroke="#191817" stroke-width="1"/>
+  <line x1="610" y1="495" x2="950" y2="495" stroke="#D8D4C7" stroke-width="0.8"/>
+  <line x1="790" y1="470" x2="790" y2="520" stroke="#D8D4C7" stroke-width="0.8"/>
+  <text x="620" y="487" font-size="9" font-weight="600" fill="#191817" letter-spacing="1">RUANG ANTARA STUDIO</text>
+  <text x="620" y="510" font-size="8" fill="#63605A">PROYEK: RUMAH POHON MANGGA, LEMBANG</text>
+  <text x="800" y="487" font-size="8" fill="#63605A">GBR: POTONGAN A-A'</text>
+  <text x="800" y="510" font-size="8" font-family="'JetBrains Mono', monospace" fill="#A64B2A">SKALA: 1:100 @ A3</text>
+</svg>

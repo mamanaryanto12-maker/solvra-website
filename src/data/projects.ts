@@ -1,206 +1,155 @@
-export type ProjectVisual =
-  | "hero"
-  | "editorial"
-  | "gallery"
-  | "mobile"
-  | "dashboard"
-  | "commerce"
-  | "hospitality"
-  | "booking";
+export type ProjectFact = { term: string; value: string };
 
-export type ProjectStatus = "concept";
+export type ProjectSection = { index: string; title: string; text: string };
 
-export type ProjectType = "Website Concept";
+export type ProjectGalleryItem = {
+  src: string;
+  alt: string;
+  caption: string;
+  device?: "desktop" | "mobile";
+};
 
 export type Project = {
   id: string;
   slug: string;
   title: string;
   industry: string;
-  kind: ProjectType;
+  kind: string;
   services: string[];
   description: string;
   short: string;
   highlights: string[];
-  visual: ProjectVisual;
   image: string;
   imageAlt: string;
   featured: boolean;
-  status: ProjectStatus;
   heroLabel: string;
-  challenge: string;
-  strategy: string;
-  design: string;
-  development: string;
-  outcome: string;
-  galleryCount: number;
+  facts: ProjectFact[];
+  designSystem: ProjectFact[];
+  sections: ProjectSection[];
+  gallery: ProjectGalleryItem[];
+  liveUrl: string;
 };
 
 export const projects: Project[] = [
   {
-    id: "p1",
-    slug: "nusantara-properties",
-    title: "Nusantara Properties",
-    industry: "Property",
-    kind: "Website Concept",
-    services: ["Design", "Development"],
+    id: "ruang-antara-studio",
+    slug: "ruang-antara-studio",
+    title: "Ruang Antara Studio",
+    industry: "Property / Architecture",
+    kind: "Website Arsitektur",
+    services: ["Strategy", "Design", "Development"],
     description:
-      "Website properti yang dirancang untuk membangun kepercayaan dan memandu calon pembeli menuju jadwal kunjungan lokasi.",
-    short: "Membangun kepercayaan properti melalui presentasi unit dan alur inquiry yang jelas.",
-    visual: "editorial",
+      "Website arsitektur butik untuk Ruang Antara Studio — praktik di Bandung Utara yang berpegang pada modernisme tropis yang tenang. Editorial, tenang, dan dibangun sepenuhnya dengan HTML5, CSS3, serta JavaScript murni tanpa proses build.",
+    short:
+      "Situs editorial untuk praktik arsitektur butik di Bandung Utara — dari hero slideshow hingga studi kasus proyek dan gambar kerja vektor.",
     highlights: [
-      "Komposisi editorial untuk presentasi unit",
-      "Alur inquiry menuju kunjungan lokasi",
-      "Struktur properti yang mudah dibandingkan",
+      "Sistem desain editorial",
+      "10 halaman · 3 studi kasus proyek",
+      "Gambar kerja arsitektur vektor",
+      "Zero-build: HTML, CSS, JS murni",
     ],
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Fasad rumah modern dengan arsitektur yang bersih dan lapang",
+    image: "/portfolio/ruang-antara-studio/home.png",
+    imageAlt:
+      "Beranda situs Ruang Antara Studio dengan hero slideshow karya arsitektur tropis",
     featured: true,
-    status: "concept",
-    heroLabel: "Website concept untuk sektor property",
-    challenge:
-      "Kepercayaan adalah segalanya di sektor properti. Calon pembeli perlu memahami kompleksitas unit, lokasi, dan fasilitas tanpa kebingungan.",
-    strategy:
-      "Kami menyusun hierarki informasi berbasis tahapan keputusan: eksplorasi unit, perbandingan, lalu pembuatan janji kunjungan lokasi.",
-    design:
-      "Palet hangat dan tenang dengan komposisi editorial pada presentasi unit. Fotografi arsitektur menjadi pusat visual dengan tipografi yang jelas dan lapang.",
-    development:
-      "Struktur halaman yang ringan dan cepat, form inquiry yang mudah diakses, serta integrasi pemetaan lokasi dan galeri yang responsif.",
-    outcome:
-      "Menghasilkan struktur yang lebih terarah dengan jalur konversi yang lebih langsung menuju kunjungan lokasi.",
-    galleryCount: 4,
-  },
-  {
-    id: "p2",
-    slug: "teras-kita",
-    title: "Teras Kita",
-    industry: "Hospitality",
-    kind: "Website Concept",
-    services: ["Design", "Development", "Digital Experience"],
-    description:
-      "Website kafe dan ruang komunitas yang menonjolkan atmosfer hangat serta memudahkan pengunjung melakukan reservasi.",
-    short: "Menghadirkan atmosfer hangat dan alur reservasi yang sederhana.",
-    visual: "hospitality",
-    highlights: [
-      "Narasi atmosfer ruang yang hangat",
-      "Menu dan galeri yang mudah dibaca",
-      "Alur reservasi yang sederhana",
+    heroLabel: "Proyek Terpilih — Website Studio Arsitektur",
+    facts: [
+      { term: "Klien", value: "Ruang Antara Studio" },
+      { term: "Sektor", value: "Arsitektur / Properti" },
+      { term: "Lokasi", value: "Bandung, Jawa Barat" },
+      { term: "Cakupan", value: "Desain & Pengembangan Website" },
     ],
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Suasana hangat interior kafe dan ruang komunitas",
-    featured: true,
-    status: "concept",
-    heroLabel: "Website concept untuk sektor hospitality",
-    challenge:
-      "Sebuah ruang komunitas perlu menyampaikan atmosfer — tidak hanya menu dan alamat. Pengunjung merasa antusias sebelum datang.",
-    strategy:
-      "Kami membangun narasi visual yang menonjolkan ruang, cerita di baliknya, lalu mempersingkat jarak menuju reservasi.",
-    design:
-      "Nuansa hangat, tipografi yang ramah, dan komposisi gambar yang menyerupai editorial majalah. Setiap bagian membawa pengunjung lebih dekat pada pengalaman nyata.",
-    development:
-      "Galeri yang ringan, halaman menu yang mudah dibaca, dan alur reservasi sederhana yang bekerja tanpa hambatan di ponsel.",
-    outcome:
-      "Website yang mampu menyampaikan atmosfer dan memandu pengunjung menuju tindakan reservasi dengan cara yang alami.",
-    galleryCount: 4,
-  },
-  {
-    id: "p5",
-    slug: "arsa-studio",
-    title: "Arsa Studio",
-    industry: "Professional Services",
-    kind: "Website Concept",
-    services: ["Design", "Development", "Digital Experience"],
-    description:
-      "Website studio arsitektur yang menyampaikan pendekatan desain, karya terpilih, dan proses kolaborasi kepada calon klien.",
-    short: "Presentasi karya dan pendekatan desain yang kredibel.",
-    visual: "gallery",
-    highlights: [
-      "Presentasi karya yang terkurasi",
-      "Proses kolaborasi yang mudah dibaca",
-      "Fluiditas tampilan desktop ke ponsel",
+    designSystem: [
+      { term: "Tipografi", value: "Newsreader · Plus Jakarta Sans · JetBrains Mono" },
+      { term: "Palet", value: "Kertas gading, jelaga arang, aksen tanah liat #A64B2A" },
+      { term: "Bentuk", value: "Sudut tegas, tanpa gradien, tanpa drop-shadow" },
+      { term: "Teknologi", value: "HTML5 · CSS3 · JavaScript (tanpa build)" },
     ],
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Ruang kerja studio arsitektur yang terkurasi dengan presisi",
-    featured: false,
-    status: "concept",
-    heroLabel: "Website concept untuk sektor professional services",
-    challenge:
-      "Klien memilih studio arsitektur berdasarkan kepercayaan terhadap kualitas dan cara berpikir. Website harus membuktikan keduanya.",
-    strategy:
-      "Kami menempatkan karya sebagai bukti utama, didampingi pernyataan pendekatan yang jelas, lalu memandu menuju percakapan awal.",
-    design:
-      "Rasa editorial yang tenang dengan grid yang presisi, ruang yang luas, serta penekanan pada gambar yang terkurasi dengan baik.",
-    development:
-      "Tampilan portofolio yang besar namun cepat, proses kolaborasi yang mudah dibaca, dan jalur kontak yang langsung.",
-    outcome:
-      "Membangun kredibilitas melalui presentasi karya yang terkurasi dan komunikasi pendekatan yang jelas dan meyakinkan.",
-    galleryCount: 4,
-  },
-  {
-    id: "p10",
-    slug: "loka-arus",
-    title: "Loka Arus",
-    industry: "Logistics",
-    kind: "Website Concept",
-    services: ["Design", "Development", "Digital Experience"],
-    description:
-      "Portal pelanggan untuk perusahaan logistik — melacak pengiriman, mengakses dokumen, dan meninjau riwayat dari satu dashboard yang jelas.",
-    short: "Pelacakan dan dokumen yang terpusat untuk pelanggan logistik.",
-    highlights: [
-      "Dashboard pelacakan yang terpusat",
-      "Akses dokumen & riwayat pengiriman",
-      "Tabel data yang ringan dan responsif",
+    sections: [
+      {
+        index: "01",
+        title: "Latar & Pendekatan",
+        text: "Ruang Antara Studio adalah praktik arsitektur butik di Bandung Utara yang berpegang pada modernisme tropis yang tenang, kejujuran material, dan kepekaan iklim mikro. Website ini perlu menyampaikan sikap itu tanpa berteriak: karya menjadi bukti utama, bukan dekorasi. Kami menempatkan fotografi arsitektur dan tipografi editorial sebagai pusat pengalaman, dengan ruang yang lapang dan ritme baca yang tenang.",
+      },
+      {
+        index: "02",
+        title: "Bahasa Visual",
+        text: "Standar estetika editorial menjadi dasar seluruh halaman: Newsreader untuk judul, Plus Jakarta Sans untuk teks tubuh, dan JetBrains Mono untuk notasi teknis seperti skala gambar dan dimensi tapak. Paletnya tektonik — kertas gading, jelaga arang, dengan satu warna aksen tanah liat bakar. Sudut tegas, tanpa gradien, dan tanpa bayangan mengambang.",
+      },
+      {
+        index: "03",
+        title: "Struktur & Isi",
+        text: "Sepuluh halaman tersusun rapi: beranda dengan hero slideshow lambat, profil studio beserta esai filosofi dan tim, portofolio dengan filter kategori yang understated, tiga studi kasus proyek, lima lingkup layanan, proses enam tahap, jurnal, serta halaman kontak. Seluruh konten memakai materi nyata studio — tanpa lorem ipsum dan tanpa angka karangan.",
+      },
+      {
+        index: "04",
+        title: "Teknik & Material Digital",
+        text: "Dibangun tanpa kerangka kerja dan tanpa proses kompilasi: HTML5 semantik, CSS3 murni, dan JavaScript standar. Gambar kerja arsitektur digambar ulang sebagai vektor SVG — potongan, aksonometri, dan denah tapak — sehingga tajam di segala ukuran layar, ringan dimuat, dan mudah dirawat.",
+      },
     ],
-    visual: "dashboard",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Gudang logistik modern dengan sistem pelacakan terpusat",
-    featured: false,
-    status: "concept",
-    heroLabel: "Website concept untuk sektor logistik",
-    challenge:
-      "Pelanggan logistik hidup di antara banyak email, telepon, dan dokumen untuk satu pertanyaan sederhana: di mana kiriman saya?",
-    strategy:
-      "Kami merancang satu portal: pelacakan, dokumen, dan riwayat berada di satu dashboard yang mengurangi kebutuhan bertanya berulang.",
-    design:
-      "Dashboard yang bersih dengan hierarki berbasis status. Aksen biru terbatas pada elemen aktif sehingga data tetap mudah dipindai.",
-    development:
-      "Tabel data yang ringan, filter status sederhana, dan navigasi sidebar yang responsif dari desktop hingga tablet.",
-    outcome:
-      "Menghasilkan portal yang mempersingkat pencarian informasi dan memperbaiki pengalaman dukungan pelanggan secara keseluruhan.",
-    galleryCount: 3,
-  },
-  {
-    id: "p11",
-    slug: "aksara-hub",
-    title: "Aksara Hub",
-    industry: "Community & Non-Profit",
-    kind: "Website Concept",
-    services: ["Design", "Development", "Digital Experience"],
-    description:
-      "Platform komunitas literasi yang menghubungkan kegiatan, relawan, dan donasi dalam satu pengalaman yang hangat dan mudah diakses.",
-    short: "Menghubungkan kegiatan, relawan, dan dukungan komunitas.",
-    highlights: [
-      "Pendekatan yang hangat & inklusif",
-      "Alur donasi dan relawan yang jelas",
-      "Pengalaman mobile-first untuk akses luas",
+    gallery: [
+      {
+        src: "/portfolio/ruang-antara-studio/home.png",
+        alt: "Beranda situs Ruang Antara Studio dengan hero slideshow karya arsitektur",
+        caption: "Beranda · hero slideshow karya arsitektur",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/portfolio.png",
+        alt: "Halaman portofolio dengan grid masonry dan filter kategori",
+        caption: "Portofolio · grid karya dengan filter kategori",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/studio.png",
+        alt: "Halaman studio dengan profil pendiri dan esai filosofi",
+        caption: "Studio · profil, esai filosofi, dan tim",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/case-lembang.png",
+        alt: "Studi kasus Rumah Akhir Pekan di Lembang",
+        caption: "Studi kasus · Rumah Akhir Pekan, Lembang",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/case-roastery.png",
+        alt: "Studi kasus Sangrai Roastery di Bandung",
+        caption: "Studi kasus · Sangrai Roastery, Bandung",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/case-cihapit.png",
+        alt: "Studi kasus Rumah Cihapit dengan courtyard",
+        caption: "Studi kasus · Rumah Cihapit, Bandung",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/layanan.png",
+        alt: "Halaman layanan dengan lima lingkup kerja",
+        caption: "Layanan · lima lingkup kerja terukur",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/kontak.png",
+        alt: "Halaman kontak dengan peta vektor monokrom",
+        caption: "Kontak · formulir dan peta vektor",
+        device: "desktop",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/mobile-home.png",
+        alt: "Tampilan beranda situs Ruang Antara Studio pada ponsel",
+        caption: "Beranda pada ponsel",
+        device: "mobile",
+      },
+      {
+        src: "/portfolio/ruang-antara-studio/mobile-portfolio.png",
+        alt: "Tampilan portofolio situs Ruang Antara Studio pada ponsel",
+        caption: "Portofolio pada ponsel",
+        device: "mobile",
+      },
     ],
-    visual: "mobile",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600&q=80&auto=format&fit=crop",
-    imageAlt: "Ponsel yang menampilkan tampilan antarmuka aplikasi komunitas",
-    featured: false,
-    status: "concept",
-    heroLabel: "Website concept untuk sektor komunitas & non-profit",
-    challenge:
-      "Organisasi nirlaba melayani banyak kelompok — pemustaka, relawan, dan donatur. Setiap kelompok membutuhkan jalurnya sendiri yang jelas.",
-    strategy:
-      "Kami merancang pengalaman yang membedakan tiga jalur utama — ikut kegiatan, menjadi relawan, dan memberi dukungan — tanpa terasa membingungkan.",
-    design:
-      "Komposisi yang hangat dan ramah dengan ruang luas, memastikan informasi penting dapat diakses oleh siapa pun, termasuk di ponsel.",
-    development:
-      "Struktur navigasi sederhana, form pendaftaran yang ringkas, dan pembuatan halaman kegiatan yang mudah dikelola tim komunitas.",
-    outcome:
-      "Menghasilkan platform yang memudahkan komunitas berpartisipasi dan organisasi mengelola kegiatan tanpa keahlian teknis.",
-    galleryCount: 3,
+    liveUrl: "/proyek/ruang-antara-studio/index.html",
   },
 ];
 
@@ -210,17 +159,6 @@ export function getProject(slug: string): Project | undefined {
 
 export function getAdjacentProject(slug: string): Project | null {
   const index = projects.findIndex((p) => p.slug === slug);
-  if (index < 0) return null;
+  if (index < 0 || projects.length < 2) return null;
   return projects[(index + 1) % projects.length];
 }
-
-export const projectCategories = [
-  "Semua",
-  "Property",
-  "Hospitality",
-  "Professional Services",
-  "Logistics",
-  "Community & Non-Profit",
-] as const;
-
-export const projectKinds = ["Semua", "Website Concept"] as const;

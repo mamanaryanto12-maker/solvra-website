@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { notFound } from "next/navigation";
 
-import { getProject, getAdjacentProject, projects } from "@/data/projects";
-import { ProjectMock } from "@/components/ui/ProjectMock";
+import { getProject, projects } from "@/data/projects";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/motion/Reveal";
 import { CTASection } from "@/components/cta/CTASection";
@@ -36,10 +36,9 @@ type CaseSectionProps = {
   index: string;
   title: string;
   text: string;
-  aside?: React.ReactNode;
 };
 
-function CaseSection({ index, title, text, aside }: CaseSectionProps) {
+function CaseSection({ index, title, text }: CaseSectionProps) {
   return (
     <div className="grid grid-cols-1 gap-6 border-b border-line py-12 last:border-b-0 sm:py-16 lg:grid-cols-12 lg:gap-10">
       <div className="lg:col-span-2">
@@ -50,7 +49,6 @@ function CaseSection({ index, title, text, aside }: CaseSectionProps) {
       </div>
       <div className="lg:col-span-6">
         <p className="max-w-2xl text-[15.5px] leading-relaxed text-muted">{text}</p>
-        {aside && <div className="mt-8">{aside}</div>}
       </div>
     </div>
   );
@@ -64,7 +62,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const next = getAdjacentProject(slug);
+  const desktopShots = project.gallery.filter((item) => item.device !== "mobile");
+  const mobileShots = project.gallery.filter((item) => item.device === "mobile");
 
   return (
     <>
@@ -76,7 +75,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               className="inline-flex items-center gap-2 text-[13px] font-semibold text-muted transition-colors hover:text-forest"
             >
               <ArrowLeft className="h-4 w-4" />
-              Kembali ke Proyek
+              Kembali ke Work
             </Link>
           </Reveal>
 
@@ -97,21 +96,30 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </Reveal>
             </div>
             <Reveal delay={0.2} className="lg:col-span-3">
-              <div className="flex flex-col gap-3 border-l-2 border-sage pl-5">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-muted">
-                  Status
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-forest transition-colors hover:text-moss"
+              >
+                <span className="border-b border-moss/0 transition-colors hover:border-moss/60">
+                  Buka situs langsung
                 </span>
-                <span className="text-[15px] font-bold text-forest">{project.kind}</span>
-              </div>
+                <ArrowUpRight className="h-4 w-4 text-moss" />
+              </a>
             </Reveal>
           </div>
 
           <Reveal delay={0.25}>
-            <div className="mt-14 overflow-hidden border border-line shadow-raise">
-              <ProjectMock
-                project={project}
-                visual={project.visual}
-                className="aspect-[16/9]"
+            <div className="relative mt-14 aspect-[16/9] w-full overflow-hidden border border-line bg-white shadow-raise">
+              <Image
+                src={project.image}
+                alt={project.imageAlt}
+                fill
+                priority
+                quality={88}
+                sizes="(min-width: 1280px) 1200px, 100vw"
+                className="object-cover object-top"
               />
             </div>
           </Reveal>
@@ -122,17 +130,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <Container>
           <Reveal>
             <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
-              {[
-                { term: "Industri", value: project.industry },
-                { term: "Tipe Proyek", value: project.kind },
-                { term: "Layanan", value: project.services.join(" + ") },
-                { term: "Pendekatan", value: "Strategy-first" },
-              ].map((item) => (
-                <div key={item.term} className="border-t border-line pt-5">
+              {project.facts.map((fact) => (
+                <div key={fact.term} className="border-t border-line pt-5">
                   <dt className="text-[11px] font-bold uppercase tracking-widest text-muted">
-                    {item.term}
+                    {fact.term}
                   </dt>
-                  <dd className="mt-2 text-[15px] font-bold text-forest">{item.value}</dd>
+                  <dd className="mt-2 text-[15px] font-bold text-forest">{fact.value}</dd>
                 </div>
               ))}
             </div>
@@ -141,7 +144,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <Reveal delay={0.1}>
             <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-line pt-6">
               <span className="mr-1 text-[11px] font-bold uppercase tracking-widest text-muted">
-                Fitur Utama
+                Sorotan
               </span>
               {project.highlights.map((item) => (
                 <span
@@ -158,177 +161,134 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       <section className="py-14 sm:py-20">
         <Container>
-          <CaseSection
-            index="01"
-            title="Tantangan"
-            text={project.challenge}
-          />
-          <CaseSection
-            index="02"
-            title="Strategy"
-            text={project.strategy}
-            aside={
-              <ul className="flex flex-col gap-2.5">
-                {project.highlights.map((point) => (
-                  <li key={point} className="flex items-center gap-3 text-[14px] font-medium text-forest">
-                    <Check className="h-4 w-4 text-moss" strokeWidth={2.5} />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            }
-          />
-          <CaseSection
-            index="03"
-            title="Arahan Desain"
-            text={project.design}
-          />
-          <CaseSection
-            index="04"
-            title="Development"
-            text={project.development}
-          />
+          {project.sections.map((section) => (
+            <CaseSection
+              key={section.index}
+              index={section.index}
+              title={section.title}
+              text={section.text}
+            />
+          ))}
         </Container>
       </section>
 
       <section className="border-t border-line bg-white py-16 sm:py-24">
         <Container>
           <Reveal>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {project.designSystem.map((item) => (
+                <div key={item.term} className="border-t-2 border-forest pt-5">
+                  <p className="text-[11px] font-bold uppercase tracking-widest text-moss">
+                    {item.term}
+                  </p>
+                  <p className="mt-3 text-[15px] font-semibold leading-relaxed text-forest">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="border-t border-line py-16 sm:py-24">
+        <Container>
+          <Reveal>
             <div className="mb-10 flex items-end justify-between">
               <div>
-                <span className="label">05 · Galeri</span>
+                <span className="label">Galeri</span>
                 <h2 className="mt-3 text-2xl font-bold tracking-tight text-forest sm:text-3xl">
-                  Preview halaman
+                  Halaman-halaman situs
                 </h2>
               </div>
               <p className="hidden text-[12px] text-muted sm:block">
-                Representasi visual konsep dari halaman utama proyek.
+                Tangkapan layar dari situs yang dibangun.
               </p>
             </div>
           </Reveal>
 
-          <div className="mt-10">
-            <Reveal>
-              <p className="text-[11px] font-bold uppercase tracking-widest text-muted">
-                Preview Desktop
-              </p>
-            </Reveal>
-            <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            {desktopShots.map((shot, index) => (
+              <Reveal key={shot.src} delay={(index % 2) * 0.06}>
+                <div>
+                  <div className="relative aspect-[16/10] w-full overflow-hidden border border-line bg-white">
+                    <Image
+                      src={shot.src}
+                      alt={shot.alt}
+                      fill
+                      quality={85}
+                      sizes="(min-width: 768px) 560px, 100vw"
+                      className="object-cover object-top"
+                    />
+                  </div>
+                  <p className="mt-3 text-[12px] font-semibold uppercase tracking-widest text-muted">
+                    {shot.caption}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {mobileShots.length > 0 && (
+            <div className="mt-16">
               <Reveal>
-                <div>
-                  <div className="overflow-hidden border border-line shadow-raise">
-                    <ProjectMock
-                      project={project}
-                      variation={1}
-                      className="aspect-[4/3]"
-                    />
-                  </div>
-                  <p className="mt-3 text-[12px] font-semibold uppercase tracking-widest text-muted">
-                    Halaman utama · 01
-                  </p>
-                </div>
+                <p className="text-[11px] font-bold uppercase tracking-widest text-muted">
+                  Tampilan ponsel
+                </p>
               </Reveal>
-              <Reveal delay={0.06}>
-                <div>
-                  <div className="overflow-hidden border border-line shadow-raise">
-                    <ProjectMock
-                      project={project}
-                      variation={2}
-                      className="aspect-[4/3]"
-                    />
-                  </div>
-                  <p className="mt-3 text-[12px] font-semibold uppercase tracking-widest text-muted">
-                    Detail & aspek visual · 02
-                  </p>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-
-          <div className="mt-14">
-            <Reveal>
-              <p className="text-[11px] font-bold uppercase tracking-widest text-muted">
-                Preview Mobile
-              </p>
-            </Reveal>
-            <Reveal delay={0.06}>
-              <div className="mt-5 flex flex-col items-start gap-10 sm:flex-row sm:items-center">
-                <div className="w-full max-w-[300px] rounded-[2.6rem] border border-line bg-forest p-2 shadow-raise">
-                  <div className="overflow-hidden rounded-[2rem]">
-                    <ProjectMock
-                      project={project}
-                      variation={3}
-                      frame={false}
-                      className="aspect-[9/16]"
-                    />
-                  </div>
-                </div>
-                <div className="max-w-sm">
-                  <h3 className="text-lg font-bold tracking-tight text-forest sm:text-xl">
-                    Dirancang dan diuji khusus untuk ponsel.
-                  </h3>
-                  <p className="mt-3 text-[14.5px] leading-relaxed text-muted">
-                    Tidak sekadar mengecilkan tampilan desktop — setiap halaman memiliki
-                    hierarki informasi, ukuran ketukan, dan alur tindakannya sendiri pada
-                    layar kecil.
-                  </p>
-                </div>
+              <div className="mt-6 flex flex-wrap items-start gap-10">
+                {mobileShots.map((shot) => (
+                  <Reveal key={shot.src}>
+                    <div className="w-full max-w-[280px] rounded-[2.4rem] border border-line bg-forest p-2 shadow-raise">
+                      <div className="relative aspect-[390/780] overflow-hidden rounded-[1.9rem]">
+                        <Image
+                          src={shot.src}
+                          alt={shot.alt}
+                          fill
+                          quality={85}
+                          sizes="280px"
+                          className="object-cover object-top"
+                        />
+                      </div>
+                    </div>
+                    <p className="mt-4 text-[12px] font-semibold uppercase tracking-widest text-muted">
+                      {shot.caption}
+                    </p>
+                  </Reveal>
+                ))}
               </div>
-            </Reveal>
-          </div>
+            </div>
+          )}
         </Container>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="border-t border-line bg-ivory py-14 sm:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <Reveal>
-              <span className="label">06 · Outcome</span>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <h2 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-forest sm:text-4xl">
-                Hasil yang diutamakan, diukur secara kualitatif.
-              </h2>
-            </Reveal>
-            <Reveal delay={0.14}>
-              <p className="mt-6 text-[16px] leading-relaxed text-muted">{project.outcome}</p>
-            </Reveal>
-
-            <Reveal delay={0.2}>
-              <div className="mt-6 max-w-xl border border-line bg-white px-6 py-5 text-left">
-                <p className="text-[13px] leading-relaxed text-muted">
-                  Catatan: proyek ini adalah studi konsep. Kami tidak mencantumkan metrik fiktif —
-                  angka hasil hanya akan ditampilkan jika berasal dari data klien yang terverifikasi.
+          <Reveal>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <span className="label">Situs Asli</span>
+                <h2 className="mt-3 text-2xl font-bold tracking-tight text-forest sm:text-3xl">
+                  Lihat Ruang Antara Studio langsung.
+                </h2>
+                <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted">
+                  Seluruh halaman dapat dibuka persis seperti yang dibangun — tanpa mockup dan
+                  tanpa rekayasa tampilan.
                 </p>
               </div>
-            </Reveal>
-          </div>
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center gap-2 border border-forest bg-forest px-6 py-4 text-[13px] font-bold uppercase tracking-widest text-ivory transition-colors hover:bg-forest-2"
+              >
+                Buka situs
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+          </Reveal>
         </Container>
       </section>
-
-      {next && (
-        <section className="border-t border-line">
-          <Link
-            href={`/work/${next.slug}`}
-            className="group block bg-ivory transition-colors duration-500 hover:bg-white"
-          >
-            <div className="container-x flex flex-col gap-8 py-16 sm:flex-row sm:items-center sm:justify-between sm:py-20">
-              <div>
-                <span className="label">Proyek Selanjutnya</span>
-                <h3 className="mt-4 text-3xl font-extrabold tracking-tight text-forest transition-colors duration-300 group-hover:text-moss sm:text-4xl">
-                  {next.title}
-                </h3>
-                <p className="mt-2 text-[13px] font-semibold uppercase tracking-widest text-muted">
-                  {next.industry} · {next.kind}
-                </p>
-              </div>
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center border border-line transition-all duration-300 group-hover:border-forest group-hover:bg-forest">
-                <ArrowUpRight className="h-6 w-6 text-forest transition-colors duration-300 group-hover:text-ivory" />
-              </span>
-            </div>
-          </Link>
-        </section>
-      )}
 
       <CTASection
         eyebrow="Serupa dengan kebutuhan Anda?"
@@ -336,7 +296,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         text="Mulai dari percakapan singkat — kami akan membantu mengidentifikasi kebutuhan dan pendekatan yang paling sesuai."
         primaryLabel="Mulai Proyek Anda"
         primaryHref="/contact"
-        secondaryLabel="Lihat Proyek Lain"
+        secondaryLabel="Lihat Work"
         secondaryHref="/work"
       />
     </>

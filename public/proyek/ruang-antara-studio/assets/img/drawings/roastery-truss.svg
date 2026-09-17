@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%" style="background-color: #F7F5F0; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#EAE7DF" stroke-width="0.75"/>
+    </pattern>
+    <pattern id="brickHatch" width="20" height="10" patternUnits="userSpaceOnUse">
+      <rect width="20" height="10" fill="none" stroke="#DDD4C5" stroke-width="0.75"/>
+      <line x1="10" y1="0" x2="10" y2="10" stroke="#DDD4C5" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="560" fill="url(#grid2)"/>
+  <rect x="25" y="25" width="950" height="510" fill="none" stroke="#D8D4C7" stroke-width="1"/>
+  <rect x="28" y="28" width="944" height="504" fill="none" stroke="#ECE9DF" stroke-width="0.5"/>
+
+  <!-- Dinding Bata Merah Ekspos Garut -->
+  <rect x="120" y="320" width="80" height="130" fill="url(#brickHatch)" stroke="#191817" stroke-width="1.4"/>
+  <rect x="120" y="440" width="80" height="15" fill="#C2B7A3" stroke="#191817" stroke-width="1.4"/>
+  <text x="160" y="400" text-anchor="middle" font-size="8.5" fill="#A64B2A" font-weight="600" transform="rotate(-90 160 400)">BATA EKSPOS GARUT</text>
+
+  <rect x="800" y="320" width="80" height="130" fill="url(#brickHatch)" stroke="#191817" stroke-width="1.4"/>
+  <rect x="800" y="440" width="80" height="15" fill="#C2B7A3" stroke="#191817" stroke-width="1.4"/>
+
+  <!-- Lantai Teraso Halus -->
+  <rect x="80" y="455" width="840" height="18" fill="#D5CEBE" stroke="#191817" stroke-width="1.5"/>
+  <line x1="80" y1="465" x2="920" y2="465" stroke="#8C887B" stroke-width="0.75" stroke-dasharray="3 3"/>
+
+  <!-- Pelat Landasan Baja & Baut Angkur pada Balok Ring Beton -->
+  <rect x="185" y="310" width="30" height="12" fill="#3D3A35" stroke="#191817" stroke-width="1.2"/>
+  <rect x="785" y="310" width="30" height="12" fill="#3D3A35" stroke="#191817" stroke-width="1.2"/>
+
+  <!-- Rangka Atap Truss Kayu Jati Reklamasi 1942 -->
+  <!-- Batang Tarik Bawah (Bentang Bersih 12 Meter 150x250mm) -->
+  <path d="M 195 310 L 805 310 L 805 295 L 195 295 Z" fill="#4A3B32" stroke="#191817" stroke-width="1.6"/>
+  <text x="500" y="306" text-anchor="middle" font-size="9" fill="#EAE7DF" letter-spacing="1">BATANG TARIK KAYU JATI REKLAMASI (PABRIK GULA 1942)</text>
+
+  <!-- Kaki Kuda-Kuda (Kaso Induk) -->
+  <path d="M 195 300 L 500 130 L 500 150 L 210 310 Z" fill="#5A473D" stroke="#191817" stroke-width="1.6"/>
+  <path d="M 805 300 L 500 130 L 500 150 L 790 310 Z" fill="#5A473D" stroke="#191817" stroke-width="1.6"/>
+
+  <!-- Tiang Gantung / Makelar (Queen Posts) -->
+  <rect x="360" y="210" width="16" height="85" fill="#4A3B32" stroke="#191817" stroke-width="1.4"/>
+  <rect x="624" y="210" width="16" height="85" fill="#4A3B32" stroke="#191817" stroke-width="1.4"/>
+
+  <!-- Balok Kunci Atas (Straining Beam) -->
+  <rect x="360" y="200" width="280" height="16" fill="#4A3B32" stroke="#191817" stroke-width="1.4"/>
+
+  <!-- Batang Pengaku Diagonal (Skur) -->
+  <path d="M 376 295 L 485 216 L 495 224 L 386 303 Z" fill="#3D3029" stroke="#191817" stroke-width="1.2"/>
+  <path d="M 624 295 L 515 216 L 505 224 L 614 303 Z" fill="#3D3029" stroke="#191817" stroke-width="1.2"/>
+
+  <!-- Sambungan Baut Baja Hitam M16 & Pelat Buhul Tersembunyi -->
+  <circle cx="202" cy="302" r="5" fill="#191817"/>
+  <circle cx="500" cy="142" r="6" fill="#A64B2A"/>
+  <circle cx="368" cy="208" r="4" fill="#191817"/>
+  <circle cx="632" cy="208" r="4" fill="#191817"/>
+  <circle cx="368" cy="295" r="4" fill="#191817"/>
+  <circle cx="632" cy="295" r="4" fill="#191817"/>
+
+  <!-- Peninggian Lentera Clerestory / Ventilasi Panas Pasif -->
+  <path d="M 430 168 L 430 90 L 570 90 L 570 168" fill="none" stroke="#191817" stroke-width="1.4"/>
+  <line x1="420" y1="85" x2="580" y2="85" stroke="#191817" stroke-width="1.6"/>
+  <!-- Kisi-kisi Jalusi Kayu -->
+  <line x1="432" y1="105" x2="568" y2="105" stroke="#A64B2A" stroke-width="1"/>
+  <line x1="432" y1="120" x2="568" y2="120" stroke="#A64B2A" stroke-width="1"/>
+  <line x1="432" y1="135" x2="568" y2="135" stroke="#A64B2A" stroke-width="1"/>
+
+  <!-- Vektor Pembuangan Hawa Panas Roasting Pasif -->
+  <path d="M 500 240 L 500 65" fill="none" stroke="#A64B2A" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <polygon points="500,60 495,72 505,72" fill="#A64B2A"/>
+  <text x="500" y="52" text-anchor="middle" font-size="9" fill="#A64B2A" font-weight="500">CEROBONG PELEPASAN HAWA PANAS ROASTING</text>
+
+  <!-- Notasi Detail Tektonik -->
+  <line x1="280" y1="230" x2="230" y2="170" stroke="#8C887B" stroke-width="0.8"/>
+  <circle cx="280" cy="230" r="2.5" fill="#191817"/>
+  <text x="220" y="160" text-anchor="end" font-size="9" fill="#191817" font-weight="600">KAYU JATI TUA REKLAMASI</text>
+  <text x="220" y="174" text-anchor="end" font-size="8" fill="#63605A">Serat padat kering alami, usia &gt;80 tahun</text>
+
+  <line x1="500" y1="142" x2="600" y2="120" stroke="#8C887B" stroke-width="0.8"/>
+  <text x="610" y="118" font-size="9" fill="#191817" font-weight="600">FLITCH PLATE BAJA 8 MM</text>
+  <text x="610" y="132" font-size="8" fill="#63605A">Pelat baja tersembunyi dengan baut geser M16</text>
+
+  <!-- Dimensi Bentang -->
+  <line x1="195" y1="480" x2="805" y2="480" stroke="#8C887B" stroke-width="0.8"/>
+  <line x1="195" y1="475" x2="195" y2="485" stroke="#8C887B" stroke-width="0.8"/>
+  <line x1="805" y1="475" x2="805" y2="485" stroke="#8C887B" stroke-width="0.8"/>
+  <text x="500" y="495" text-anchor="middle" font-size="9.5" fill="#63605A" font-family="'JetBrains Mono', monospace">12.000 MM BENTANG BERSIH STRUKTUR</text>
+
+  <!-- Kepala Gambar -->
+  <rect x="610" y="465" width="340" height="50" fill="#F7F5F0" stroke="#191817" stroke-width="1"/>
+  <line x1="610" y1="490" x2="950" y2="490" stroke="#D8D4C7" stroke-width="0.8"/>
+  <line x1="790" y1="465" x2="790" y2="515" stroke="#D8D4C7" stroke-width="0.8"/>
+  <text x="620" y="482" font-size="9" font-weight="600" fill="#191817" letter-spacing="1">RUANG ANTARA STUDIO</text>
+  <text x="620" y="505" font-size="8" fill="#63605A">PROYEK: SANGRAI ROASTERY, BANDUNG</text>
+  <text x="800" y="482" font-size="8" fill="#63605A">GBR: AKSONOMETRI TRUSS</text>
+  <text x="800" y="505" font-size="8" font-family="'JetBrains Mono', monospace" fill="#A64B2A">SKALA: 1:50 @ A3</text>
+</svg>

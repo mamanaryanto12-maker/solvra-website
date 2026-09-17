@@ -232,38 +232,6 @@ function StudioPanel() {
   );
 }
 
-function GalleryPanel() {
-  return (
-    <div className="relative">
-      <div className="relative ml-4 overflow-hidden rounded-t-[10rem] border border-line shadow-raise sm:ml-0 sm:aspect-[4/5] sm:rounded-t-[12rem]">
-        <Image
-          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1600&q=88&auto=format&fit=crop"
-          alt="Detail arsitektur modern yang terkurasi"
-          fill
-          priority
-          sizes="50vw"
-          className="object-cover"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(247,247,245,0) 45%, rgba(247,247,245,0.78) 100%)",
-          }}
-        />
-        <div className="absolute bottom-5 left-5 right-5">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-moss">
-            Kurasi Visual
-          </p>
-          <p className="mt-1 text-sm font-bold text-forest">Referensi arsitektur modern</p>
-        </div>
-      </div>
-      <CornerFrame className="-right-4 -top-8 opacity-70" length={60} color="rgba(46,111,242,0.4)" />
-      <Rings className="-right-12 -bottom-10 opacity-80" size={220} />
-    </div>
-  );
-}
-
 const ATMOSPHERES: Record<Atmosphere, ReactNode> = {
   studio: (
     <>
@@ -361,7 +329,7 @@ export function PageIntro({
   atmosphere = "studio",
 }: PageIntroProps) {
   const centered = atmosphere === "monument" || atmosphere === "insight";
-  const withPanel = atmosphere === "studio" || atmosphere === "gallery";
+  const withPanel = atmosphere === "studio";
 
   return (
     <section className="relative overflow-hidden border-b border-line pb-14 pt-32 sm:pb-20 sm:pt-40">
@@ -446,7 +414,7 @@ export function PageIntro({
             </div>
             <div className="lg:col-span-5">
               <Reveal delay={0.2}>
-                {atmosphere === "studio" ? <StudioPanel /> : <GalleryPanel />}
+                <StudioPanel />
               </Reveal>
             </div>
           </div>
