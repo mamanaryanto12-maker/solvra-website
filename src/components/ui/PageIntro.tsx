@@ -200,28 +200,29 @@ function CornerFrame({
 function StudioPanel() {
   return (
     <div className="relative">
-      <div className="relative ml-8 overflow-hidden rounded-t-[10rem] border border-line shadow-raise sm:ml-0 sm:aspect-[4/5] sm:rounded-t-[12rem]">
+      <div className="relative overflow-hidden rounded-2xl border border-line shadow-raise">
         <Image
-          src="/solvra-hero-visual-2.png"
-          alt="Komposisi digital SOLVRA yang menyatukan teknologi dan kebutuhan bisnis"
-          fill
+          src="/hero-background.png"
+          alt="Visual teknologi SOLVRA yang menyatukan sistem digital dan kebutuhan bisnis"
+          width={1671}
+          height={941}
           priority
-          sizes="50vw"
-          className="object-cover"
+          sizes="(min-width: 1024px) 42vw, 100vw"
+          className="h-auto w-full"
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(247,247,245,0) 40%, rgba(247,247,245,0.72) 100%)",
+              "linear-gradient(180deg, rgba(247,247,245,0) 48%, rgba(247,247,245,0.6) 100%)",
           }}
         />
-        <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+        <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-widest text-moss">Digital & Teknologi</p>
             <p className="mt-1 text-sm font-bold text-forest">Pendekatan SOLVRA untuk pertumbuhan bisnis digital</p>
           </div>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-forest/15 bg-white/90 text-[16px] font-bold text-forest">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-forest/15 bg-white/90 text-[16px] font-bold text-forest">
             S
           </span>
         </div>
